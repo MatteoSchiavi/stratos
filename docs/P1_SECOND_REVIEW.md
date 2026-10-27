@@ -13,7 +13,7 @@ This pass stays within the atmospheric-input/trajectory/recovery scope. Earlier 
 
 Keep existing altitude sampling and schema1 replay untouched. Add a pressure-level sampler alongside them, with typed plane selection in the read-only explorer. A pure NumPy contour module emits GeoJSON from finite grid cells; its geometry is tested independently of the UI. No additional dependency or network source is needed. The inspector exports the exact displayed slice and its forecast provenance.
 
-Verification results and remaining limits will be appended after implementation. Native Windows/8GB-host qualification, full72h testing, 3D volume display and later phases remain separate work.
+Verification results and remaining limits are recorded below. Native Windows/8GB-host qualification, full72h testing, 3D volume display and later phases remain separate work.
 
 ## Implemented findings
 
@@ -54,7 +54,7 @@ STRATOS_CHROMIUM=/usr/bin/chromium npm run test:e2e
 
 Independent references include closed-form/equivalent GeographicLib solver checks, actual ecCodes isobaric-point extraction, analytic contour planes/saddles/masks, dateline path interpolation and UTC/elapsed alignment. The original NOAA float/ascent golden outputs still reproduce with exact hashes and zero coordinate differences in this instance.
 
-Earlier in this pass,90 backend tests and11 isolated browser scenarios passed before retaining the additional common-time NOAA fixtures. The expanded suite and publishing/clean-install evidence are recorded below after their final execution. Frontend lint/TypeScript/production build passed; the main bundle is about322kB, with the larger lazy MapLibre chunk still disclosed by the bundler.
+The expanded final suite passed91 backend tests and11 isolated browser scenarios, including the actual retained common-time NOAA fixture workflow. Frontend lint/TypeScript/production build passed; the main bundle is about322kB, with the larger lazy MapLibre chunk still disclosed by the bundler.
 
 Live NOAA discovery was attempted through the application's real endpoint and returned502/ProxyError under the active cloud destination policy. Official domains are preserved in the configuration draft; cached real inputs require no network. No proxy/TLS bypass is used.
 
@@ -62,4 +62,16 @@ Live NOAA discovery was attempted through the application's real endpoint and re
 
 Full real72h qualification, native Windows, an independent8GB host and a full3D weather volume remain open. Automatic cache eviction, SSE and numerical checkpoints are deferred. All trajectories remain prescribed, uncalibrated L0 transport; no lift/survival, radio/connectivity, power, balloon data recovery or launch-readiness assessment is claimed. The new restore tool recovers local engineering evidence, not balloon telemetry.
 
-Final expanded checks: **91 backend tests passed in27.76s**, one upstream Starlette/httpx deprecation warning; lint/format passed42 Python files and mypy passed24 source files. **All11 isolated Chromium scenarios passed in59.9s**. Frontend lint/TypeScript/build passed. No source changes were made after these feature checks; publishing/clean-install evidence follows below.
+Final expanded checks: **91 backend tests passed in27.76s**, one upstream Starlette/httpx deprecation warning; lint/format passed42 Python files and mypy passed24 source files. **All11 isolated Chromium scenarios passed in59.9s**. Frontend lint/TypeScript/build passed. The only subsequent dependency-file edit removed a blank EOF line in pyproject.toml before publishing; no scientific implementation changed after these checks.
+
+## Published-source and installation evidence
+
+Scientific implementation commit `9d49d035dde0ac47cb8ff9c6bfa84e5f0a79e525` was pushed to GitHub main and cloned back over HTTPS. In a separate checkout whose path contains spaces, the portable Bash installer created a fresh venv, installed locked packages/native ecCodes2.50.0, ran npm ci/production build and migrated a fresh database. The actual API/worker on8002 imported all three real references. Running the same12UTC-cycle1h study exactly reproduced all31 snapshots and output SHA `f94d5b9a95f539c33b444a05d4a3f9246b2162c1274e67b0d66f8b7719072d6f`. See `CLEAN_INSTALL_VERIFICATION.json`. The separate launcher was stopped after verification; the planning instance remains on8000. Same-host Linux installation is the extent of this check.
+
+The committed API/worker repeated the full cached48h run and exactly matched all1,441 saved snapshots plus SHA `78b7a99d9556bb35db42643e3ccb0236152766518f921c3f1ce042b58654fb6b`. Both controlled-cycle studies were also run through the durable production queue. For their identical18UTC/12,500m/1h profile,06UTC and12UTC cycles yielded58.132788km and56.248460km ground distances. The end separation was1,952.742670m, with no height difference; only `weather.dataset_id` differed. `P1_SECOND_REVIEW_RESULTS.json` and `examples/noaa-cross-cycle-*.json` retain the results, source identities and comparison hash. This is sensitivity between two forecasts, not measured accuracy.
+
+Final backup and separate restore verified327 files,15 saved simulations and21 referenced source datasets. The restored API reopened the48h and both controlled studies with exact hashes, and the original backup remained unchanged and verified. `BACKUP_RESTORE_VERIFICATION.json` records local paths/results. Raw long-study data remains in the ignored local cache and external backup, rather than the Git repository.
+
+`./screenshots/forecast-cycle-comparison.png` and `./screenshots/pressure-surface-contours.png` were captured from the running application using actual retained forecasts. The pressure explorer export at20UTC uses500hPa, nine temperature-contour paths and actual varying GFS heights; its complete inspected-source export is retained under `examples/`.
+
+GitHub push and HTTPS clean clone were successful. Reading Actions status via gh was denied by the active `api.github.com` destination policy; only local test results are claimed. The cloud setup draft is saved separately from environment publication. New NOAA access remains policy-dependent; no fresh-task snapshot restoration was inferred from this clean GitHub installation.

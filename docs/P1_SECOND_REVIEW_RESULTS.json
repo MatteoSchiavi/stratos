@@ -1,0 +1,27 @@
+{
+  "code_commit": "9d49d035dde0ac47cb8ff9c6bfa84e5f0a79e525",
+  "saved_48h_result_id": "5a98be5a-45ab-4db5-bd2c-a2db5665d646",
+  "saved_48h_output_sha256": "78b7a99d9556bb35db42643e3ccb0236152766518f921c3f1ce042b58654fb6b",
+  "saved_48h_exact_prior_samples_equal": true,
+  "controlled_cycle_studies": {
+    "06": {
+      "id": "9acaa105-1ccd-4ed3-a719-4a7d8b26ece1",
+      "output_sha256": "3b8204fdf665d244d317157b5d7e5ab40fe619b110a01c89a8278b11c313eabf",
+      "distance_m": 58132.78835446859
+    },
+    "12": {
+      "id": "d2fbed7e-a0e7-48ce-bfb7-63bd8a34a4f9",
+      "output_sha256": "f94d5b9a95f539c33b444a05d4a3f9246b2162c1274e67b0d66f8b7719072d6f",
+      "distance_m": 56248.46023514857
+    }
+  },
+  "comparison_sha256": "efb56a999a8c221a9c69d18f91397c0f32706cdfb43ffcd7e1c2868467763cb4",
+  "comparison_metrics": {
+    "maximum_sampled_separation_m": 1952.7426700481328,
+    "mean_sampled_separation_m": 943.6452790174613,
+    "shared_window_end_separation_m": 1952.7426700481328,
+    "maximum_absolute_sampled_height_difference_m": 0.0,
+    "maximum_separation_sample_index": 240
+  },
+  "quality": "comparison_of_uncalibrated_predictions"
+}

@@ -59,7 +59,7 @@ NOAA was initially denied by proxy policy; later discovery/download succeeded. F
 
 ## Configuration / repository
 
-Cloud draft saves official NOAA domains, tested installation and service startup/readiness instructions. Saving does not publish a snapshot or prove fresh-task restoration. Review/save and publication are product actions. GitHub publishing is now explicitly requested. Historical runs were created in an unborn repository and retain `git_commit=null` plus source hashes; subsequent committed-source checks will retain the actual commit. No public service or PR is implied by source publishing.
+Cloud draft saves official NOAA domains, tested installation and service startup/readiness instructions. Saving does not publish a snapshot or prove fresh-task restoration. Review/save and publication are product actions. The complete implementation is published on GitHub `main` at scientific-source commit `9d49d035dde0ac47cb8ff9c6bfa84e5f0a79e525`; final documentation/evidence is committed separately. Historical runs were created in an unborn repository and retain `git_commit=null` plus source hashes; the final three actual API/worker calculations retain the committed source identity. No public service or PR is implied by source publishing.
 
 ## Reliability review additions, 27 October 2026
 
@@ -69,7 +69,7 @@ The final API/worker 48h record is `db683209-a61d-4d0d-91c6-ccc5006bfadc`, outpu
 
 Final review: offline schema2 replay exactly matched the saved 48h output hash and all1,441 samples after configuration normalization. A corrected311-file backup passed complete checksum/integrity verification and an isolated API restore of both NOAA studies; a live API/worker restart preserved them. Detailed metrics and the two defects caught by these checks are documented in `docs/REVIEW_VERIFICATION.md`.
 
-Cloud draft revision now also declares the verified checkout at mount path `stratos`, origin `MatteoSchiavi/stratos`, with null commit only because its valid symbolic branch is unborn. The empty sandbox protection directory `/workspace/.git` is not another checkout. Installation, startup and official NOAA custom network domains remain preserved. Publication/fresh-machine restoration are still not claimed.
+The earlier cloud draft recorded an unborn checkout. Final onboarding updates replace that historical ref with the exact published local HEAD at mount path `stratos`, origin `MatteoSchiavi/stratos`. The empty sandbox protection directory `/workspace/.git` and the empty uv cache marker `.cache/uv/sdists-v9/.git` are not additional project checkouts. Installation, startup and official NOAA custom network domains remain preserved. Environment publication/fresh-task restoration are still not claimed.
 
 ## Second P1 revision
 
@@ -82,3 +82,13 @@ Forecast requests can select a window of at most72h within GFS hourly leads0–1
 UI request fingerprints preserve the connection between estimates and inputs; late saves preserve newer edits, and stale inspections cannot repopulate a changed dataset. Findings, commands, exact results and remaining limits are in `docs/P1_SECOND_REVIEW.md`.
 
 Saved-study comparison now aligns real saved paths in elapsed/UTC time, exposes changed inputs and source identities, and exports hashed scenario-sensitivity data. Two exact NOAA cycle windows are bundled for a controlled common-valid-time comparison. Browser tests use a separate server/temp database; continuous mission fields no longer fail native step validation. Full user instructions are in `INSTALL_AND_USE.md`.
+
+## Published-source release verification
+
+- Scientific-source commit `9d49d035dde0ac47cb8ff9c6bfa84e5f0a79e525` was pushed to GitHub main and independently cloned over HTTPS into a path containing spaces. `bash scripts/install.sh` completed with fresh locked dependencies, native ecCodes2.50.0, frontend production build and migrated database. The clean instance imported three dated real NOAA references, calculated a one-hour study and exactly matched all31 samples/output hash from the planning instance. This is a fresh installation on the same Linux host, not an independent-machine qualification. Evidence: `docs/CLEAN_INSTALL_VERIFICATION.json`.
+- Committed-source API/worker replay of the48h study exactly matched all1,441 previous snapshots and output hash `78b7a99d9556bb35db42643e3ccb0236152766518f921c3f1ce042b58654fb6b`. New result `5a98be5a-45ab-4db5-bd2c-a2db5665d646` retains the actual commit identity.
+- Controlled06UTC/12UTC real GFS studies start at the same18UTC time and12,500m height for1h. Their distances are58,132.788354m and56,248.460235m; endpoint separation is1,952.742670m. Only the weather dataset differs. This is forecast-cycle sensitivity, not an accuracy/confidence measurement. Full manifests and hashed comparison are in `docs/examples/noaa-cross-cycle-*.json`; summary: `docs/P1_SECOND_REVIEW_RESULTS.json`.
+- Final quiet-state backup `/workspace/stratos-backups/final-20261027-2324`:327 files,15 simulations and21 referenced weather sources verified. Restore into a new directory reopened the three final NOAA results with exact hashes; original backup reverified unchanged. Evidence: `docs/BACKUP_RESTORE_VERIFICATION.json`. The runtime cache/database/backup are local and ignored by Git; portable small NOAA fixtures are committed.
+- Actual Chromium screenshots of the comparison and pressure-surface explorer are retained in `docs/screenshots/`. Final local suites:91 backend tests and11 isolated browser scenarios. GitHub Actions status could not be read because the cloud policy denies `api.github.com`; remote CI success is not claimed.
+
+Full installation, configuration, UTC planning, NOAA acquisition, comparison, export, backup and restore instructions: `INSTALL_AND_USE.md`. P1 remaining gates above remain open; no later phase has been declared complete.

@@ -1,0 +1,17 @@
+{
+  "source": "fresh HTTPS GitHub clone into path containing spaces; independent venv and npm ci",
+  "commit": "9d49d035dde0ac47cb8ff9c6bfa84e5f0a79e525",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "qualification": "Same Linux machine, fresh dependencies/data; not independent host/native Windows qualification",
+  "installer": "bash scripts/install.sh",
+  "native_eccodes": "2.50.0",
+  "offline_noaa_result_id": "0bbc9f42-f2ff-4a79-9ea9-921d35278849",
+  "offline_noaa_output_sha256": "f94d5b9a95f539c33b444a05d4a3f9246b2162c1274e67b0d66f8b7719072d6f",
+  "all_samples_exactly_equal": true,
+  "samples": 31,
+  "worker": {
+    "state": "ready",
+    "heartbeat_age_s": 1.171512
+  },
+  "bundled_datasets": 3
+}

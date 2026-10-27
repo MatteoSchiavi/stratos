@@ -1,0 +1,28 @@
+{
+  "backup": "/workspace/stratos-backups/final-20261027-2324",
+  "restored_to": "/tmp/stratos final restored",
+  "verification": {
+    "files": 327,
+    "simulations": 15,
+    "weather_sources": 21,
+    "status": "verified"
+  },
+  "read_only_original_reverified_after_restore": true,
+  "restored_api_results": [
+    {
+      "id": "5a98be5a-45ab-4db5-bd2c-a2db5665d646",
+      "output_sha256": "78b7a99d9556bb35db42643e3ccb0236152766518f921c3f1ce042b58654fb6b",
+      "samples": 1441
+    },
+    {
+      "id": "9acaa105-1ccd-4ed3-a719-4a7d8b26ece1",
+      "output_sha256": "3b8204fdf665d244d317157b5d7e5ab40fe619b110a01c89a8278b11c313eabf",
+      "samples": 31
+    },
+    {
+      "id": "d2fbed7e-a0e7-48ce-bfb7-63bd8a34a4f9",
+      "output_sha256": "f94d5b9a95f539c33b444a05d4a3f9246b2162c1274e67b0d66f8b7719072d6f",
+      "samples": 31
+    }
+  ]
+}

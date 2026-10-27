@@ -36,6 +36,8 @@ bash scripts/install.sh
 
 The script finds its own checkout, installs the locked Python3.12 environment, installs/builds the client and migrates the local database. It does not erase existing mission records.
 
+In this managed cloud, prepend `UV_CACHE_DIR=/workspace/stratos/.cache/uv` to subsequent `uv run` commands because the default home cache is read-only. The installer sets a writable cache itself. Ordinary local installations can use the commands as written.
+
 Equivalent individual commands, also useful for troubleshooting:
 ```sh
 uv sync --frozen --python 3.12
