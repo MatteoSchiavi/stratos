@@ -1,0 +1,23 @@
+{
+  "files": [
+    {
+      "file": "synthetic-gfs-shaped-f000.grib2",
+      "lead_hour": 0,
+      "sha256": "a5b00bf0aedeccf2f1fb684994ca0eac3670f80630fd2187679354c7aebb33eb"
+    },
+    {
+      "file": "synthetic-gfs-shaped-f001.grib2",
+      "lead_hour": 1,
+      "sha256": "0328b5b557991706c52b2c4646ea68ff56502a9a361a6682a54d55e77c1aedeb"
+    }
+  ],
+  "height_model": "ISA approximation, deliberately synthetic",
+  "licence": "Generated project test data",
+  "origin": "demo",
+  "provider": "SYNTHETIC",
+  "run_utc": "2026-10-27T00:00:00+00:00",
+  "sha256": "133ba2d783aee7bccbe1bf615cff84df7a0e77e523e03107167d67422b0e63e0",
+  "source": "scripts/make_synthetic_grib.py using ecCodes samples, not downloaded NOAA data",
+  "u_ms": 12,
+  "v_ms": 3
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "lead_hour": 6,
+    "latitude_deg": 45,
+    "longitude_deg": 10,
+    "pressure_pa": 20000,
+    "independent_eccodes_nearest": {
+      "gh": 12172.57125,
+      "t": 214.36298828125,
+      "u": 14.24375,
+      "v": -13.64356689453125
+    },
+    "sampled": {
+      "u_ms": 14.243749999999995,
+      "v_ms": -13.643566894531249,
+      "temperature_k": 214.36298828125,
+      "pressure_pa": 19999.99999999998,
+      "geopotential_m": 12172.571249999999,
+      "valid_before_utc": "2026-10-27T12:00:00+00:00",
+      "valid_after_utc": "2026-10-27T13:00:00+00:00",
+      "temporal_weight": 0.0
+    },
+    "absolute_errors": {
+      "u_ms": 5.329070518200751e-15,
+      "v_ms": 1.7763568394002505e-15,
+      "temperature_k": 0.0,
+      "pressure_pa": 1.8189894035458565e-11
+    }
+  },
+  {
+    "lead_hour": 7,
+    "latitude_deg": 45,
+    "longitude_deg": 10,
+    "pressure_pa": 20000,
+    "independent_eccodes_nearest": {
+      "gh": 12168.5125,
+      "t": 214.22275390625,
+      "u": 14.025659179687501,
+      "v": -12.144885253906251
+    },
+    "sampled": {
+      "u_ms": 14.025659179687496,
+      "v_ms": -12.144885253906248,
+      "temperature_k": 214.22275390625,
+      "pressure_pa": 19999.99999999998,
+      "geopotential_m": 12168.512500000003,
+      "valid_before_utc": "2026-10-27T13:00:00+00:00",
+      "valid_after_utc": "2026-10-27T14:00:00+00:00",
+      "temporal_weight": 0.0
+    },
+    "absolute_errors": {
+      "u_ms": 5.329070518200751e-15,
+      "v_ms": 3.552713678800501e-15,
+      "temperature_k": 0.0,
+      "pressure_pa": 1.8189894035458565e-11
+    }
+  },
+  {
+    "lead_hour": 8,
+    "latitude_deg": 45,
+    "longitude_deg": 10,
+    "pressure_pa": 20000,
+    "independent_eccodes_nearest": {
+      "gh": 12164.16375,
+      "t": 214.01689453125002,
+      "u": 13.481390380859375,
+      "v": -11.006280517578126
+    },
+    "sampled": {
+      "u_ms": 13.481390380859375,
+      "v_ms": -11.006280517578126,
+      "temperature_k": 214.01689453125002,
+      "pressure_pa": 19999.99999999998,
+      "geopotential_m": 12164.16375,
+      "valid_before_utc": "2026-10-27T13:00:00+00:00",
+      "valid_after_utc": "2026-10-27T14:00:00+00:00",
+      "temporal_weight": 1.0
+    },
+    "absolute_errors": {
+      "u_ms": 0.0,
+      "v_ms": 0.0,
+      "temperature_k": 0.0,
+      "pressure_pa": 1.8189894035458565e-11
+    }
+  }
+]

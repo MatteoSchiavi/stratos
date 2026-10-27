@@ -1,0 +1,142 @@
+{
+  "kind": "retained_exact_hourly_subset",
+  "operation": "Byte-for-byte copy from previously downloaded, verified NOAA cache; no new download or re-encoding.",
+  "parent_manifest": {
+    "files": [
+      {
+        "file": "f006.grib2",
+        "lead_hour": 6,
+        "retrieved_utc": "2026-10-27T17:01:57.573000+00:00",
+        "sha256": "803b61996cec7bdc4c1e6b4323da65eaace6542334bfc4f26b02e96ce1270492",
+        "size_bytes": 733014,
+        "source_uri": "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25.pl?file=gfs.t12z.pgrb2.0p25.f006&dir=%2Fgfs.20261027%2F12%2Fatmos&subregion=&leftlon=5.0&rightlon=23.0&toplat=55.0&bottomlat=37.0&var_UGRD=on&var_VGRD=on&var_TMP=on&var_HGT=on&var_PRES=on&lev_1000_mb=on&lev_975_mb=on&lev_950_mb=on&lev_925_mb=on&lev_900_mb=on&lev_850_mb=on&lev_800_mb=on&lev_750_mb=on&lev_700_mb=on&lev_650_mb=on&lev_600_mb=on&lev_550_mb=on&lev_500_mb=on&lev_450_mb=on&lev_400_mb=on&lev_350_mb=on&lev_300_mb=on&lev_250_mb=on&lev_200_mb=on&lev_150_mb=on&lev_100_mb=on&lev_70_mb=on&lev_50_mb=on&lev_surface=on&lev_10_m_above_ground=on&lev_2_m_above_ground=on"
+      },
+      {
+        "file": "f007.grib2",
+        "lead_hour": 7,
+        "retrieved_utc": "2026-10-27T17:02:33.956098+00:00",
+        "sha256": "51bbc15dc8ca40f65359d571e540cca3f38322ba6986338fc5645e158617eada",
+        "size_bytes": 733014,
+        "source_uri": "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25.pl?file=gfs.t12z.pgrb2.0p25.f007&dir=%2Fgfs.20261027%2F12%2Fatmos&subregion=&leftlon=5.0&rightlon=23.0&toplat=55.0&bottomlat=37.0&var_UGRD=on&var_VGRD=on&var_TMP=on&var_HGT=on&var_PRES=on&lev_1000_mb=on&lev_975_mb=on&lev_950_mb=on&lev_925_mb=on&lev_900_mb=on&lev_850_mb=on&lev_800_mb=on&lev_750_mb=on&lev_700_mb=on&lev_650_mb=on&lev_600_mb=on&lev_550_mb=on&lev_500_mb=on&lev_450_mb=on&lev_400_mb=on&lev_350_mb=on&lev_300_mb=on&lev_250_mb=on&lev_200_mb=on&lev_150_mb=on&lev_100_mb=on&lev_70_mb=on&lev_50_mb=on&lev_surface=on&lev_10_m_above_ground=on&lev_2_m_above_ground=on"
+      },
+      {
+        "file": "f008.grib2",
+        "lead_hour": 8,
+        "retrieved_utc": "2026-10-27T17:02:48.055978+00:00",
+        "sha256": "8f9a6571f4bf87e5c23941eff0a8545b286187e8f3d685669c1e3be152ab85e8",
+        "size_bytes": 737011,
+        "source_uri": "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25.pl?file=gfs.t12z.pgrb2.0p25.f008&dir=%2Fgfs.20261027%2F12%2Fatmos&subregion=&leftlon=5.0&rightlon=23.0&toplat=55.0&bottomlat=37.0&var_UGRD=on&var_VGRD=on&var_TMP=on&var_HGT=on&var_PRES=on&lev_1000_mb=on&lev_975_mb=on&lev_950_mb=on&lev_925_mb=on&lev_900_mb=on&lev_850_mb=on&lev_800_mb=on&lev_750_mb=on&lev_700_mb=on&lev_650_mb=on&lev_600_mb=on&lev_550_mb=on&lev_500_mb=on&lev_450_mb=on&lev_400_mb=on&lev_350_mb=on&lev_300_mb=on&lev_250_mb=on&lev_200_mb=on&lev_150_mb=on&lev_100_mb=on&lev_70_mb=on&lev_50_mb=on&lev_surface=on&lev_10_m_above_ground=on&lev_2_m_above_ground=on"
+      },
+      {
+        "file": "f009.grib2",
+        "lead_hour": 9,
+        "retrieved_utc": "2026-10-27T17:03:05.257194+00:00",
+        "sha256": "f131c10bafe95f6e89a209f9dc25e0034e0937d51fdc21b7f772f1fffd984a8b",
+        "size_bytes": 734348,
+        "source_uri": "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25.pl?file=gfs.t12z.pgrb2.0p25.f009&dir=%2Fgfs.20261027%2F12%2Fatmos&subregion=&leftlon=5.0&rightlon=23.0&toplat=55.0&bottomlat=37.0&var_UGRD=on&var_VGRD=on&var_TMP=on&var_HGT=on&var_PRES=on&lev_1000_mb=on&lev_975_mb=on&lev_950_mb=on&lev_925_mb=on&lev_900_mb=on&lev_850_mb=on&lev_800_mb=on&lev_750_mb=on&lev_700_mb=on&lev_650_mb=on&lev_600_mb=on&lev_550_mb=on&lev_500_mb=on&lev_450_mb=on&lev_400_mb=on&lev_350_mb=on&lev_300_mb=on&lev_250_mb=on&lev_200_mb=on&lev_150_mb=on&lev_100_mb=on&lev_70_mb=on&lev_50_mb=on&lev_surface=on&lev_10_m_above_ground=on&lev_2_m_above_ground=on"
+      },
+      {
+        "file": "f010.grib2",
+        "lead_hour": 10,
+        "retrieved_utc": "2026-10-27T17:03:20.961894+00:00",
+        "sha256": "98b4cece07ab4680448100127cee38a867287d652691dc80cd967ddcf65a4eed",
+        "size_bytes": 732350,
+        "source_uri": "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25.pl?file=gfs.t12z.pgrb2.0p25.f010&dir=%2Fgfs.20261027%2F12%2Fatmos&subregion=&leftlon=5.0&rightlon=23.0&toplat=55.0&bottomlat=37.0&var_UGRD=on&var_VGRD=on&var_TMP=on&var_HGT=on&var_PRES=on&lev_1000_mb=on&lev_975_mb=on&lev_950_mb=on&lev_925_mb=on&lev_900_mb=on&lev_850_mb=on&lev_800_mb=on&lev_750_mb=on&lev_700_mb=on&lev_650_mb=on&lev_600_mb=on&lev_550_mb=on&lev_500_mb=on&lev_450_mb=on&lev_400_mb=on&lev_350_mb=on&lev_300_mb=on&lev_250_mb=on&lev_200_mb=on&lev_150_mb=on&lev_100_mb=on&lev_70_mb=on&lev_50_mb=on&lev_surface=on&lev_10_m_above_ground=on&lev_2_m_above_ground=on"
+      },
+      {
+        "file": "f011.grib2",
+        "lead_hour": 11,
+        "retrieved_utc": "2026-10-27T17:03:34.668222+00:00",
+        "sha256": "43082e792e4a72a76d3590f39351a01c2f4d0b71e4d690fed2bbaf9d08429913",
+        "size_bytes": 733017,
+        "source_uri": "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25.pl?file=gfs.t12z.pgrb2.0p25.f011&dir=%2Fgfs.20261027%2F12%2Fatmos&subregion=&leftlon=5.0&rightlon=23.0&toplat=55.0&bottomlat=37.0&var_UGRD=on&var_VGRD=on&var_TMP=on&var_HGT=on&var_PRES=on&lev_1000_mb=on&lev_975_mb=on&lev_950_mb=on&lev_925_mb=on&lev_900_mb=on&lev_850_mb=on&lev_800_mb=on&lev_750_mb=on&lev_700_mb=on&lev_650_mb=on&lev_600_mb=on&lev_550_mb=on&lev_500_mb=on&lev_450_mb=on&lev_400_mb=on&lev_350_mb=on&lev_300_mb=on&lev_250_mb=on&lev_200_mb=on&lev_150_mb=on&lev_100_mb=on&lev_70_mb=on&lev_50_mb=on&lev_surface=on&lev_10_m_above_ground=on&lev_2_m_above_ground=on"
+      },
+      {
+        "file": "f012.grib2",
+        "lead_hour": 12,
+        "retrieved_utc": "2026-10-27T17:03:48.376679+00:00",
+        "sha256": "b844f2313fdcedd6fb94cf57afab35e8b972619210761606a718ea3800771c7e",
+        "size_bytes": 737679,
+        "source_uri": "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25.pl?file=gfs.t12z.pgrb2.0p25.f012&dir=%2Fgfs.20261027%2F12%2Fatmos&subregion=&leftlon=5.0&rightlon=23.0&toplat=55.0&bottomlat=37.0&var_UGRD=on&var_VGRD=on&var_TMP=on&var_HGT=on&var_PRES=on&lev_1000_mb=on&lev_975_mb=on&lev_950_mb=on&lev_925_mb=on&lev_900_mb=on&lev_850_mb=on&lev_800_mb=on&lev_750_mb=on&lev_700_mb=on&lev_650_mb=on&lev_600_mb=on&lev_550_mb=on&lev_500_mb=on&lev_450_mb=on&lev_400_mb=on&lev_350_mb=on&lev_300_mb=on&lev_250_mb=on&lev_200_mb=on&lev_150_mb=on&lev_100_mb=on&lev_70_mb=on&lev_50_mb=on&lev_surface=on&lev_10_m_above_ground=on&lev_2_m_above_ground=on"
+      },
+      {
+        "file": "f013.grib2",
+        "lead_hour": 13,
+        "retrieved_utc": "2026-10-27T17:04:04.608397+00:00",
+        "sha256": "5deeff4010111150099c1ac087c024336c8ed017a158b03bfe6dd5e54dd5201c",
+        "size_bytes": 731683,
+        "source_uri": "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25.pl?file=gfs.t12z.pgrb2.0p25.f013&dir=%2Fgfs.20261027%2F12%2Fatmos&subregion=&leftlon=5.0&rightlon=23.0&toplat=55.0&bottomlat=37.0&var_UGRD=on&var_VGRD=on&var_TMP=on&var_HGT=on&var_PRES=on&lev_1000_mb=on&lev_975_mb=on&lev_950_mb=on&lev_925_mb=on&lev_900_mb=on&lev_850_mb=on&lev_800_mb=on&lev_750_mb=on&lev_700_mb=on&lev_650_mb=on&lev_600_mb=on&lev_550_mb=on&lev_500_mb=on&lev_450_mb=on&lev_400_mb=on&lev_350_mb=on&lev_300_mb=on&lev_250_mb=on&lev_200_mb=on&lev_150_mb=on&lev_100_mb=on&lev_70_mb=on&lev_50_mb=on&lev_surface=on&lev_10_m_above_ground=on&lev_2_m_above_ground=on"
+      },
+      {
+        "file": "f014.grib2",
+        "lead_hour": 14,
+        "retrieved_utc": "2026-10-27T17:04:18.472485+00:00",
+        "sha256": "9e77dcc49f2b1745a3f7c5d2824f0cf3478b14e1056a533ac3ce37538941a497",
+        "size_bytes": 739010,
+        "source_uri": "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25.pl?file=gfs.t12z.pgrb2.0p25.f014&dir=%2Fgfs.20261027%2F12%2Fatmos&subregion=&leftlon=5.0&rightlon=23.0&toplat=55.0&bottomlat=37.0&var_UGRD=on&var_VGRD=on&var_TMP=on&var_HGT=on&var_PRES=on&lev_1000_mb=on&lev_975_mb=on&lev_950_mb=on&lev_925_mb=on&lev_900_mb=on&lev_850_mb=on&lev_800_mb=on&lev_750_mb=on&lev_700_mb=on&lev_650_mb=on&lev_600_mb=on&lev_550_mb=on&lev_500_mb=on&lev_450_mb=on&lev_400_mb=on&lev_350_mb=on&lev_300_mb=on&lev_250_mb=on&lev_200_mb=on&lev_150_mb=on&lev_100_mb=on&lev_70_mb=on&lev_50_mb=on&lev_surface=on&lev_10_m_above_ground=on&lev_2_m_above_ground=on"
+      },
+      {
+        "file": "f015.grib2",
+        "lead_hour": 15,
+        "retrieved_utc": "2026-10-27T17:04:33.228072+00:00",
+        "sha256": "e5665774b602bc7bd6126f12325421ed880dd9594828873d778fe3677c82f625",
+        "size_bytes": 735680,
+        "source_uri": "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25.pl?file=gfs.t12z.pgrb2.0p25.f015&dir=%2Fgfs.20261027%2F12%2Fatmos&subregion=&leftlon=5.0&rightlon=23.0&toplat=55.0&bottomlat=37.0&var_UGRD=on&var_VGRD=on&var_TMP=on&var_HGT=on&var_PRES=on&lev_1000_mb=on&lev_975_mb=on&lev_950_mb=on&lev_925_mb=on&lev_900_mb=on&lev_850_mb=on&lev_800_mb=on&lev_750_mb=on&lev_700_mb=on&lev_650_mb=on&lev_600_mb=on&lev_550_mb=on&lev_500_mb=on&lev_450_mb=on&lev_400_mb=on&lev_350_mb=on&lev_300_mb=on&lev_250_mb=on&lev_200_mb=on&lev_150_mb=on&lev_100_mb=on&lev_70_mb=on&lev_50_mb=on&lev_surface=on&lev_10_m_above_ground=on&lev_2_m_above_ground=on"
+      },
+      {
+        "file": "f016.grib2",
+        "lead_hour": 16,
+        "retrieved_utc": "2026-10-27T17:04:50.952186+00:00",
+        "sha256": "8c89e3a49d3a57b21099ea6fd4ceee7f06601103979348bfdda0e8bdce27e88a",
+        "size_bytes": 736344,
+        "source_uri": "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25.pl?file=gfs.t12z.pgrb2.0p25.f016&dir=%2Fgfs.20261027%2F12%2Fatmos&subregion=&leftlon=5.0&rightlon=23.0&toplat=55.0&bottomlat=37.0&var_UGRD=on&var_VGRD=on&var_TMP=on&var_HGT=on&var_PRES=on&lev_1000_mb=on&lev_975_mb=on&lev_950_mb=on&lev_925_mb=on&lev_900_mb=on&lev_850_mb=on&lev_800_mb=on&lev_750_mb=on&lev_700_mb=on&lev_650_mb=on&lev_600_mb=on&lev_550_mb=on&lev_500_mb=on&lev_450_mb=on&lev_400_mb=on&lev_350_mb=on&lev_300_mb=on&lev_250_mb=on&lev_200_mb=on&lev_150_mb=on&lev_100_mb=on&lev_70_mb=on&lev_50_mb=on&lev_surface=on&lev_10_m_above_ground=on&lev_2_m_above_ground=on"
+      },
+      {
+        "file": "f017.grib2",
+        "lead_hour": 17,
+        "retrieved_utc": "2026-10-27T17:05:07.387149+00:00",
+        "sha256": "d096bf201f6029eaa104e09b333edee6ba1f581237cadc249f7b95e14fdf73a5",
+        "size_bytes": 735679,
+        "source_uri": "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25.pl?file=gfs.t12z.pgrb2.0p25.f017&dir=%2Fgfs.20261027%2F12%2Fatmos&subregion=&leftlon=5.0&rightlon=23.0&toplat=55.0&bottomlat=37.0&var_UGRD=on&var_VGRD=on&var_TMP=on&var_HGT=on&var_PRES=on&lev_1000_mb=on&lev_975_mb=on&lev_950_mb=on&lev_925_mb=on&lev_900_mb=on&lev_850_mb=on&lev_800_mb=on&lev_750_mb=on&lev_700_mb=on&lev_650_mb=on&lev_600_mb=on&lev_550_mb=on&lev_500_mb=on&lev_450_mb=on&lev_400_mb=on&lev_350_mb=on&lev_300_mb=on&lev_250_mb=on&lev_200_mb=on&lev_150_mb=on&lev_100_mb=on&lev_70_mb=on&lev_50_mb=on&lev_surface=on&lev_10_m_above_ground=on&lev_2_m_above_ground=on"
+      },
+      {
+        "file": "f018.grib2",
+        "lead_hour": 18,
+        "retrieved_utc": "2026-10-27T17:05:21.036028+00:00",
+        "sha256": "ec5225ea39dd9332d0c173e6eeca7f1bfdc18a778e3b35cccedffc30aa11a5a9",
+        "size_bytes": 731017,
+        "source_uri": "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25.pl?file=gfs.t12z.pgrb2.0p25.f018&dir=%2Fgfs.20261027%2F12%2Fatmos&subregion=&leftlon=5.0&rightlon=23.0&toplat=55.0&bottomlat=37.0&var_UGRD=on&var_VGRD=on&var_TMP=on&var_HGT=on&var_PRES=on&lev_1000_mb=on&lev_975_mb=on&lev_950_mb=on&lev_925_mb=on&lev_900_mb=on&lev_850_mb=on&lev_800_mb=on&lev_750_mb=on&lev_700_mb=on&lev_650_mb=on&lev_600_mb=on&lev_550_mb=on&lev_500_mb=on&lev_450_mb=on&lev_400_mb=on&lev_350_mb=on&lev_300_mb=on&lev_250_mb=on&lev_200_mb=on&lev_150_mb=on&lev_100_mb=on&lev_70_mb=on&lev_50_mb=on&lev_surface=on&lev_10_m_above_ground=on&lev_2_m_above_ground=on"
+      }
+    ],
+    "grid_deg": 0.25,
+    "id": "gfs_7e50d32a5e27e7b541844624",
+    "licence": "NOAA US-government data; retain source attribution",
+    "member": "deterministic",
+    "origin": "forecast",
+    "provider": "NOAA_GFS",
+    "publication_time_utc": null,
+    "quality": "forecast_not_observation",
+    "request": {
+      "east_deg": 23.0,
+      "first_lead_hour": 6,
+      "last_lead_hour": 18,
+      "north_deg": 55.0,
+      "run_utc": "2026-10-27T12:00:00Z",
+      "south_deg": 37.0,
+      "west_deg": 5.0
+    },
+    "retrieved_utc": "2026-10-27T17:05:21.049566+00:00",
+    "run_utc": "2026-10-27T12:00:00+00:00",
+    "schema_version": 1,
+    "sha256": "66e5e415cfd4ae641acba68006ae1a3dbd8aefc2972040d40de141044ed282b5",
+    "source_uri": "https://nomads.ncep.noaa.gov",
+    "surface_assumption": "10m wind and 2m temperature used at surface boundary; not a boundary-layer model",
+    "valid_end_utc": "2026-10-28T06:00:00+00:00",
+    "valid_start_utc": "2026-10-27T18:00:00+00:00"
+  },
+  "retained_utc": "2026-10-27T23:03:34.412739+00:00",
+  "selected_file_sha256": {
+    "f006.grib2": "803b61996cec7bdc4c1e6b4323da65eaace6542334bfc4f26b02e96ce1270492",
+    "f007.grib2": "51bbc15dc8ca40f65359d571e540cca3f38322ba6986338fc5645e158617eada"
+  }
+}

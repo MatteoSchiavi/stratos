@@ -1,0 +1,45 @@
+{
+  "files": [
+    {
+      "file": "f006.grib2",
+      "lead_hour": 6,
+      "retrieved_utc": "2026-10-27T10:33:34.618443+00:00",
+      "sha256": "8177706fd4ab2f66722141a757f05554d35e6d39666d113692f27769c47c5112",
+      "size_bytes": 18276,
+      "source_uri": "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25.pl?file=gfs.t06z.pgrb2.0p25.f006&dir=%2Fgfs.20261027%2F06%2Fatmos&subregion=&leftlon=9.5&rightlon=10.0&toplat=45.25&bottomlat=44.75&var_UGRD=on&var_VGRD=on&var_TMP=on&var_HGT=on&var_PRES=on&lev_1000_mb=on&lev_975_mb=on&lev_950_mb=on&lev_925_mb=on&lev_900_mb=on&lev_850_mb=on&lev_800_mb=on&lev_750_mb=on&lev_700_mb=on&lev_650_mb=on&lev_600_mb=on&lev_550_mb=on&lev_500_mb=on&lev_450_mb=on&lev_400_mb=on&lev_350_mb=on&lev_300_mb=on&lev_250_mb=on&lev_200_mb=on&lev_150_mb=on&lev_100_mb=on&lev_70_mb=on&lev_50_mb=on&lev_surface=on&lev_10_m_above_ground=on&lev_2_m_above_ground=on"
+    },
+    {
+      "file": "f007.grib2",
+      "lead_hour": 7,
+      "retrieved_utc": "2026-10-27T10:33:38.313081+00:00",
+      "sha256": "67cbc82d8ffb956160853dfca78ae6f9d31a688e4d866b5ea502cb961ad3f150",
+      "size_bytes": 18258,
+      "source_uri": "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25.pl?file=gfs.t06z.pgrb2.0p25.f007&dir=%2Fgfs.20261027%2F06%2Fatmos&subregion=&leftlon=9.5&rightlon=10.0&toplat=45.25&bottomlat=44.75&var_UGRD=on&var_VGRD=on&var_TMP=on&var_HGT=on&var_PRES=on&lev_1000_mb=on&lev_975_mb=on&lev_950_mb=on&lev_925_mb=on&lev_900_mb=on&lev_850_mb=on&lev_800_mb=on&lev_750_mb=on&lev_700_mb=on&lev_650_mb=on&lev_600_mb=on&lev_550_mb=on&lev_500_mb=on&lev_450_mb=on&lev_400_mb=on&lev_350_mb=on&lev_300_mb=on&lev_250_mb=on&lev_200_mb=on&lev_150_mb=on&lev_100_mb=on&lev_70_mb=on&lev_50_mb=on&lev_surface=on&lev_10_m_above_ground=on&lev_2_m_above_ground=on"
+    }
+  ],
+  "grid_deg": 0.25,
+  "id": "gfs_1d2f265e6d0afbcbf28d130b",
+  "licence": "NOAA US-government data; retain source attribution",
+  "member": "deterministic",
+  "origin": "forecast",
+  "provider": "NOAA_GFS",
+  "publication_time_utc": null,
+  "quality": "forecast_not_observation",
+  "request": {
+    "east_deg": 10.0,
+    "first_lead_hour": 6,
+    "last_lead_hour": 7,
+    "north_deg": 45.25,
+    "run_utc": "2026-10-27T06:00:00Z",
+    "south_deg": 44.75,
+    "west_deg": 9.5
+  },
+  "retrieved_utc": "2026-10-27T10:33:38.852706+00:00",
+  "run_utc": "2026-10-27T06:00:00+00:00",
+  "schema_version": 1,
+  "sha256": "805086d5424caa794f784e57e694930ad983023d449cbb1870b4818f1de48966",
+  "source_uri": "https://nomads.ncep.noaa.gov",
+  "surface_assumption": "10m wind and 2m temperature used at surface boundary; not a boundary-layer model",
+  "valid_end_utc": "2026-10-27T13:00:00+00:00",
+  "valid_start_utc": "2026-10-27T12:00:00+00:00"
+}

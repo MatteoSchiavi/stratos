@@ -1,0 +1,30 @@
+{
+  "provider": "NOAA_GFS",
+  "run_utc": "2026-10-27T06:00:00+00:00",
+  "solver_version": "wgs84-height-rk4-v2",
+  "profile": "one hour float, assumed12500m MSL, 2026-10-27 12UTC",
+  "results": [
+    {
+      "step_s": 60,
+      "latitude_deg": 44.649638352833584,
+      "longitude_deg": 10.29117163214903,
+      "ground_distance_m": 64566.26588141621,
+      "endpoint_error_vs_15s_m": 0.006094227930043363
+    },
+    {
+      "step_s": 30,
+      "latitude_deg": 44.64963835243106,
+      "longitude_deg": 10.29117153379994,
+      "ground_distance_m": 64566.26896997963,
+      "endpoint_error_vs_15s_m": 0.0025160443928089913
+    },
+    {
+      "step_s": 15,
+      "latitude_deg": 44.649638367094916,
+      "longitude_deg": 10.29117155796692,
+      "ground_distance_m": 64566.27152889841,
+      "endpoint_error_vs_15s_m": 0.0
+    }
+  ],
+  "limitation": "Numerical discretization check only; does not measure forecast skill or attainable altitude."
+}

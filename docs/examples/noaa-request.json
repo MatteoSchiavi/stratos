@@ -1,0 +1,9 @@
+{
+  "run_utc": "2026-10-27T06:00:00Z",
+  "first_lead_hour": 6,
+  "last_lead_hour": 8,
+  "west_deg": 5,
+  "east_deg": 20,
+  "south_deg": 40,
+  "north_deg": 52
+}

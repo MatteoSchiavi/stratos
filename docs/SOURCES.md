@@ -1,0 +1,17 @@
+# Data and dependency sources
+
+* NOAA GFS: https://nomads.ncep.noaa.gov/ and https://www.nco.ncep.noaa.gov/pmb/products/gfs/nomads/ . Public US-government meteorological model data; retain source/run/retrieval metadata. The adapter uses `filter_gfs_0p25.pl`, hourly isobaric HGT/UGRD/VGRD/TMP and near-surface fields. Live NOMADS discovery and GRIB filtering were verified against the 2026-10-27 06 UTC cycle, leads f006–f008; raw crops, source requests and output samples are retained separately from synthetic fixtures.
+* Natural Earth: https://www.naturalearthdata.com/about/terms-of-use/ . Public domain. Bundled `apps/web/public/countries.geojson` downloaded from https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_admin_0_countries.geojson . Coarse 1:110m geography. No terrain, political authority, permission, or coverage information can be inferred. No external map tiles or glyphs are requested.
+* Synthetic meteorology: `SyntheticField` and `scripts/make_synthetic_grib.py`. Constant U=12m/s, V=3m/s. The GRIB-shaped fixtures are generated with ecCodes and are **not NOAA downloads**, despite having GFS-like field names/encoding. `tests/fixtures/synthetic-grib-provenance.json` records provenance and hashes.
+* GRIB decoding: ECMWF ecCodes 2.50.0 native API, Python ecCodes 2.50.0, native wheel eccodeslib 2.50.0.33. Native library verified by import and actual fixture decoding; Windows library wheel path not yet exercised.
+* GeographicLib 2.1 is used for independent geodesic distances/reference tests. Schema2 flight integration uses WGS84 meridional/prime-vertical radii plus prescribed height, geodetic RK4 rates and GeographicLib ground-distance accumulation. Schema1 retains the original Earth-centred-vector/retraction method for exact replay.
+* All installed dependency versions and package artifact hashes are in `uv.lock` and `apps/web/package-lock.json`. No dependency requires a paid service. The frontend uses system fonts.
+
+NOAA initialization time is not its publication timestamp. P1 records publication time as unknown and does not claim frozen-time historical forecast skill. ERA5, GEFS, Packet Broker, RF, power, firmware and imagery APIs are not implemented or verified in this milestone.
+
+* NOAA filter usage policy: https://nomads.ncep.noaa.gov/info.php?page=gribfilter (checked HTTP200 on 27 October2026). Requires ten seconds between automated fetches; enforced including retries/adjacent crops.
+* Follow-up real data: 2026-10-27 06UTC f010–f058 regional input plus pinned adjacent segments for the 48h study; 2026-10-27 12UTC f006–f018, 13 files /9,549,846 bytes. These larger raw inputs remain in local ignored cache and a checksummed backup, not the small committed-fixture set. Exact URLs/hashes are retained in saved manifests.
+
+* The official GFS product inventory cited above distinguishes hourly output through lead120 from coarser later output. The adapter now permits a72h cropped window within those hourly leads; f078/f079 decoder coverage is explicitly synthetic. No new real late-lead transfer or full72h acceptance is implied.
+
+* `tests/fixtures/noaa-cross-cycle-20261027-06` and `...-12` retain exact earlier-downloaded NOAA bytes for a common18–19UTC window. The06UTC pair is1,515,316 bytes; the12UTC pair is1,466,028 bytes. Only the temporal manifest/window was reduced; no GRIB values were re-encoded or synthesized. `subset-provenance.json` preserves the complete parent manifest and selected raw checksums.

@@ -1,0 +1,24 @@
+{
+  "example": "noaa-simulation.json",
+  "provider": "NOAA_GFS",
+  "run_utc": "2026-10-27T06:00:00+00:00",
+  "samples": 31,
+  "distance_m": 64700.7035889804,
+  "duration_s": 3600.0,
+  "recomputed_output_sha256": "cd352deeb9bd741a3c018eff2d0a6e5445665ef3112c2fae202528fee8953770",
+  "exact_output_hash_equal": true,
+  "max_coordinate_error_deg": 0.0,
+  "cross_platform_note": "Exact hashes are reported; acceptance tolerance allows minor platform floating-point differences"
+}
+{
+  "example": "noaa-ascent-simulation.json",
+  "provider": "NOAA_GFS",
+  "run_utc": "2026-10-27T06:00:00+00:00",
+  "samples": 60,
+  "distance_m": 78270.11009392395,
+  "duration_s": 6895.0,
+  "recomputed_output_sha256": "0f28299072a4c9c3065a17767123f6210b1853b7edf02220339499def37508e8",
+  "exact_output_hash_equal": true,
+  "max_coordinate_error_deg": 0.0,
+  "cross_platform_note": "Exact hashes are reported; acceptance tolerance allows minor platform floating-point differences"
+}

@@ -1,0 +1,149 @@
+{
+  "address_space_limit_bytes": 6442450944,
+  "code": {
+    "git_commit": null,
+    "packages": {
+      "cfgrib": "0.9.15.1",
+      "eccodes": "2.50.0",
+      "fastapi": "0.141.1",
+      "geographiclib": "2.1",
+      "numpy": "2.5.4",
+      "pydantic": "2.14.1",
+      "scipy": "1.18.1",
+      "xarray": "2026.9.0"
+    },
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+    "python": "3.12.14",
+    "scientific_source_sha256": "ef9404acd090b203f7a21fe2459d8abdd62af2e81c518421d98ead239640e87e",
+    "source_files_sha256": {
+      "apps/web/package-lock.json": "3570fb2ba27315fcfd6592ef544ce5cd841cd4b2ad22b390559af1e800aab0ee",
+      "apps/web/src/AltitudeChart.tsx": "ab36d92d997649fd256463e77ef035eef022de61dfe46d8af86ec14f01d1c265",
+      "apps/web/src/App.tsx": "b33527fc48daf2143a42df00104f8de1d10015f236a7cd2395a24a2cbf35d310",
+      "apps/web/src/Evidence.tsx": "09b1d529d07a5d23e7722dd5d3fb14b0a9c99af4efea8f789e2477330665b176",
+      "apps/web/src/Fields.tsx": "8d846b3d7e6b9ee244d15e7a401da5e542601542a5fe77d671d71db0a72e3550",
+      "apps/web/src/Inspector.tsx": "ecdc4840d1346f1388ee7bc4460073c266a3431355b5d3ad202225feebe85b0f",
+      "apps/web/src/LazyMap.tsx": "ddcdcee6fff84d6ef5ed3b63de351c00f32146f85da516a3c70c197a0cf32ed1",
+      "apps/web/src/TrajectoryMap.tsx": "a4edff143ebfe7ee799d7e45be0b09f79db8c354b28b14d8129aaf58e4ecb4cc",
+      "apps/web/src/WeatherExplorer.tsx": "c961f5f5085c4a3d3d49bacba8a80b10ac2007b241997a9352da69cfa0f1275e",
+      "apps/web/src/WeatherPanel.tsx": "aa265be2a510fc0c7cfb88036739544499bde6aa73371875286727a78149c9c6",
+      "apps/web/src/api.ts": "ad08e6b6d4fb1be6a324941c3434c24b735eaf341bd777207c1734fe7e9e84b3",
+      "apps/web/src/main.tsx": "751f954bcf52881a7436ca409175e090d980dcfc492e0c41fe0c39d298633076",
+      "apps/web/src/style.css": "c8f7d08343bc0b1acec212ae31111addb135dcdb2582a1345ec6d62ce36211e7",
+      "apps/web/src/types.ts": "fe4b99322dcd102592aa90b35a01ede6954f29ec0ffd243ae1b6e91eac852a15",
+      "apps/web/src/useNow.ts": "227022805264ea2c18fe9198c217fb117ef1c665d79bc54732c71e38043033cd",
+      "packages/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "packages/domain/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "packages/domain/models.py": "f8f88e21ca2baacd904edaf01846583143a08a38141f33b9c3437fca6db1d5e5",
+      "packages/flight/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "packages/flight/geojson.py": "674c2ddde0511955890cf0fdbb0d771724a8d62edc13059fb66b745482e0bceb",
+      "packages/flight/integrator.py": "c5929b8b30c7c66466c24ed1a49c99d5e760ef85b69bcc1ee071645f7bce63e0",
+      "packages/flight/legacy.py": "c7db935d328dab3f9afb5a2bdd484d95890b4399dcd54da5984dc3109ac3784b",
+      "packages/meteo/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "packages/meteo/adaptive.py": "127862ae2bc4bf5b01c1830e09518208eb0d4fba4a3dc6dd28943ceca5e6ad06",
+      "packages/meteo/explorer.py": "1cf7bfa1455fc09008701c5eea8768c5f1ce96e6e81b0f33576bed104bf4342e",
+      "packages/meteo/field.py": "40aa506a5abf8b2f958ee3d5bbb0a373c31e06ea9105c0743d5e468446589dce",
+      "packages/meteo/gfs.py": "1a1300e48f3ff6927bb19b92c8dc3700098708a18b09063d35e9f9eeeb79e961",
+      "pyproject.toml": "8f5c7152cc828fc0e5cd15441a1d638b396e2675c334aa88c7b587a466c30ba3",
+      "services/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "services/api/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "services/api/main.py": "b6b4ad184953dab8fd1c26f5305555f0c87e496362d59d4dae46db3199e71904",
+      "services/api/migrations/env.py": "0ac8df31032b1ed0cd23a886b55494e4e97f55056b7c0177be600a806e9c99b7",
+      "services/api/migrations/versions/0001_foundation.py": "29beafe9fc0f985c7cf1f74fc36567ace39aedd8759d9175abfc8e2efbca8d71",
+      "services/api/provenance.py": "a3ab2781adcdef373bb08d81dc5e5f2bf04d1f55aeb441d16d93ab6cdb2d1cee",
+      "services/api/reference_data.py": "84c0d1f19d70dc32473764ece8a226d65439d7caa3670d48f113d560e4200b58",
+      "services/api/storage.py": "fafc47f111131025b77702318d6ac35c025fa13204f6a71209902875029ce50e",
+      "services/api/worker.py": "8d89f1a3284a4d2d4c61360905925096395caab690b43fe398e2265b15c8d5c4",
+      "uv.lock": "91d03df6cb13e3a414eb36c650b852f04bffbe8e2d5a00442475b959c6d9e3bd"
+    },
+    "source_tree_sha256": "d7ec86732b5b31cec9058e84548f2667429ae352f32e6135ed563c891322e3a4"
+  },
+  "config": {
+    "calibration_status": "uncalibrated",
+    "flight": {
+      "ascent_ms": 1.5,
+      "descent_ms": null,
+      "float_duration_hours": 48.0,
+      "initial_geometric_m": 12500.0,
+      "integration_step_s": 30,
+      "model": "L0_prescribed",
+      "payload_mass_g": 23.0,
+      "sample_interval_s": 120,
+      "target_geometric_m": 12500.0
+    },
+    "id": "2b6318c1-594a-405c-9233-8d906332bdca",
+    "launch": {
+      "ground_geometric_m": 80.0,
+      "latitude_deg": 45.05,
+      "longitude_deg": 9.7,
+      "start_utc": "2026-10-27T16:00:00Z"
+    },
+    "name": "STRATOS / Design study 01",
+    "operating_mode": "DEMO",
+    "origin": "assumed",
+    "radio": {
+      "enabled": false
+    },
+    "schema_version": 2,
+    "weather": {
+      "dataset_id": "gfs_956c52d52a69009dd016a2fd",
+      "provider": "NOAA_GFS"
+    }
+  },
+  "elapsed_wall_s": 178.47211103099835,
+  "limitations": [
+    "This is a process-budget test on Linux, not a native 8GB-host or Windows qualification.",
+    "Deterministic uncalibrated L0 transport; forecast skill is not measured."
+  ],
+  "network_disabled_by_test": true,
+  "output_sha256": "78b7a99d9556bb35db42643e3ccb0236152766518f921c3f1ce042b58654fb6b",
+  "peak_rss_kib": 216512,
+  "procedure_sha256": "88b276d41b5ec4372949bd8504abd2c26f6577f89fce4eb30064d1ee6824608b",
+  "schema_version": 2,
+  "weather": {
+    "id": "gfs_956c52d52a69009dd016a2fd",
+    "run_utc": "2026-10-27T06:00:00+00:00",
+    "segment_count": 16,
+    "verified_source_bytes": 46715809,
+    "expansion_policy": {
+      "max_download_mib": 128,
+      "max_tiles": 16
+    },
+    "segment_ids": [
+      "gfs_956c52d52a69009dd016a2fd",
+      "gfs_58c32f80764ad307cf4bc8e9",
+      "gfs_779a73fcd674d3c1c4f21b02",
+      "gfs_89d8bb2db03ee7a23ac8b310",
+      "gfs_1300d2bdf7b8815cab8bc3d8",
+      "gfs_593ba4024058b573818d9b37",
+      "gfs_539fe07e3d936bb988438f43",
+      "gfs_544d54eca02924ff35aa2002",
+      "gfs_85cf887ac19325ad10fb1f67",
+      "gfs_e46e938ba4a042ea115a146c",
+      "gfs_550dfe040cbbbd8f1b36b661",
+      "gfs_7484270f4d76f8bc83406bcd",
+      "gfs_b2b04444b676906627a99b60",
+      "gfs_4c80c529989b93057583984f",
+      "gfs_0ea9ef554396ec114217dd24",
+      "gfs_f0de51d809d0f0cfef567375"
+    ]
+  },
+  "output": {
+    "distance_m": 4596333.905296057,
+    "duration_s": 172800.0,
+    "horizontal_air_distance_m": 4605342.029252657,
+    "limitations": [
+      "Prescribed altitude: lift, envelope leakage, burst and survival are not modeled.",
+      "Deterministic track; no calibrated uncertainty or mission-success probability.",
+      "No radio, data recovery or energy model is implemented in this phase.",
+      "Descent, if enabled, ends at configured flat ground, not mapped terrain.",
+      "WGS84 curvature includes geometric MSL height; a precise local geoid model is not supplied.",
+      "Ground-track distance is accumulated on integration steps; horizontal air distance is separate."
+    ],
+    "model": "L0_prescribed",
+    "quality": "modeled_uncalibrated",
+    "solver_version": "wgs84-height-rk4-v2",
+    "termination": "prescribed_float_end"
+  },
+  "samples": 1441,
+  "exact_saved_output_hash_equal": true
+}

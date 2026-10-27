@@ -1,0 +1,220 @@
+{
+  "$defs": {
+    "FlightProfile": {
+      "additionalProperties": false,
+      "properties": {
+        "model": {
+          "const": "L0_prescribed",
+          "default": "L0_prescribed",
+          "title": "Model",
+          "type": "string"
+        },
+        "initial_geometric_m": {
+          "default": 80,
+          "maximum": 20000,
+          "minimum": -400,
+          "title": "Initial Geometric M",
+          "type": "number"
+        },
+        "target_geometric_m": {
+          "default": 12500,
+          "maximum": 20000,
+          "minimum": 100,
+          "title": "Target Geometric M",
+          "type": "number"
+        },
+        "ascent_ms": {
+          "default": 1.5,
+          "exclusiveMinimum": 0,
+          "maximum": 15,
+          "title": "Ascent Ms",
+          "type": "number"
+        },
+        "float_duration_hours": {
+          "default": 6,
+          "exclusiveMinimum": 0,
+          "maximum": 72,
+          "title": "Float Duration Hours",
+          "type": "number"
+        },
+        "descent_ms": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "maximum": 30,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Descent Ms"
+        },
+        "payload_mass_g": {
+          "default": 23,
+          "exclusiveMinimum": 0,
+          "maximum": 3000,
+          "title": "Payload Mass G",
+          "type": "number"
+        },
+        "integration_step_s": {
+          "default": 30,
+          "maximum": 120,
+          "minimum": 5,
+          "title": "Integration Step S",
+          "type": "integer"
+        },
+        "sample_interval_s": {
+          "default": 120,
+          "maximum": 300,
+          "minimum": 30,
+          "title": "Sample Interval S",
+          "type": "integer"
+        }
+      },
+      "title": "FlightProfile",
+      "type": "object"
+    },
+    "Launch": {
+      "additionalProperties": false,
+      "properties": {
+        "latitude_deg": {
+          "default": 45.05,
+          "maximum": 89.5,
+          "minimum": -89.5,
+          "title": "Latitude Deg",
+          "type": "number"
+        },
+        "longitude_deg": {
+          "default": 9.7,
+          "maximum": 180,
+          "minimum": -180,
+          "title": "Longitude Deg",
+          "type": "number"
+        },
+        "ground_geometric_m": {
+          "default": 80,
+          "maximum": 6000,
+          "minimum": -400,
+          "title": "Ground Geometric M",
+          "type": "number"
+        },
+        "start_utc": {
+          "default": "2026-10-27T12:00:00Z",
+          "format": "date-time",
+          "title": "Start Utc",
+          "type": "string"
+        }
+      },
+      "title": "Launch",
+      "type": "object"
+    },
+    "RadioConfig": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "const": false,
+          "default": false,
+          "title": "Enabled",
+          "type": "boolean"
+        }
+      },
+      "title": "RadioConfig",
+      "type": "object"
+    },
+    "WeatherConfig": {
+      "additionalProperties": false,
+      "properties": {
+        "provider": {
+          "default": "SYNTHETIC",
+          "enum": [
+            "SYNTHETIC",
+            "NOAA_GFS"
+          ],
+          "title": "Provider",
+          "type": "string"
+        },
+        "dataset_id": {
+          "anyOf": [
+            {
+              "pattern": "^[a-zA-Z0-9_-]{1,80}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Dataset Id"
+        }
+      },
+      "title": "WeatherConfig",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": 2,
+      "enum": [
+        1,
+        2
+      ],
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "id": {
+      "format": "uuid",
+      "title": "Id",
+      "type": "string"
+    },
+    "name": {
+      "default": "STRATOS / Design study 01",
+      "maxLength": 100,
+      "minLength": 1,
+      "title": "Name",
+      "type": "string"
+    },
+    "operating_mode": {
+      "default": "DEMO",
+      "enum": [
+        "DEMO",
+        "HISTORICAL_REPLAY",
+        "HARDWARE_TEST",
+        "LIVE"
+      ],
+      "title": "Operating Mode",
+      "type": "string"
+    },
+    "origin": {
+      "default": "assumed",
+      "enum": [
+        "assumed",
+        "demo"
+      ],
+      "title": "Origin",
+      "type": "string"
+    },
+    "calibration_status": {
+      "const": "uncalibrated",
+      "default": "uncalibrated",
+      "title": "Calibration Status",
+      "type": "string"
+    },
+    "launch": {
+      "$ref": "#/$defs/Launch"
+    },
+    "flight": {
+      "$ref": "#/$defs/FlightProfile"
+    },
+    "weather": {
+      "$ref": "#/$defs/WeatherConfig"
+    },
+    "radio": {
+      "$ref": "#/$defs/RadioConfig"
+    }
+  },
+  "title": "MissionConfig",
+  "type": "object"
+}

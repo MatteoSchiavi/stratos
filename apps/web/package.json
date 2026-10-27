@@ -1,0 +1,34 @@
+{
+  "name": "stratos-web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc -b && vite build",
+    "typecheck": "tsc -b",
+    "lint": "eslint src",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.90.0",
+    "lucide-react": "^0.577.0",
+    "maplibre-gl": "6.16.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.62.0",
+    "@types/geojson": "^7946.0.16",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^6.0.0",
+    "eslint": "^10.13.0",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "globals": "^16.5.0",
+    "prettier": "^3.9.10",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.56.0",
+    "vite": "8.3.5"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "file": "f013.grib2",
+  "lead_hour": 13,
+  "retrieved_utc": "2026-10-27T15:58:29.753774+00:00",
+  "sha256": "5197bfb9d8ba7e3db4824bff6c1bb19497656edcd8fcf044939077f76f138c54",
+  "size_bytes": 758989,
+  "source_uri": "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25.pl?file=gfs.t06z.pgrb2.0p25.f013&dir=%2Fgfs.20261027%2F06%2Fatmos&subregion=&leftlon=5.0&rightlon=23.0&toplat=55.0&bottomlat=37.0&var_UGRD=on&var_VGRD=on&var_TMP=on&var_HGT=on&var_PRES=on&lev_1000_mb=on&lev_975_mb=on&lev_950_mb=on&lev_925_mb=on&lev_900_mb=on&lev_850_mb=on&lev_800_mb=on&lev_750_mb=on&lev_700_mb=on&lev_650_mb=on&lev_600_mb=on&lev_550_mb=on&lev_500_mb=on&lev_450_mb=on&lev_400_mb=on&lev_350_mb=on&lev_300_mb=on&lev_250_mb=on&lev_200_mb=on&lev_150_mb=on&lev_100_mb=on&lev_70_mb=on&lev_50_mb=on&lev_surface=on&lev_10_m_above_ground=on&lev_2_m_above_ground=on"
+}

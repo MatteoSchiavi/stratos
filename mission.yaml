@@ -1,0 +1,26 @@
+schema_version: 2
+id: 35938244-8356-4b60-97a8-1e4bf9572950
+name: STRATOS / Design study 01
+operating_mode: DEMO
+origin: assumed
+calibration_status: uncalibrated
+launch:
+  latitude_deg: 45.05
+  longitude_deg: 9.70
+  ground_geometric_m: 80
+  start_utc: '2026-10-27T12:00:00Z'
+flight:
+  model: L0_prescribed
+  initial_geometric_m: 80
+  target_geometric_m: 12500
+  ascent_ms: 1.5
+  float_duration_hours: 6
+  descent_ms: null
+  payload_mass_g: 23
+  integration_step_s: 30
+  sample_interval_s: 120
+weather:
+  provider: SYNTHETIC
+  dataset_id: null
+radio:
+  enabled: false
