@@ -52,6 +52,12 @@ def snapshot_records(connection: sqlite3.Connection) -> tuple[dict[str, dict], d
             require_forecast(weather)
             for segment in weather.get("segments", []):
                 require_forecast(segment)
+    from packages.telemetry.evidence import verify_evidence
+
+    for ident, kind, raw in connection.execute(
+        "SELECT id,kind,payload FROM records WHERE kind IN ('telemetry_study','telemetry_archive')"
+    ):
+        verify_evidence(json.loads(raw), ident, kind)
     return simulations, forecasts
 
 

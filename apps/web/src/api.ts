@@ -19,7 +19,17 @@ export async function api<T>(path: string, data?: unknown): Promise<T> {
       .catch(() => ({ detail: response.statusText }));
     const detail: unknown = body.detail;
     throw new Error(
-      typeof detail === "string" ? detail : JSON.stringify(detail),
+      typeof detail === "string"
+        ? detail
+        : Array.isArray(detail)
+          ? detail
+              .slice(0, 8)
+              .map(
+                (item: { loc?: (string | number)[]; msg?: string }) =>
+                  `${item.loc?.filter((v) => v !== "body").join(".") ?? "Input"}: ${item.msg ?? "Invalid value"}`,
+              )
+              .join("; ")
+          : "The request could not be completed. Check the input values.",
     );
   }
   return response.json() as Promise<T>;

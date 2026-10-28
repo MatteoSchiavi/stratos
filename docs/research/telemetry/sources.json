@@ -1,0 +1,23 @@
+{
+  "retrieved_utc": "2026-10-28",
+  "purpose": "Pinned RP002-1.0.3 secondary cross-check; not current legal authority",
+  "files": [
+    {
+      "file": "band_eu863_870.go",
+      "source": "https://raw.githubusercontent.com/brocaar/lorawan/master/band/band_eu863_870.go",
+      "sha256": "1518779705c9eccf827e80d9246a7f2a7cec339e8306a1786e93a17e0b38ea42"
+    },
+    {
+      "file": "band_us902_928.go",
+      "source": "https://raw.githubusercontent.com/brocaar/lorawan/master/band/band_us902_928.go",
+      "sha256": "30f18960a75a1b6af652c48bdc62bea01ad97c6d86f509c389e71aa070511c44"
+    },
+    {
+      "file": "UPSTREAM_LICENSE",
+      "source": "https://raw.githubusercontent.com/brocaar/lorawan/master/LICENSE",
+      "sha256": "610f751880f32b22fddb66fcb1bdf3410ff8d505a9ccb7e9c197f8d46b50dc1a",
+      "upstream_sha256": "cac160cc47eb762b9b93724b229faef212ecff51121377dfc3e89f800c632633",
+      "normalization": "One trailing newline; licence text unchanged"
+    }
+  ]
+}

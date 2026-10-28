@@ -10,7 +10,6 @@ import {
   Clock3,
   Database,
   FileJson,
-  FlaskConical,
   Globe2,
   Layers3,
   Orbit,
@@ -33,6 +32,7 @@ import { NumberField, Metric } from "./Fields";
 import { WeatherPanel } from "./WeatherPanel";
 import { Inspector } from "./Inspector";
 import { Evidence } from "./Evidence";
+import { TelemetryPanel } from "./TelemetryPanel";
 import { ComparisonPanel } from "./ComparisonPanel";
 import type {
   Dataset,
@@ -44,19 +44,33 @@ import type {
   SimulationSummary,
 } from "./types";
 
-type View = "overview" | "plan" | "simulate" | "analyze";
+type View = "overview" | "plan" | "simulate" | "analyze" | "telemetry";
 const EMPTY_SAMPLES: [] = [];
 const navigation: { id: View; name: string; icon: LucideIcon }[] = [
   { id: "overview", name: "Overview", icon: Layers3 },
   { id: "plan", name: "Plan", icon: Settings2 },
   { id: "simulate", name: "Simulate", icon: Orbit },
   { id: "analyze", name: "Analyze", icon: Activity },
+  { id: "telemetry", name: "Telemetry", icon: Radio },
 ];
 
 export function App() {
   const qc = useQueryClient();
   const now = useNow();
-  const [view, setView] = useState<View>("simulate");
+  const [view, setView] = useState<View>(() => {
+    const params = new URLSearchParams(location.search);
+    const requested = params.get("view");
+    return navigation.some((n) => n.id === requested)
+      ? (requested as View)
+      : params.has("recovery")
+        ? "telemetry"
+        : "simulate";
+  });
+  useEffect(() => {
+    const url = new URL(location.href);
+    url.searchParams.set("view", view);
+    history.replaceState(null, "", url);
+  }, [view]);
   const [tab, setTab] = useState<"trajectory" | "weather" | "evidence">(
     "trajectory",
   );
@@ -247,9 +261,11 @@ export function App() {
       ? "Mission configuration"
       : view === "overview"
         ? "Mission overview"
-        : view === "analyze"
-          ? "Simulation archive"
-          : "Trajectory workspace";
+        : view === "telemetry"
+          ? "Telemetry & recovery"
+          : view === "analyze"
+            ? "Simulation archive"
+            : "Trajectory workspace";
   const currentError =
     error ||
     missions.error?.message ||
@@ -310,22 +326,6 @@ export function App() {
               {view === id && <span className="nav-indicator" />}
             </button>
           ))}
-          <div
-            className="nav-deferred"
-            title="Hardware bench testing belongs to Phase 5 and is not implemented"
-          >
-            <FlaskConical size={18} />
-            <span>Test</span>
-            <small>P5</small>
-          </div>
-          <div
-            className="nav-deferred"
-            title="Live reception belongs to Phase 7 and is not implemented"
-          >
-            <Radio size={18} />
-            <span>Flight</span>
-            <small>P7</small>
-          </div>
           {navigation.slice(3).map(({ id, name, icon: Icon }) => (
             <button
               key={id}
@@ -339,18 +339,6 @@ export function App() {
             </button>
           ))}
         </nav>
-        <div className="sidebar-note">
-          <span className="eyebrow">CURRENT MILESTONE</span>
-          <strong>Weather → trajectory</strong>
-          <p>
-            Foundation & L0 prediction.
-            <br />
-            No hardware assumptions.
-          </p>
-          <span className="phase-line">
-            <i /> PHASE 0 — 1
-          </span>
-        </div>
         <div className="sidebar-footer">
           <span className="tiny-dot green" /> LOCAL WORKSPACE <span>v0.1</span>
           <small>Engineering evidence, not launch authority.</small>
@@ -366,9 +354,11 @@ export function App() {
                 ? "Plan"
                 : view === "analyze"
                   ? "Analyze"
-                  : view === "overview"
-                    ? "Overview"
-                    : "Simulate"}
+                  : view === "telemetry"
+                    ? "Telemetry"
+                    : view === "overview"
+                      ? "Overview"
+                      : "Simulate"}
             </span>
           </div>
           <div className="topbar-right">
@@ -394,31 +384,62 @@ export function App() {
                 <span className="heading-dot" />
               </h1>
               <p>
-                Trace the atmosphere. Inspect the assumptions. Keep the
-                evidence.
+                {view === "telemetry"
+                  ? "Design the packet. Test the outage. Preserve the record."
+                  : view === "plan"
+                    ? "Set launch, flight profile and weather. Save or run when ready."
+                    : view === "analyze"
+                      ? "Reopen a saved result or compare two scenarios."
+                      : "Configure → calculate → inspect. All work stays on this computer."}
               </p>
             </div>
-            <div className="heading-actions">
-              {run && (
-                <a
-                  className="button secondary"
-                  href={`/api/simulations/${run.id}/export`}
-                  download
+            {(view === "plan" || view === "simulate") && (
+              <div className="heading-actions">
+                {run && (
+                  <a
+                    className="button secondary"
+                    href={`/api/simulations/${run.id}/export`}
+                    download
+                  >
+                    <ArrowDownToLine size={15} />
+                    <span>Export run</span>
+                  </a>
+                )}
+                <button
+                  className="button primary"
+                  onClick={() => execute.mutate()}
+                  disabled={!config || execute.isPending}
+                  title="Save this mission revision and enqueue a new calculated trajectory"
                 >
-                  <ArrowDownToLine size={15} />
-                  <span>Export run</span>
-                </a>
-              )}
-              <button
-                className="button primary"
-                onClick={() => execute.mutate()}
-                disabled={!config || execute.isPending}
-                title="Save this mission revision and enqueue a new calculated trajectory"
-              >
-                <Play size={14} fill="currentColor" />
-                {execute.isPending ? "Queuing…" : "Run simulation"}
+                  <Play size={14} fill="currentColor" />
+                  {execute.isPending ? "Queuing…" : "Run simulation"}
+                </button>
+              </div>
+            )}
+          </div>
+
+          {view === "simulate" && (
+            <div className="workflow-strip" aria-label="Mission workflow">
+              <button onClick={() => setView("plan")}>
+                <span>1</span> Edit mission
+              </button>
+              <ChevronRight size={13} />
+              <button onClick={() => setTab("weather")}>
+                <span>2</span> Choose weather
+              </button>
+              <ChevronRight size={13} />
+              <button onClick={() => setTab("trajectory")}>
+                <span>3</span> Inspect result
+              </button>
+              <ChevronRight size={13} />
+              <button onClick={() => setView("telemetry")}>
+                <span>4</span> Plan data recovery
               </button>
             </div>
+          )}
+
+          <div hidden={view !== "telemetry"}>
+            <TelemetryPanel studies={saved.data ?? []} />
           </div>
 
           {currentError && (
@@ -621,7 +642,7 @@ export function App() {
                 <div className="section-heading">
                   <div>
                     <span className="eyebrow">VERSIONED MISSION</span>
-                    <h2>Make each assumption explicit.</h2>
+                    <h2>Mission inputs</h2>
                     <p>
                       Saving creates an immutable revision. Earlier simulations
                       keep their original inputs.
@@ -919,36 +940,39 @@ export function App() {
               </form>
               <aside className="plan-notes">
                 <span className="eyebrow">ASSUMPTION REGISTER</span>
-                <h2>Designed to be questioned.</h2>
-                <div className="note-block">
-                  <span>01 / Flight model</span>
-                  <p>
-                    Altitude is prescribed, not predicted from helium, mass,
-                    drag, or thermal behavior.
-                  </p>
-                </div>
-                <div className="note-block">
-                  <span>02 / Mission mode</span>
-                  <p>
-                    DEMO is the simulation record mode. NOAA forecast
-                    provenance, when selected, remains distinct from synthetic
-                    inputs. No measured telemetry.
-                  </p>
-                </div>
-                <div className="note-block">
-                  <span>03 / Transmission</span>
-                  <p>
-                    Radio is disabled. Power, compatible receivers and recovered
-                    data are not modeled in this phase.
-                  </p>
-                </div>
-                <div className="note-block">
-                  <span>04 / Reproducibility</span>
-                  <p>
-                    Every run pins this revision, weather file hashes, source
-                    hashes and package versions.
-                  </p>
-                </div>
+                <h2>Keep your inputs</h2>
+                <details className="assumptions-details">
+                  <summary>Model assumptions</summary>
+                  <div className="note-block">
+                    <span>01 / Flight model</span>
+                    <p>
+                      Altitude is prescribed, not predicted from helium, mass,
+                      drag, or thermal behavior.
+                    </p>
+                  </div>
+                  <div className="note-block">
+                    <span>02 / Mission mode</span>
+                    <p>
+                      DEMO is the simulation record mode. NOAA forecast
+                      provenance, when selected, remains distinct from synthetic
+                      inputs. No measured telemetry.
+                    </p>
+                  </div>
+                  <div className="note-block">
+                    <span>03 / Transmission</span>
+                    <p>
+                      Physical radio is disabled. Use Telemetry for separate,
+                      explicitly assumed contact, power and recovery studies.
+                    </p>
+                  </div>
+                  <div className="note-block">
+                    <span>04 / Reproducibility</span>
+                    <p>
+                      Every run pins this revision, weather file hashes, source
+                      hashes and package versions.
+                    </p>
+                  </div>
+                </details>
                 <div className="yaml-actions">
                   <button
                     className="button secondary"
@@ -1139,72 +1163,74 @@ export function App() {
             </section>
           )}
 
-          <section
-            className="job-panel"
-            aria-label="Background job status"
-            aria-live="polite"
-          >
-            {activeJobs.length ? (
-              activeJobs.map((job) => (
-                <div className="job" key={job.id}>
-                  <Clock3 size={15} />
-                  <div>
-                    <strong>
-                      {job.kind === "weather"
-                        ? "NOAA subset download"
-                        : "Trajectory calculation"}{" "}
-                      · {job.status}
-                    </strong>
-                    <span>{job.message}</span>
-                    <progress value={job.progress} max={1} />
+          {view !== "telemetry" && (
+            <section
+              className="job-panel"
+              aria-label="Background job status"
+              aria-live="polite"
+            >
+              {activeJobs.length ? (
+                activeJobs.map((job) => (
+                  <div className="job" key={job.id}>
+                    <Clock3 size={15} />
+                    <div>
+                      <strong>
+                        {job.kind === "weather"
+                          ? "NOAA subset download"
+                          : "Trajectory calculation"}{" "}
+                        · {job.status}
+                      </strong>
+                      <span>{job.message}</span>
+                      <progress value={job.progress} max={1} />
+                    </div>
+                    <span>{Math.round(job.progress * 100)}%</span>
+                    <button
+                      className="text-button"
+                      onClick={() => cancel.mutate(job.id)}
+                    >
+                      <Square size={12} /> Cancel
+                    </button>
                   </div>
-                  <span>{Math.round(job.progress * 100)}%</span>
+                ))
+              ) : lastJob &&
+                ["failed", "interrupted", "cancelled"].includes(
+                  lastJob.status,
+                ) ? (
+                <div
+                  className={`job ${lastJob.status === "failed" ? "job-failed" : ""}`}
+                >
+                  <ShieldAlert size={16} />
+                  <div>
+                    <strong>Last job {lastJob.status}</strong>
+                    <span>{lastJob.message}</span>
+                  </div>
                   <button
                     className="text-button"
-                    onClick={() => cancel.mutate(job.id)}
+                    onClick={() => retry.mutate(lastJob.id)}
+                    disabled={retry.isPending}
                   >
-                    <Square size={12} /> Cancel
+                    Retry original job
+                  </button>
+                  <button
+                    className="text-button"
+                    onClick={() => {
+                      setView("simulate");
+                      setTab("weather");
+                    }}
+                  >
+                    Inspect inputs
+                    <ArrowUpRight size={14} />
                   </button>
                 </div>
-              ))
-            ) : lastJob &&
-              ["failed", "interrupted", "cancelled"].includes(
-                lastJob.status,
-              ) ? (
-              <div
-                className={`job ${lastJob.status === "failed" ? "job-failed" : ""}`}
-              >
-                <ShieldAlert size={16} />
-                <div>
-                  <strong>Last job {lastJob.status}</strong>
-                  <span>{lastJob.message}</span>
+              ) : (
+                <div className="idle-status">
+                  <span className="tiny-dot green" />
+                  <span>Local job queue idle</span>
+                  <span>SQLite WAL · Results persist after refresh</span>
                 </div>
-                <button
-                  className="text-button"
-                  onClick={() => retry.mutate(lastJob.id)}
-                  disabled={retry.isPending}
-                >
-                  Retry original job
-                </button>
-                <button
-                  className="text-button"
-                  onClick={() => {
-                    setView("simulate");
-                    setTab("weather");
-                  }}
-                >
-                  Inspect inputs
-                  <ArrowUpRight size={14} />
-                </button>
-              </div>
-            ) : (
-              <div className="idle-status">
-                <span className="tiny-dot green" />
-                <span>Local job queue idle</span>
-                <span>SQLite WAL · Results persist after refresh</span>
-              </div>
-            )}
-          </section>
+              )}
+            </section>
+          )}
         </main>
         <footer className="app-footer">
           <span>STRATOS MISSION ENGINEERING</span>

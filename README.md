@@ -1,6 +1,6 @@
 # STRATOS · Mission engineering
 
-A free, local-first engineering workspace for one atmospheric balloon mission. This milestone implements the P0 foundation and a working P1 **L0 prescribed-profile** trajectory workflow. It does **not** establish flight readiness.
+A free, local-first engineering workspace for one atmospheric balloon mission. This milestone implements the P0 foundation, a working P1 **L0 prescribed-profile** trajectory workflow, and the explicitly requested **Telemetry Protocol & Recovery Optimization** engineering module. It does **not** establish flight readiness.
 
 The complete supplied specification is preserved in [docs/STRATOS_ENGINEERING_SPEC_V2.md](docs/STRATOS_ENGINEERING_SPEC_V2.md). Read [ARCHITECTURE.md](ARCHITECTURE.md) for the pre-implementation audit, [DECISIONS.md](DECISIONS.md) for tradeoffs, and [PROJECT_STATUS.md](PROJECT_STATUS.md) for verified capabilities and remaining work.
 
@@ -38,7 +38,7 @@ Every track is simulated and uncalibrated. Synthetic weather is watermarked **DE
 
 ## Real NOAA GFS workflow
 
-1. In **Simulate → Weather inputs**, discover published cycles or specify an exact 00/06/12/18 UTC initialization. Discovery checks NOMADS directories for actual files; it does not assume every recent cycle is complete.
+1. In **Simulate → Weather inputs → Acquire new forecast**, discover published cycles or specify an exact 00/06/12/18 UTC initialization. Discovery checks NOMADS directories for actual files; it does not assume every recent cycle is complete.
 2. Select an explicit non-dateline-crossing ROI and consecutive hourly leads within 0–120h, spanning at most72h (73 files). Estimate download/memory first; then download. The default cropped 48h estimate includes pressure-level U/V/T/HGT and surface/near-surface fields. Transfers are serial, bounded, cancellable and have retry/backoff plus the NOAA-documented ten-second wait between filter fetches. No silent change of cycle or provider.
 3. In **Plan**, select the cached GFS dataset. Its first valid time becomes the proposed start; review this and the complete profile duration. Verify initial altitude against site/model terrain. To study a floating balloon independently of ascent, set initial altitude equal to target altitude.
 4. Run, inspect the selected run and temporal brackets, export, and reopen. The API preflights the whole time horizon and initial terrain/altitude state. Missing files, cells, levels or altitude coverage stop the calculation. A crop exit either stops explicitly or, when enabled in Plan for schema2, triggers bounded same-cycle adjacent-crop acquisition with overlap checks. Segment and input-byte quotas remain blocking. **No partial route is reported as a complete prediction.**
@@ -54,7 +54,7 @@ NOAA was initially blocked by network policy; access subsequently became availab
 * GRIB HGT geopotential metres are converted with standard reference radius 6,356,766m. Actual model height columns determine vertical wind/temperature interpolation; pressure is interpolated logarithmically between height surfaces. No pressure=altitude identity or weather extrapolation.
 * GFS surface winds are the 10m product and temperatures the 2m product; using them as a surface boundary is an explicit approximation. Coarse GFS terrain is not a landing/recovery DEM. Descent ends at configured flat ground only.
 * Cached weather exploration provides selectable UTC/altitude or actual retained pressure surfaces, wind-speed/temperature contours, a cursor-selected vertical pressure-level profile and explicit invalid-cell counts. Pressure surfaces use their actual varying model heights; below-ground levels and missing grid cells are masked. Contour grids are bounded17/25/33 display samples per axis and add no native model resolution. Each inspected slice has a content hash, loaded scientific-code identity and complete JSON export. It decodes at most two hourly leads for a request. Vector length is a disclosed ten-minute displacement scale, not a predicted track or coverage radius. An invalid probe retains the last valid view with an explicit error.
-* No forecast-at-issue-time historical verification, actual ensemble spread, 3D weather-volume display, RF connectivity, recovered-byte budget, power state machine, firmware, imaging or legal-readiness assessment is implemented. These remain explicit tasks.
+* No forecast-at-issue-time historical verification, actual ensemble spread, 3D weather-volume display, calibrated RF propagation, qualified hardware power state machine, firmware, imaging or legal-readiness assessment is implemented. Telemetry now models entered contact windows, radio payload/airtime, finite energy and recovered-record budgets; these remain uncalibrated assumptions, distinct from observed reception.
 
 ## Persistence and resource limits
 
@@ -102,3 +102,14 @@ The second P1 review adds pressure-surface scrutiny, tested contour topology, ar
 Analyze also compares saved predictions with explicit elapsed/UTC alignment, WGS84 interpolation, sampled separation/height metrics, configuration differences and a source-hashed JSON export. These are scenario sensitivity tools between uncalibrated predictions.
 
 Offline controlled-cycle inputs now retain exact NOAA bytes for06UTC f012–f013 and12UTC f006–f007, both valid27 October2026 18–19UTC. Their byte-for-byte subset provenance is retained beside the fixtures; this is dated forecast evidence, not current observations.
+
+
+## Telemetry & recovery
+
+Open **Telemetry** for real binary encoding/decoding (NAV19B, NAV+ENV24B, variable HISTORY, EMERGENCY11B), EU868/US915 payload/airtime checks, batching tradeoffs, durable contact/outage/backlog studies, and verified lossless archives with separate lossy summaries. A saved trajectory can supply modeled positions; receiver windows, power and loss assumptions remain explicit. No hardware transmitter is connected.
+
+The interface separates cached-weather exploration from acquisition, hides advanced probe settings, keeps actions in their workspace and prioritizes results after calculation. Full instructions: [docs/TELEMETRY_AND_RECOVERY.md](docs/TELEMETRY_AND_RECOVERY.md). Wire specification: [docs/TELEMETRY_PROTOCOL.md](docs/TELEMETRY_PROTOCOL.md). The explicitly synthetic example runs offline:
+
+```sh
+uv run --frozen python -m scripts.reproduce_telemetry --output /absolute/new/evidence-directory
+```

@@ -119,6 +119,9 @@ test("NOAA unavailable is an explicit error, and download requires estimate", as
   );
   await page.goto("/");
   await page.getByRole("tab", { name: "Weather inputs" }).click();
+  await page
+    .getByRole("tab", { name: "Acquire new forecast", exact: true })
+    .click();
   await expect(
     page.getByRole("button", { name: "Download selected subset" }),
   ).toBeDisabled();
@@ -199,6 +202,9 @@ test("inspect a real cached NOAA wind field and pressure-level column offline", 
 test("oversized weather estimates cannot be submitted", async ({ page }) => {
   await page.goto("/");
   await page.getByRole("tab", { name: "Weather inputs" }).click();
+  await page
+    .getByRole("tab", { name: "Acquire new forecast", exact: true })
+    .click();
   await page.getByLabel("West boundary · °", { exact: true }).fill("0");
   await page.getByLabel("East boundary · °", { exact: true }).fill("60");
   await page.getByLabel("South boundary · °", { exact: true }).fill("0");
@@ -342,6 +348,9 @@ test("a delayed estimate stays tied to its original download inputs", async ({
   test.setTimeout(90000);
   await page.goto("/");
   await page.getByRole("tab", { name: "Weather inputs" }).click();
+  await page
+    .getByRole("tab", { name: "Acquire new forecast", exact: true })
+    .click();
   let release!: () => void;
   const gate = new Promise<void>((resolve) => {
     release = resolve;

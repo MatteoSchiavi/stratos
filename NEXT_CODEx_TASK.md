@@ -1,14 +1,17 @@
-# Next vertical slice: real72h qualification (remaining P1)
+# Next vertical slice: receiver-contact evidence and packet replay
 
 ## Goal
-Measure one complete72h real-GFS prescribed-profile study and document its resource/coverage limits, without extrapolation or a flight-readiness claim. Pressure surfaces, contours, verified archive restore and UI race protection are already implemented. Do not begin P2–P7.
+Replace at least one assumed contact/loss input with traceable receiver evidence, without introducing a live transmitter or claiming RF/power qualification. Keep P0/P1 and the completed telemetry tools working; do not implement every remaining phase.
 
 ## Work
-1. Read PROJECT_STATUS.md, DECISIONS.md and docs/P1_SECOND_REVIEW.md. Use the existing checkout. Confirm NOAA domain policy/service access; cached fixtures are sufficient for regression but must not be presented as a new72h forecast.
-2. Select exact cycle, prospective start and72h valid-time window. Hourly leads may extend to120, but a crop window spans at most72h/73files. Initialization is not publication. Respect NOAA's10s request spacing and30min download budget; retain verified partial files for explicit retry.
-3. Choose a crop within the384MiB decoded estimate and512MiB cache bound. Run the actual API/worker with explicit expansion/input quotas. If16 segments or15min cannot complete the route, record that limit; evaluate measured evidence before changing budgets. Never report a partial track as successful.
-4. Repeat from verified cache, measure process memory/wall time and test API/UI responsiveness. Check timestep convergence and saved/reopened/exported hashes. Native Windows and an independent8GB host remain separate qualification gates.
-5. Create and verify a quiet-state backup and restore into a new directory. Retain exact inputs/source identity, update status and choose one subsequent slice. Full3D weather volume, automatic disk eviction, SSE and numeric checkpoints remain open.
+1. Read PROJECT_STATUS.md, DECISIONS.md, docs/TELEMETRY_AUDIT.md, docs/TELEMETRY_PROTOCOL.md and docs/TELEMETRY_VERIFICATION.md.
+2. Define/import a small bounded receiver-evidence format carrying receiver identity, raw uplink bytes, UTC receive time, regional frequency/DR, source/licence and external MIC-verification status. Preserve every raw packet/copy. Use actual supplied/permitted receiver data when available; otherwise label a generated fixture synthetic and leave measured qualification open.
+3. Replay the versioned codec and deduplicate by session/time/sequence plus receiver-copy identity, respecting emergency sequence/time quantization. Never infer authenticated transport from CRC or decoder success. Compare entered contact windows against observed decodes; non-reception outside a logged observation interval is unknown, not a measured failed link.
+4. Add a compact evidence-import/replay screen linked to recovery inputs. Expose data gaps, unsupported settings and source hashes. Keep radio/network transmission disabled. No Gaussian coverage probabilities, unverified gateway compatibility or look-ahead leakage.
+5. Run focused scientific/API/browser regressions, exercise a real available input, verify backup/restore of new records, and update exact evidence/remaining limitations.
+
+## Remaining separate gates
+Full real72h NOAA study, independent8GB host, native Windows, authoritative regional/channel/airborne permissions, measured compatible receiver/antenna/link margin, cold/ESR/power qualification and flash journal/firmware testing remain open. The synthetic72h scheduler stress case does not close these gates.
 
 ## Checks
 ```sh
@@ -18,10 +21,10 @@ uv run --frozen ruff format --check packages services scripts tests
 uv run --frozen mypy packages services --explicit-package-bases
 uv run --frozen pytest -q
 uv run --frozen python -m scripts.reproduce
+uv run --frozen python -m scripts.reproduce_telemetry --output /absolute/new/evidence-directory
 cd apps/web
-npm ci
 npm run lint
 npm run build
 STRATOS_CHROMIUM=/usr/bin/chromium npm run test:e2e
 ```
-Restart both services after scientific Python/dependency changes. Never rebuild the client during browser verification. The native Windows,8GB-host and launch/hardware gates are not established by a Linux process limit.
+Restart API and worker after scientific source/dependency changes. Never rebuild while browser tests run. Keep test data isolated from planning state.

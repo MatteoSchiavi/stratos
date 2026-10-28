@@ -49,3 +49,30 @@ Saved-record reads/exports return409 for inconsistent metadata/IDs as well as ch
 
 
 POST `/api/simulations/compare` accepts distinct `reference_id`/`candidate_id` UUIDs, `alignment="elapsed"|"utc"` and `sample_count`3–1001 (default241). Both stored records pass full integrity checks before analysis. The response includes aligned/interpolated source positions, shared horizon, sampled separation/height metrics, configuration differences, source/cycle/solver identities, original output hashes, loaded-code identity and `comparison_sha256`. A missing UTC overlap returns422; damaged source evidence returns409. Comparison is read-only and performs no weather download or simulation. Values describe scenario sensitivity between predictions, not measured errors.
+
+## Telemetry Protocol & Recovery Optimization
+
+These endpoints perform local engineering work. They never transmit radio packets. Typed schemas are available from local `/openapi.json` and `/docs`.
+
+| Method / route | Behavior |
+| --- | --- |
+|GET `/api/telemetry/profiles`|Pinned wire sizes and EU868/US915 RP002-1.0.3 DR tables|
+|GET `/api/telemetry/example`|Explicitly synthetic, editable recovery configuration|
+|POST `/api/telemetry/configuration/validate`|Validate bounded recovery inputs and any pinned trajectory ID/hash/epoch|
+|POST `/api/telemetry/codec/encode`|Family plus typed observations → exact hex, SHA and independently decoded fields|
+|POST `/api/telemetry/codec/decode`|Raw hex → strict version/range/CRC checks; EMERGENCY explicitly requires external MIC|
+|POST `/api/telemetry/radio/validate`|Region/DR/application bytes/FOpts/optional stricter dwell → payload/PHY/airtime verdict|
+|POST `/api/telemetry/batches/optimize`|Actual-record grouping sizes, freshness/airtime/loss tradeoffs and bounded recommendation|
+|POST `/api/telemetry/studies`|Enqueue immutable `telemetry_recovery` worker job;202, existing cancellation/retry endpoints apply|
+|GET `/api/telemetry/studies`|Newest50 study summaries|
+|GET `/api/telemetry/studies/{id}`|Verified complete immutable configuration/output/code/hash evidence|
+|GET `/api/telemetry/sources/{simulation_id}`|Verified saved trajectory → modeled telemetry observations, UTC epoch and original output hash|
+|POST `/api/telemetry/archives`|Typed observations+optional epoch OR saved simulation ID → persisted lossless verified archive and separate summary|
+|GET `/api/telemetry/archives`|Newest50 archive summaries|
+|GET `/api/telemetry/archives/{id}`|Integrity-checked archive metadata/hex and separate lossy summary|
+|GET `/api/telemetry/archives/{id}/binary`|Download actual STLA binary|
+|POST `/api/telemetry/archives/decode`|Raw application/octet-stream → bounded lossless decode plus checked epoch context|
+
+Telemetry study/configuration/archive JSON writes allow at most2MiB; raw binary archive decoding allows4MiB. Other ordinary writes retain64KiB. Observation/study/event limits are additional, enforced constraints. Unsupported versions/regions/DRs/settings fail explicitly. The `valid` radio result covers modeled payload/airtime only, not complete regulatory certification. Unknown/stale/ambiguous geographic profiles or missing configured permission produce no scheduler transmission.
+
+Recovery `position_source`, when present, pins `simulation_id` and `output_sha256`; positions and epoch must match that immutable source. Clear it explicitly before deliberately editing position data. Fixed sender repeats never use simulated receive success; receiver copies are deduplicated separately. `fresh_airtime_fraction` reserves tracking capacity against known future contact opportunities under an optional fairness budget. Saved studies/archives use integrity guards on read/export and are verified during quiet-state backup/restore.

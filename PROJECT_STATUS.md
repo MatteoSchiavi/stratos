@@ -2,7 +2,7 @@
 
 ## Delivered: P0 foundation + extended P1 engineering slice
 
-**P0 implemented and tested. P1 core weather-to-saved-trajectory workflow tested with actual NOAA inputs. Full P1 has remaining tasks below. P2–P7 not started.** No flight-readiness or hardware qualification is claimed.
+**P0 implemented and tested. P1 core weather-to-saved-trajectory workflow tested with actual NOAA inputs. Full P1 has remaining tasks below. P2 and fullP3–P7 remain incomplete. The explicitly requested telemetry/recovery slice below is implemented separately.** No flight-readiness or hardware qualification is claimed.
 
 Specification read in full before changes; repository verified empty. Pre-implementation audit: `ARCHITECTURE.md`. Decisions: `DECISIONS.md`. The original screenshot was not supplied; styling follows the written visual contract.
 
@@ -18,7 +18,7 @@ Specification read in full before changes; repository verified empty. Pre-implem
 - [x] Interactive offline MapLibre map, synchronized chart/inspector, mission editor, download estimates, archive and JSON/CSV/YAML exports.
 - [x] Manifests retain exact configuration, weather URLs/checksums, output hashes, source hashes and runtime/package versions.
 - [x] Saved JSON identical after real API/worker restart; fresh app instance and browser refresh/reopen also verified.
-- [x] **91 backend tests passed**, Python lint/format/type checks passed, frontend lint/typecheck/build passed, **11 isolated browser tests passed**. Separate real-NOAA browser/map/reopen/mobile check passed.
+- [x] **123 backend tests passed** after the telemetry extension; Python lint/format/type checks and frontend lint/typecheck/build passed. Browser results for the current extension are recorded in `docs/TELEMETRY_VERIFICATION.md`; the earlier P1 milestone passed11 scenarios. Separate real-NOAA browser/map/reopen/mobile check passed.
 - [x] Frozen install/migration script exercised; reusable installation/startup fields saved in cloud environment draft. Publication/fresh-task restoration remain separate actions, not claimed.
 
 ## Real input/output evidence
@@ -92,3 +92,28 @@ Saved-study comparison now aligns real saved paths in elapsed/UTC time, exposes 
 - Actual Chromium screenshots of the comparison and pressure-surface explorer are retained in `docs/screenshots/`. Final local suites:91 backend tests and11 isolated browser scenarios. GitHub Actions status could not be read because the cloud policy denies `api.github.com`; remote CI success is not claimed.
 
 Full installation, configuration, UTC planning, NOAA acquisition, comparison, export, backup and restore instructions: `INSTALL_AND_USE.md`. P1 remaining gates above remain open; no later phase has been declared complete.
+
+
+## Telemetry Protocol & Recovery Optimization — 28 October2026
+
+The user explicitly requested this bounded extension beyond P1; it does not declare every intermediate/later phase complete. Pre-implementation audit: `docs/TELEMETRY_AUDIT.md`. User guide: `docs/TELEMETRY_AND_RECOVERY.md`. Wire/archive specification: `docs/TELEMETRY_PROTOCOL.md`.
+
+- [x] Version1 global24-bit coordinate codec, fixed-point temperature/voltage, compact mission-relative timestamps, sequences and strict validity/sentinel rules. NAV19B, NAV+ENV24B, variable independent-delta HISTORY and EMERGENCY11B. Emergency's external LoRaWAN MIC requirement and reduced time/sequence fields are explicit.
+- [x] Version-pinned EU868/US915 uplink DR/SF/BW/payload tables, actual FOpts/PHY overhead, independent airtime vectors and conservative dwell/channel accounting. No region-wide radio/airborne certification is claimed.
+- [x] Actual encoded batching trade study: freshness delay, packet overhead, available airtime, grouped loss/correlation and constrained recommendation.
+- [x] Lossless pre-radio typed-value delta archive with bounded block decompression, CRC, original/context SHA and exact round-trip verification. Separate lossy summaries retain endpoints, extrema, validity/clock transitions and significant timed trajectory changes. Summary failure cannot discard a verified archive.
+- [x] Durable/cancellable recovery worker: explicit receiver windows, channel compatibility, arbitrary outages, fixed repeats, historical priorities, seeded independent packet loss, receiver deduplication and no sender delivery oracle.
+- [x] Geographic/time permission profiles, stale/ambiguous-region radio-off behavior, finite battery/capacitor accounting, reserve/hysteresis, missed samples and conserved energy. Future fresh-airtime reservation prevents history from consuming the entire tracking budget; incompatible cadences are paced explicitly.
+- [x] Saved trajectory selection pins original ID/output hash/UTC epoch; edited data cannot masquerade as that source. Saved telemetry studies/archives retain hashes and are included in backup verification.
+- [x] UI separates packet/recovery/archive tasks and weather exploration/acquisition, removes deferred navigation, scopes actions, preserves drafts across workspaces and collapses completed study inputs. Advanced probe/configuration controls remain available on demand.
+
+Verification results, reproducible commands, resource measurements, actual API/worker/archive evidence and screenshots are recorded in `docs/TELEMETRY_VERIFICATION.md`. The bundled forecast references remain explicitly dated27 October2026; this extension makes no new live NOAA acquisition claim. New tooling works offline with retained real forecasts and labelled synthetic contact scenarios.
+
+### Explicit remaining requirements
+
+- [ ] Actual receiver-contact/packet evidence import and replay; no measured receiver link or independently authenticated observed contact has been qualified.
+- [ ] Current national/airborne approval, EIRP/hardware channel-plan certification and authoritative jurisdiction polygons. Configured rectangles and baseline region tables cannot supply these.
+- [ ] Measured GNSS/sensor, independent correlated-loss/link-margin calibration, battery/capacitor cold/ESR/transient tests and qualified firmware/flash journal.
+- [ ] Full real72h NOAA qualification, full3D weather volume, native Windows and an independent8GB host remain open. Synthetic72h scheduler stress testing does not close them.
+
+Next single implementable slice: `NEXT_CODEx_TASK.md`. All reception/power scheduling outputs remain modeled assumptions; typed measurement inputs do not turn a scenario into live mission operation.

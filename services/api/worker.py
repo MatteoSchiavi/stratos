@@ -84,6 +84,25 @@ def run_one(session_factory, data: Path, stop=lambda: False) -> bool:
                 DownloadRequest.model_validate(payload), data / "cache", progress, cancelled
             )
             result_id, record_kind = result["id"], "dataset"
+        elif kind == "telemetry_recovery":
+            from packages.telemetry.models import RecoveryRequest
+            from packages.telemetry.recovery import simulate_recovery
+
+            configuration = RecoveryRequest.model_validate(payload)
+            output = simulate_recovery(configuration, progress, cancelled)
+            assert_runtime_unchanged(RUNTIME_CODE)
+            result_id, record_kind = str(uuid4()), "telemetry_study"
+            result = {
+                "id": result_id,
+                "kind": record_kind,
+                "schema_version": 1,
+                "created_utc": utcnow().isoformat(),
+                "configuration": configuration.model_dump(mode="json"),
+                "code": RUNTIME_CODE,
+                "output_sha256": digest(output),
+                "output": output,
+            }
+            result["sha256"] = digest(result)
         else:
             with session_factory() as session:
                 revision = session.get(Record, payload["revision_id"])

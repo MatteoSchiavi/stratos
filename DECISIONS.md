@@ -55,3 +55,19 @@ Retain a small exact hourly window from each of two previously downloaded NOAA c
 
 ## ADR-018 — Continuous inputs and isolated verification (accepted)
 Browser stepping is a UI constraint, not a scientific quantization rule. Continuous mission values use arbitrary numeric precision; integer controls remain discrete. The browser regression suite owns a separate server/worker and temporary database, so verification cannot modify launch planning state. The portable installer resolves its own checkout and defaults to the tested Python3.12 environment.
+
+
+## ADR-019 — Explicitly requested telemetry slice (accepted, 28 October2026)
+The user's new request authorizes this bounded P3/P4-related module after the earlier P0/P1 milestone. It does not override evidence gates or declare intervening/full later phases complete. Preserve the working weather/trajectory tools; hardware/network integration and calibration remain separate.
+
+## ADR-020 — Versioned wire contract and regional uplinks (accepted)
+Define global24-bit coordinates, explicit mission-relative epoch/time/sequence/validity, fixed-point fields, independent packet delta state and strict corruption/range validation. NAV/NAV+ENV/HISTORY have application CRC16;11B EMERGENCY trades fields/application CRC for US915 DR0 compatibility and requires external verified LoRaWAN MIC. Pin RP002-1.0.3 regional DR/BW/payload tables rather than assuming EU and US share settings. Model FOpts/PHY overhead, conservative US dwell/channel windows and EU shared-sub-band duty. This is no airborne authorization or complete regulatory certification.
+
+## ADR-021 — Lossless originals and independent lossy summaries (accepted)
+Archive original typed observations before radio quantization using resettable prefix deltas and bounded checksummed compression blocks, plus checked epoch context. Scientific summaries retain selected extrema/validity/clock/path events and are separate exports. A failed/bounded summary never discards a verified original archive. Truncated archives fail validation; flash-journal/power-cut salvage remains unqualified.
+
+## ADR-022 — No reception oracle and protected fresh airtime (accepted)
+A durable event scheduler intersects entered contacts, region permissions, supported channels, outages and finite energy. Sender fixed repeats/retirement never depend on seeded receiver outcomes. Receiver deduplication is separate. Stress verification found historical data starving later tracking; reserve fresh airtime against upcoming compatible time windows and pace infeasible cadences before spending the remainder on history. This conservative heuristic trades complete-record recovery against position freshness, without claiming global optimality or calibrated probabilities.
+
+## ADR-023 — Task-focused interface and immutable source identity (accepted)
+Separate packet checking, recovery planning and archives; separate cached weather inspection from acquisition. Remove deferred navigation, scope trajectory actions to their workspace, preserve telemetry edits across navigation, collapse completed inputs, and disclose advanced probe/configuration controls. Pin selected trajectory ID/output hash/epoch; reject edited data misrepresented as its original source. Delayed analyses retain original-input fingerprints and visibly become stale after edits.

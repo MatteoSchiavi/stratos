@@ -194,39 +194,44 @@ export function WeatherExplorer({ datasets }: { datasets: Dataset[] }) {
             <option value="temperature">Temperature · K</option>
           </select>
         </label>
-        <label className="field">
-          <span>Display sample grid</span>
-          <select
-            aria-label="Contour display sample grid"
-            value={gridSize}
-            onChange={(e) =>
-              setGridSize(Number(e.target.value) as typeof gridSize)
-            }
-          >
-            {[17, 25, 33].map((size) => (
-              <option key={size} value={size}>
-                {size} × {size} samples
-              </option>
-            ))}
-          </select>
-        </label>
-        <NumberField
-          label="Probe latitude · °N"
-          value={lat}
-          step={0.0001}
-          min={-89.5}
-          max={89.5}
-          onChange={setLat}
-        />
-        <NumberField
-          label="Probe longitude · °E"
-          value={lon}
-          step={0.0001}
-          min={-180}
-          max={180}
-          onChange={setLon}
-        />
       </div>
+      <details className="weather-probe-settings">
+        <summary>Probe coordinates & display resolution</summary>
+        <div className="form-grid">
+          <label className="field">
+            <span>Display sample grid</span>
+            <select
+              aria-label="Contour display sample grid"
+              value={gridSize}
+              onChange={(e) =>
+                setGridSize(Number(e.target.value) as typeof gridSize)
+              }
+            >
+              {[17, 25, 33].map((size) => (
+                <option key={size} value={size}>
+                  {size} × {size} samples
+                </option>
+              ))}
+            </select>
+          </label>
+          <NumberField
+            label="Probe latitude · °N"
+            value={lat}
+            step={0.0001}
+            min={-89.5}
+            max={89.5}
+            onChange={setLat}
+          />
+          <NumberField
+            label="Probe longitude · °E"
+            value={lon}
+            step={0.0001}
+            min={-180}
+            max={180}
+            onChange={setLon}
+          />
+        </div>
+      </details>
       <div className="form-actions">
         <button
           className="button primary"

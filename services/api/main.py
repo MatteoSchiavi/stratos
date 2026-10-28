@@ -119,11 +119,21 @@ def create_app(data: Path = DATA, seed: bool = True) -> FastAPI:
                 return JSONResponse(
                     {"detail": "Cross-origin writes are disabled for this local application"}, status_code=403
                 )
+            if request.url.path == "/api/telemetry/archives/decode":
+                limit = 4 * 1024 * 1024
+            elif request.url.path in (
+                "/api/telemetry/studies",
+                "/api/telemetry/configuration/validate",
+                "/api/telemetry/archives",
+            ):
+                limit = 2 * 1024 * 1024
+            else:
+                limit = 64 * 1024
             body = bytearray()
             async for chunk in request.stream():
                 body.extend(chunk)
-                if len(body) > 64 * 1024:
-                    return JSONResponse({"detail": "Request exceeds 64 KiB limit"}, status_code=413)
+                if len(body) > limit:
+                    return JSONResponse({"detail": f"Request exceeds {limit} byte limit"}, status_code=413)
             request._body = bytes(body)
         response = await call_next(request)
         response.headers["X-Content-Type-Options"] = "nosniff"
@@ -493,6 +503,10 @@ def create_app(data: Path = DATA, seed: bool = True) -> FastAPI:
             media_type=media,
             headers={"Content-Disposition": f'attachment; filename="stratos-{simulation_id}.{ext}"'},
         )
+
+    from services.api.telemetry import register_telemetry
+
+    register_telemetry(app, factory, enqueue, record, API_RUNTIME_CODE)
 
     dist = ROOT / "apps/web/dist"
     if dist.is_dir():

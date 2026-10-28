@@ -43,3 +43,8 @@ P2–P7 have no placeholder endpoints or invented metrics. Connectivity, recover
 ## Follow-up architecture review
 
 The initial audit above records the starting assumptions. ADR-008–011 and `docs/RESEARCH_REVIEW.md` document the implemented refinement: versioned height-aware numerics, bounded weather windows, source-stable expansion, worker loaded-code identity, backup and actual cached weather inspection. `docs/REVIEW_VERIFICATION.md` records subsequent evidence.
+
+
+## Telemetry/recovery extension — 28 October2026
+
+The user explicitly requested a bounded telemetry/recovery engineering slice after P0/P1. Its pre-implementation audit is [docs/TELEMETRY_AUDIT.md](docs/TELEMETRY_AUDIT.md). Pure modules live in `packages/telemetry`, API registration in `services/api/telemetry.py`, and heavy studies reuse the existing durable/cancellable single worker. Immutable telemetry studies and archives use existing generic SQLite records, with integrity checks included in backup verification; no migration/dependency is required. Wire and archive formats are independently versioned. This extension is not completion of P2–P7 or qualification of an actual receiver, transmitter, power system or flash journal.

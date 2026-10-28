@@ -86,7 +86,7 @@ The launcher passes the same environment to API and worker. Use the same environ
 1. Start the app and wait for the initial synthetic calculation to finish. The map uses local Natural Earth geography.
 2. Open **Simulate → Trajectory**. Scrub the timeline; arrow keys/Home/End work. Check altitude, wind, pressure, temperature and exact UTC brackets.
 3. The watermark **DEMO DATA** identifies synthetic winds. It is a functioning constant-wind reference calculation, not an observation or live flight.
-4. Open **Weather inputs → Inspect cached forecast**. Startup imports checksummed **dated NOAA references from27 October2026**, including06UTC and12UTC cycles with a common18–19UTC window. It demonstrates the decoder/interpolator offline; it is not a current operational forecast on later days.
+4. Open **Weather inputs → Explore cached weather → Inspect cached forecast**. Startup imports checksummed **dated NOAA references from27 October2026**, including06UTC and12UTC cycles with a common18–19UTC window. It demonstrates the decoder/interpolator offline; it is not a current operational forecast on later days.
 For a complete offline NOAA calculation, select that bundled forecast in Plan, set initial and target altitude to12,500m and float duration to1h, and retain its valid-time start. This is a dated float-only reference, not an attainable-altitude or current-weather claim.
 
 5. In Plan, change inputs, save a revision and run. In Analyze, reopen results. Export complete JSON/CSV/GeoJSON and mission YAML. Refresh/restart and confirm the same saved manifest/hash.
@@ -107,7 +107,7 @@ Continuous fields accept fractional values; integer numerical controls remain re
 
 ## 7. Use a new real GFS forecast
 
-1. Open **Simulate → Weather inputs** and discover available cycles, or enter an exact published00/06/12/18UTC initialization. Initialization is not the exact publication timestamp.
+1. Open **Simulate → Weather inputs → Acquire new forecast** and discover available cycles, or enter an exact published00/06/12/18UTC initialization. Initialization is not the exact publication timestamp.
 2. Choose a cropped ROI and consecutive hourly leads within0–120. A download window spans at most72h/73files. Ensure the **entire** planned profile fits those valid times.
 3. Example: a launch at initialization+6h with48h prescribed duration needs leads6–54. A72h duration at that start needs6–78. These are horizon examples, not recommended launch conditions.
 4. Estimate first. The UI shows packed/array estimates and a pacing lower bound. NOAA requires10s between automated filter fetches, including retries. A73-file window requires at least12min of pacing alone; network/decode time is additional. Downloads have a30min job budget and retain verified files for explicit retry.
@@ -165,3 +165,16 @@ Browser tests own a temporary database and loopback port8001, leaving planning d
 To update: create a verified backup, stop the launcher, run `git pull --ff-only`, repeat installation/build, and restart. Existing data is preserved. Do not reset or overwrite your own tracked edits to force an update.
 
 See `PROJECT_STATUS.md`, `DECISIONS.md` and `docs/P1_SECOND_REVIEW.md` for exact evidence and remaining work. Full72h, native Windows, an independent8GB host and hardware/flight calibration remain unqualified. The long endurance resource procedure is Linux-only; it must not report macOS RSS bytes as Linux KiB.
+
+
+## 11. Telemetry Protocol & Recovery Optimization
+
+Open **Telemetry**. No additional package, API key or hardware installation is needed.
+
+1. **Packet & airtime:** choose a family, region and regional DR. Encode & validate displays exact bytes, decoded values, limits and airtime. In US915 DR0, NAV/NAV+ENV correctly fail;11B EMERGENCY fits. Expand batching to compare freshness/overhead/loss tradeoffs. Expand decoding to check your own raw packet hex.
+2. **Recovery planner:** edit UTC epoch, duration/logging/fresh intervals and receiver windows. The initial windows/power/permission reference are explicitly synthetic. Import your actual source/evidence/configuration, or select a saved modeled trajectory as the position source. In advanced configuration, set geographic permission intervals, outages, SF/DR compatibility, optional channel masks, battery/capacitor parameters, fixed repeats and the independent fairness budget. Calculate recovery, inspect the collapsed-input result/backlog/position age, and export the immutable study. No confirmed delivery is inferred from a sender queue becoming empty.
+3. **Archive & summaries:** select current input observations or a saved trajectory. Create & verify performs a lossless typed-value round trip. Download the `.stla` original archive and **separate** lossy summary. Verify imported `.stla` to recover original observation JSON plus epoch context. Saved archives/studies can be reopened locally after restart.
+
+Recovery JSON imports are bounded to2MiB/5000 observations; binary imports to4MiB. Unknown/stale regions, unsupported receiver settings, missing configured permission and exhausted budgets fail explicitly. EMERGENCY has no application CRC and requires externally verified LoRaWAN MIC in an eventual actual receiver. No current regional approval or measured reception/power calibration is supplied by software.
+
+Full examples, field meanings, limits and reproducible CLI checks: [docs/TELEMETRY_AND_RECOVERY.md](docs/TELEMETRY_AND_RECOVERY.md). Exact binary layouts and radio baseline: [docs/TELEMETRY_PROTOCOL.md](docs/TELEMETRY_PROTOCOL.md).
