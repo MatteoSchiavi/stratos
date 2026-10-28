@@ -1,0 +1,226 @@
+{
+  "id": "1dadd4ab-efb5-4669-830c-087870a94193",
+  "kind": "telemetry_archive",
+  "created_utc": "2026-10-28T22:28:15.432667+00:00",
+  "schema_version": 1,
+  "configuration": {
+    "observations": [],
+    "simulation_id": "d2fbed7e-a0e7-48ce-bfb7-63bd8a34a4f9",
+    "epoch_utc": null,
+    "trajectory_tolerance_m": 100.0
+  },
+  "code": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+    "git_commit": "2523bd5134f2988ed001aa08654c09eb445784f1",
+    "source_files_sha256": {
+      "apps/web/package-lock.json": "3570fb2ba27315fcfd6592ef544ce5cd841cd4b2ad22b390559af1e800aab0ee",
+      "apps/web/src/AltitudeChart.tsx": "ab36d92d997649fd256463e77ef035eef022de61dfe46d8af86ec14f01d1c265",
+      "apps/web/src/App.tsx": "e98719885413c6466c2c2698e22efc3367954fd0619432771fcfb016c5af3259",
+      "apps/web/src/ComparisonPanel.tsx": "82b5ca673048922fb1b0033bb5a0f0fb6bf67f513dec19dbda31b49d9a658798",
+      "apps/web/src/Evidence.tsx": "09b1d529d07a5d23e7722dd5d3fb14b0a9c99af4efea8f789e2477330665b176",
+      "apps/web/src/Fields.tsx": "e368e06dc98327ca7476a701bb71ff9741b4563e0f37c7ad4b6cc8e61654bf3c",
+      "apps/web/src/Inspector.tsx": "ecdc4840d1346f1388ee7bc4460073c266a3431355b5d3ad202225feebe85b0f",
+      "apps/web/src/LazyMap.tsx": "ddcdcee6fff84d6ef5ed3b63de351c00f32146f85da516a3c70c197a0cf32ed1",
+      "apps/web/src/TelemetryPanel.tsx": "7cb734c49c8d6a430dc6c4801c3b6b3a437ad29ebd943cf5dbb07192b5ab86f9",
+      "apps/web/src/TrajectoryMap.tsx": "f0608c28abed3cfec6c6f83012de0324d4141cc429c498030661279381de3f1c",
+      "apps/web/src/WeatherExplorer.tsx": "c2ae8dfdb563dc03084d5178f78ca4cee1427d3db5e0497742e13d4a5eeb9a1f",
+      "apps/web/src/WeatherPanel.tsx": "9c200c7335d6e05e4b4a98617bc106dd40a9c4f5747b6039fe76f0b0e2fa3d1d",
+      "apps/web/src/api.ts": "a75a4243b414a686bb7953a096976327279d0659b9069a42da11e7df2c6e4149",
+      "apps/web/src/main.tsx": "751f954bcf52881a7436ca409175e090d980dcfc492e0c41fe0c39d298633076",
+      "apps/web/src/style.css": "0d45832cebf99fa80078992f7b750d27e70640980a4e471b91c8122b9e1b3aeb",
+      "apps/web/src/types.ts": "72b399ef54eb63835310001712e02ab9ca3f72b05fc8b8a2e422d7ae5a6e0e74",
+      "apps/web/src/useNow.ts": "227022805264ea2c18fe9198c217fb117ef1c665d79bc54732c71e38043033cd",
+      "packages/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "packages/domain/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "packages/domain/integrity.py": "f0752e889d7dcf99b0fd0a07b0efc570a9f5035777c6e6352c19b4c820573051",
+      "packages/domain/models.py": "f8d130afc5d506ce575330cbcb35daa2984435d036b5c6de2c9454211c720975",
+      "packages/flight/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "packages/flight/comparison.py": "784c901eb03fd5aebc3bd6ed61247fd0c3d8f6798e147b0c81c24ce4c9758f78",
+      "packages/flight/geojson.py": "674c2ddde0511955890cf0fdbb0d771724a8d62edc13059fb66b745482e0bceb",
+      "packages/flight/integrator.py": "c5929b8b30c7c66466c24ed1a49c99d5e760ef85b69bcc1ee071645f7bce63e0",
+      "packages/flight/legacy.py": "c7db935d328dab3f9afb5a2bdd484d95890b4399dcd54da5984dc3109ac3784b",
+      "packages/meteo/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "packages/meteo/adaptive.py": "127862ae2bc4bf5b01c1830e09518208eb0d4fba4a3dc6dd28943ceca5e6ad06",
+      "packages/meteo/contours.py": "0c09f05be422f4e0184488f99ef59939a4f9b1d03407e5fd347ebc162c6d19f5",
+      "packages/meteo/explorer.py": "e26cc7f2ef582c2e5b614a036ca0343b7f5d9676b930d44bbf83110759194d3e",
+      "packages/meteo/field.py": "bc544979e8456c8b6eeabfc3ce7e709bd1179f6c0beb30461f47ddab43b9b0d6",
+      "packages/meteo/gfs.py": "6f783d8123c407b3abfc69aa28c2cf21fc2901b346f7bc360a4b5e64f7933863",
+      "packages/telemetry/__init__.py": "eed9f9f4e23de2eb86007a4215d9b3ffb36c12ad5bc274bd3538175d22bde992",
+      "packages/telemetry/archive.py": "a4c92107ab4c1017c707131e5b3dead3c91954df824425172cec6f4872267863",
+      "packages/telemetry/codec.py": "46182275ce80039c8d524a7ecbf9798e7b2f357802560ac0280d779d09ff7e1c",
+      "packages/telemetry/evidence.py": "770d2133767928330a09be6002dc6481d712b7e013d2a55af9e79de34f6ca49a",
+      "packages/telemetry/examples.py": "0178b01fa160047a06124d91a5a097141c6d0d8d1992c168938ebc6aa99cd0e0",
+      "packages/telemetry/models.py": "f0a8b54d4fc3995f0b386b441ba7acf6bd40c7c0859f6ab5018d56ba9bf751aa",
+      "packages/telemetry/radio.py": "856e7736bf2619d078cac9a436e4b0f02d1c608ef48774c2bd6e77ed7cae3326",
+      "packages/telemetry/recovery.py": "255e8e0568d30e3f929d03ad985d0dfa80faf26ace57409976cad1db44afeca3",
+      "pyproject.toml": "f0ed653a9234933c8618083bf2a4adbcb2355923ddadc43223c5e0689b27d15c",
+      "services/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "services/api/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "services/api/main.py": "b9a82f60cbfee643857c0aeb2f3a63b94f9477cd510619ab8ed430615e2ff4eb",
+      "services/api/migrations/env.py": "0ac8df31032b1ed0cd23a886b55494e4e97f55056b7c0177be600a806e9c99b7",
+      "services/api/migrations/versions/0001_foundation.py": "29beafe9fc0f985c7cf1f74fc36567ace39aedd8759d9175abfc8e2efbca8d71",
+      "services/api/provenance.py": "a3ab2781adcdef373bb08d81dc5e5f2bf04d1f55aeb441d16d93ab6cdb2d1cee",
+      "services/api/reference_data.py": "2b1e5c721ccfb3eb86e9773c84c70c728eabcb200e909072a570935a5287eec5",
+      "services/api/storage.py": "fafc47f111131025b77702318d6ac35c025fa13204f6a71209902875029ce50e",
+      "services/api/telemetry.py": "733e0baf62e916a21fcea3265577259a4e333ab8c6a32b671c9b2d853f1a2e61",
+      "services/api/worker.py": "f6e6863061e3c82ca5a2980ec91ccde43852828a344f65615b39793ea60c4166",
+      "uv.lock": "91d03df6cb13e3a414eb36c650b852f04bffbe8e2d5a00442475b959c6d9e3bd"
+    },
+    "source_tree_sha256": "2849fa18d3bd094ff3159409364b5e3715e659298753ec3f156842f5d2c27a4c",
+    "scientific_source_sha256": "57d78da11de04315d4cbfcf8542ff8b18895379cc8f18ef0e83fb9dbdf29e3da",
+    "packages": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "geographiclib": "2.1",
+      "xarray": "2026.9.0",
+      "cfgrib": "0.9.15.1",
+      "eccodes": "2.50.0",
+      "fastapi": "0.141.1",
+      "pydantic": "2.14.1"
+    }
+  },
+  "source_simulation": {
+    "simulation_id": "d2fbed7e-a0e7-48ce-bfb7-63bd8a34a4f9",
+    "output_sha256": "f94d5b9a95f539c33b444a05d4a3f9246b2162c1274e67b0d66f8b7719072d6f",
+    "epoch_utc": "2026-10-27T18:00:00Z"
+  },
+  "source_sha256": "682c09b209432f3d54d7bb7392cc4d80437ab1ce76fc9c67cafd9c7a9c0395c0",
+  "archive_sha256": "b05d64093e3b09bacd724a63873d3b844270a7284ac586264b55e086d8efda83",
+  "archive_hex": "53544c41010000001f682c09b209432f3d54d7bb7392cc4d80437ab1ce76fc9c67cafd9c7a9c0395c000245dea2ab580c3f32f949da28556b46a1289e791c2791e39cd3332bb4c88758e757b2265706f63685f757463223a22323032362d31302d32375431383a30303a30305a227d001f0000169200000627929d96ed78da95986b6ee4541085e9adf87764d5bbeeed2520982d44d1a4895a9317798c90108b828109fb62039cdb02b54dee954c142552cb767f2e579d73cadffcb5fb79baba7d39bebc5e1f2eefa63d8b13cd74317dbc7df8f8e9f2f3d5edf17adabf3cbd1e2ea61f8e3fad3fb8bdfae7c4ebc3cdb4379fc9f1e1c3fdcde2d33a475dfc947a313d3c1d6f8ef7d37e7a3edebde21a87ebe9627a7c3a3c3fbf3e1d2e1faf40516a95b9aa5121ae35222ea6e7c38faf87fb8f87690fba97c3dde3e1e9eaa59df069da0beb9cedf282a3abbb151c72bc3b5c3e9f8efefc70fb727573b8fc3cedef5f6f6f7ff9fecbced4cc44b368e5ec40a770d610ad266e24dba155ac9a4be5d3596768ee4217c2d155ab98b67bfc9799a547fdfb4e236b0a55a21ab5476dea54948daba46fa666dcae8515674d5951cb80ba865a28b3992f4a2dd6c1fef0eb8ec851660ff5c6f49e3af0c58152d7129adba199491c0529ada9ceccda67c657b8ab976c5f7366d6e8975a544883d105d66f9012d17ec912876c2e35cd56a4a01cd16e79896d03ecc890089264b733b6951ef61f3b0e3c497413056eac378d857049e322c6ae513672179c88ba29a74596558bf880bb9217a652898b9eb9837adcbfeda802c9951c23ac3d6ca99e686e55899adba9a52144d1126beae8530b79b08baaf3a2d829fdbe1662950439975e8b14c75d55f4a854d9da20a5cc1e8e2a1b41f956c83940665c1e9d883e51393397de2c7efbb6b3b9564bad99added95391021140ff242539e566f29c2b95d49302afc9cba8d860768a62909e33798d7e6be3da01d96e8353b8dbda300c93d6f86871dd8e2d86a74d949a4d7dced875d4d982a217475b2dc50f8dd6e3feba4b3cd4128cf1b1a83d6e784528097ad4a0abb1153c66cf948262a3282baba101781a938919747b6d36bdf66e12082381be42639b39bde75600308b128ef2cd52e2e813b85411947125dc3cf0487626974885da2fb0b56b926fbbc0f048b888437bbadcde94bbc2380855fc1fdc20b6f6c3a62be9e6814db2b45263181c1ab12037eb770ab8d223a4c2a9b8070eabe1aa4a35a13c9bc16d764bd42f396af38405b88efc5dd3306b50805c4c262cbc0f6ea8b49590a2e0ef81438a056dea981dd2ad11b080047383a2b4095a830fdc92828c304b15bdbb10438ede6c7e805d52987b296afa3e99308230831cea00bb66b4f97670c4026407648362eb5619d825b5a78a3001ef5916bc50bfe0daee515b0bb346171cd119a2865eb25a374bb8a0c50579db8d4fd960c13d304c4201a52530175f6a4a953e38d231c353a2a2eedc050f3cacc0c0b427b95d547846a4c285c9cdd6e039d81680ce6a27135ce413a1c16c2287e101252e4fee5d705caa5931b760279bc1097e8f91872092ff87bc0cc81d4e016b4e96851c0a475f0ea99820a0408cbc5df13d3893b60481440d7d55db089e88c08ae525ea690b5881d70138b2124a88c01275b935487738bf606dc06d72328a5ebbe0d8372448911c4578eb706681ffb0ea897be59b325a2c093a8e99a84556bb4e87fabbb75d41eb0a8cd95b18e9625bd306433846a6ddbc0f039ba2a990b71c6c2beebe6f6681e2637580cd155a880af268af53fedc21de33862f95a0d4dd1e4715303218518408ec455bd111b1a4654223e8f2bae4324077fcc3334262592e6b12d6cf8609e14439e15ba15df0d25212f67da8226f5d1f32202a6d8160ac5eb99271d101b7600587dfc37d7ca92a3930cef082bed2135d5fc81192e1800c0c92cde03ebba33f151745d85f81db001caed96230ee9396aa5206a1d69bbd91a16594bbad2218728301c28420f95b1d286dcef6a28030a230b81579df3913165b1db1167f171557a27e9303b98d83b7f5caac4b8e1ac09fe053a8fbe6f527618689c9d4684eb1268f0139521e565e714cdbf28d040fe6b3bd8c32085d043caedf2c2de4617620b325b7cf27e20af6f4c08a8c70b97eff33704f683921eda16bd916d2a2fd37405f77e82d14054a5f73d02e0879d95e6b61a7c202b9955c666514dc22741d10a58c84058344d61a9797e03a704f41ffc297ad894bf6c0d14ddcf602787f7b97b7159c31a15c4e2bf6e9ac05f9d03d15d0cd02e0fe0bf2fe9ba0b71da8a0e5d8b49ca45f73a414782b3860cbf0daade8349fde8ca2eab25e8374b07712b7748b6ff01059bd79eb90ff0debe7a411",
+  "original_bytes": 8029,
+  "archive_bytes": 1700,
+  "record_count": 31,
+  "round_trip_verified": true,
+  "summary": {
+    "kind": "lossy_scientific_summary",
+    "original_count": 31,
+    "retained_count": 6,
+    "trajectory_tolerance_m": 100,
+    "limitations": "Retains global scalar extrema, validity transitions and time-parametrized path changes; intermediate scalar behavior may be lost. Original archive remains authoritative.",
+    "records": [
+      {
+        "index": 0,
+        "reasons": [
+          "altitude_m_maximum",
+          "altitude_m_minimum",
+          "endpoint",
+          "pressure_pa_maximum",
+          "valid_segment_endpoint"
+        ],
+        "observation": {
+          "time_s": 0,
+          "sequence": 0,
+          "latitude_deg": 45.05,
+          "longitude_deg": 9.699999999999989,
+          "altitude_m": 12500.0,
+          "temperature_k": 213.79999219995548,
+          "voltage_v": null,
+          "pressure_pa": 18992.934080199666,
+          "clock_valid": true,
+          "fix_valid": true,
+          "origin": "simulated"
+        }
+      },
+      {
+        "index": 7,
+        "reasons": [
+          "temperature_k_maximum",
+          "trajectory_change"
+        ],
+        "observation": {
+          "time_s": 840,
+          "sequence": 7,
+          "latitude_deg": 45.00201327918187,
+          "longitude_deg": 9.8509190252922,
+          "altitude_m": 12500.0,
+          "temperature_k": 213.82129286667632,
+          "voltage_v": null,
+          "pressure_pa": 18988.565746400192,
+          "clock_valid": true,
+          "fix_valid": true,
+          "origin": "simulated"
+        }
+      },
+      {
+        "index": 14,
+        "reasons": [
+          "trajectory_change"
+        ],
+        "observation": {
+          "time_s": 1680,
+          "sequence": 14,
+          "latitude_deg": 44.94901486283756,
+          "longitude_deg": 9.998929345192039,
+          "altitude_m": 12500.0,
+          "temperature_k": 213.80604030292312,
+          "voltage_v": null,
+          "pressure_pa": 18983.861468798885,
+          "clock_valid": true,
+          "fix_valid": true,
+          "origin": "simulated"
+        }
+      },
+      {
+        "index": 22,
+        "reasons": [
+          "trajectory_change"
+        ],
+        "observation": {
+          "time_s": 2640,
+          "sequence": 22,
+          "latitude_deg": 44.883111687303455,
+          "longitude_deg": 10.165348061244941,
+          "altitude_m": 12500.0,
+          "temperature_k": 213.78521333974186,
+          "voltage_v": null,
+          "pressure_pa": 18977.229592409236,
+          "clock_valid": true,
+          "fix_valid": true,
+          "origin": "simulated"
+        }
+      },
+      {
+        "index": 26,
+        "reasons": [
+          "temperature_k_minimum"
+        ],
+        "observation": {
+          "time_s": 3120,
+          "sequence": 26,
+          "latitude_deg": 44.848308055001944,
+          "longitude_deg": 10.247369691068172,
+          "altitude_m": 12500.0,
+          "temperature_k": 213.77551530254556,
+          "voltage_v": null,
+          "pressure_pa": 18973.877353616703,
+          "clock_valid": true,
+          "fix_valid": true,
+          "origin": "simulated"
+        }
+      },
+      {
+        "index": 30,
+        "reasons": [
+          "endpoint",
+          "pressure_pa_minimum",
+          "valid_segment_endpoint"
+        ],
+        "observation": {
+          "time_s": 3600,
+          "sequence": 30,
+          "latitude_deg": 44.812268705050215,
+          "longitude_deg": 10.328175551799006,
+          "altitude_m": 12500.0,
+          "temperature_k": 213.80103300065622,
+          "voltage_v": null,
+          "pressure_pa": 18970.79623164233,
+          "clock_valid": true,
+          "fix_valid": true,
+          "origin": "simulated"
+        }
+      }
+    ]
+  },
+  "sha256": "725addce33caf987d6972f83f191fc6496e8acf885f7aef9ec9bb25de06d4184"
+}

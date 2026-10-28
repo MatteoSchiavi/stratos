@@ -117,3 +117,8 @@ Verification results, reproducible commands, resource measurements, actual API/w
 - [ ] Full real72h NOAA qualification, full3D weather volume, native Windows and an independent8GB host remain open. Synthetic72h scheduler stress testing does not close them.
 
 Next single implementable slice: `NEXT_CODEx_TASK.md`. All reception/power scheduling outputs remain modeled assumptions; typed measurement inputs do not turn a scenario into live mission operation.
+
+
+### Telemetry release evidence
+
+Final scientific implementation pushed as `2523bd5134f2988ed001aa08654c09eb445784f1`; **123 backend tests and14 isolated browser scenarios passed**, with the three telemetry browser workflows repeated successfully after the final frontend-only reopening refinement. Original real NOAA replay hashes remain exact. Both actual API/worker telemetry studies and a31-record/1700B NOAA-derived archive passed binary round-trip and quiet-state backup/isolated restore checks. The synthetic72h stress repeat exactly matched output hash `eadd421deab6d230689a9bffa537949ac7d63e74b27f1afb9ef63da5d76638b8`, taking22.96s and~122.8MiB peak RSS on this Linux host. Maximum known-position age fell from~23h to~25.3min after fresh-airtime reservation, trading historical record recovery736→615. This closes the software regression, not measured RF, real72h NOAA or hardware qualification. Full exact evidence: `docs/TELEMETRY_VERIFICATION.md`.

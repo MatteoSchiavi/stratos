@@ -1,0 +1,19 @@
+{
+  "scientific_commit": "2523bd5134f2988ed001aa08654c09eb445784f1",
+  "archive_id": "1dadd4ab-efb5-4669-830c-087870a94193",
+  "archive_bytes": 1700,
+  "original_records": 31,
+  "restored_context": {
+    "epoch_utc": "2026-10-27T18:00:00Z"
+  },
+  "exact_original_observations_equal": true,
+  "scope": "Actual retained NOAA modeled path; explicitly synthetic contact/loss/power assumptions, no measured reception",
+  "jobs": {
+    "synthetic": "d7a2eccb-e19d-4a08-9f34-8117a3b5e4df",
+    "noaa_path_simulated_contacts": "14cdc306-3c10-42f2-b3d5-d0bbe03b3bc4"
+  },
+  "studies": {
+    "synthetic": "392161f3-f141-4d39-8145-65571e17f533",
+    "noaa_path_simulated_contacts": "4d11bef1-e2b3-4d0b-8c14-40030e6e2bf2"
+  }
+}

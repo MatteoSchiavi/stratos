@@ -1,0 +1,65 @@
+{
+  "scenario": "Identical synthetic72h inputs/seed and24h initial outage; policy refinement only",
+  "previous_policy": {
+    "metrics": {
+      "generated_records": 4320,
+      "missed_samples_power": 0,
+      "received_records": 736,
+      "received_positions": 146,
+      "unrecovered_records": 3584,
+      "sender_pending_records": 3566,
+      "retired_unrecovered_records": 20,
+      "peak_sender_backlog": 3566,
+      "transmissions": 406,
+      "airtime_s": 59.941376,
+      "radio_energy_j": 13.051206399999993,
+      "battery_remaining_j": 463.45152188281793,
+      "capacitor_final_v": 5.0,
+      "harvested_j": 0.0,
+      "idle_energy_j": 518.3999999998185,
+      "unserved_idle_j": 0.0,
+      "conversion_loss_j": 2.722271717647042,
+      "spilled_j": 0.0,
+      "energy_balance_residual_j": -2.8342128643998876e-10
+    },
+    "freshness": {
+      "first_received_position_s": 86400.082176,
+      "max_known_position_age_s": 82810.16921600001,
+      "mean_known_position_age_s": 39690.730835128015,
+      "final_position_age_s": 82800
+    },
+    "source_sha256": "e511df2d6b7290420eb7c0173ff48aa451ec8532beec5155b660ec218b78876c"
+  },
+  "reserved_fresh_policy": {
+    "metrics": {
+      "generated_records": 4320,
+      "missed_samples_power": 0,
+      "received_records": 615,
+      "received_positions": 487,
+      "unrecovered_records": 3705,
+      "sender_pending_records": 4245,
+      "retired_unrecovered_records": 4,
+      "peak_sender_backlog": 4245,
+      "transmissions": 675,
+      "airtime_s": 59.616,
+      "radio_energy_j": 15.692400000000159,
+      "battery_remaining_j": 460.3442352945755,
+      "capacitor_final_v": 5.0,
+      "harvested_j": 0.0,
+      "idle_energy_j": 518.3999999998185,
+      "unserved_idle_j": 0.0,
+      "conversion_loss_j": 3.188364705882387,
+      "spilled_j": 0.0,
+      "energy_balance_residual_j": -2.764863893389702e-10
+    },
+    "freshness": {
+      "first_received_position_s": 86400.082176,
+      "max_known_position_age_s": 1520.0821759999963,
+      "mean_known_position_age_s": 238.74552796166293,
+      "final_position_age_s": 300
+    },
+    "source_sha256": "57d78da11de04315d4cbfcf8542ff8b18895379cc8f18ef0e83fb9dbdf29e3da",
+    "commit": "2523bd5134f2988ed001aa08654c09eb445784f1"
+  },
+  "qualification": "Software stress comparison, not measured RF delivery or real72h NOAA qualification"
+}

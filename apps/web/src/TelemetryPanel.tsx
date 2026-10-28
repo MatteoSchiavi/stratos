@@ -228,7 +228,6 @@ export function TelemetryPanel({ studies }: { studies: SimulationSummary[] }) {
     refetchInterval: 3000,
   });
   const [draft, setDraft] = useState<Configuration | null>(null);
-  const config = draft ?? example.data;
   const [task, setTask] = useState("recovery");
   const [error, setError] = useState("");
   const [family, setFamily] = useState("NAV+ENV");
@@ -273,6 +272,7 @@ export function TelemetryPanel({ studies }: { studies: SimulationSummary[] }) {
     queryFn: () => api<Study>(`/telemetry/studies/${studyId}`),
     enabled: !!studyId,
   });
+  const config = draft ?? result.data?.configuration ?? example.data;
   const update = <K extends keyof Configuration>(
     key: K,
     value: Configuration[K],
@@ -1282,8 +1282,9 @@ export function TelemetryPanel({ studies }: { studies: SimulationSummary[] }) {
             >
               {archive.input_fingerprint !== archiveFingerprint && (
                 <p className="slice-pending">
-                  Archive source changed. This result retains the previous input
-                  records.
+                  {archive.input_fingerprint === undefined
+                    ? "Viewing a saved archive. Its original source is preserved in the archive evidence."
+                    : "Archive source changed. This result retains the previous input records."}
                 </p>
               )}
               <div className="result-title">

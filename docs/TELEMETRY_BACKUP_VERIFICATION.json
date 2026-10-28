@@ -1,0 +1,17 @@
+{
+  "archive": "/workspace/stratos-backups/telemetry-release-20261028",
+  "restore": "/tmp/stratos-telemetry-release-restored",
+  "backup": {
+    "files": 327,
+    "simulations": 15,
+    "weather_sources": 21,
+    "status": "verified"
+  },
+  "telemetry_study_ids": [
+    "392161f3-f141-4d39-8145-65571e17f533",
+    "4d11bef1-e2b3-4d0b-8c14-40030e6e2bf2"
+  ],
+  "archive_id": "1dadd4ab-efb5-4669-830c-087870a94193",
+  "exact_restored_evidence_equal": true,
+  "original_backup_reverified_unchanged": true
+}

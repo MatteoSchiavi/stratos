@@ -1,0 +1,6683 @@
+{
+  "id": "4d11bef1-e2b3-4d0b-8c14-40030e6e2bf2",
+  "kind": "telemetry_study",
+  "schema_version": 1,
+  "created_utc": "2026-10-28T22:28:15.099368+00:00",
+  "configuration": {
+    "position_source": {
+      "simulation_id": "d2fbed7e-a0e7-48ce-bfb7-63bd8a34a4f9",
+      "output_sha256": "f94d5b9a95f539c33b444a05d4a3f9246b2162c1274e67b0d66f8b7719072d6f"
+    },
+    "epoch_utc": "2026-10-27T18:00:00Z",
+    "schema_version": 1,
+    "duration_s": 3600,
+    "step_s": 10,
+    "sample_interval_s": 60,
+    "fresh_interval_s": 300,
+    "max_fix_age_s": 300,
+    "history_batch": 4,
+    "history_repeats": 2,
+    "seed": 42,
+    "fopts_bytes": 0,
+    "fair_use_s_per_24h": 30.0,
+    "fresh_airtime_fraction": 0.8,
+    "positions": [
+      {
+        "time_s": 0,
+        "sequence": 0,
+        "latitude_deg": 45.05,
+        "longitude_deg": 9.699999999999989,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.79999219995548,
+        "voltage_v": null,
+        "pressure_pa": 18992.934080199666,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 120,
+        "sequence": 1,
+        "latitude_deg": 45.04344423783917,
+        "longitude_deg": 9.721796239425402,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.8049493924366,
+        "voltage_v": null,
+        "pressure_pa": 18992.324945291402,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 240,
+        "sequence": 2,
+        "latitude_deg": 45.03679720900969,
+        "longitude_deg": 9.743508314192752,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.80963463114458,
+        "voltage_v": null,
+        "pressure_pa": 18991.724648513722,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 360,
+        "sequence": 3,
+        "latitude_deg": 45.03005391563552,
+        "longitude_deg": 9.76513639498637,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.81365535874986,
+        "voltage_v": null,
+        "pressure_pa": 18991.11025797889,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 480,
+        "sequence": 4,
+        "latitude_deg": 45.02320361179417,
+        "longitude_deg": 9.786686680477942,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.81676266027154,
+        "voltage_v": null,
+        "pressure_pa": 18990.482853961363,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 600,
+        "sequence": 5,
+        "latitude_deg": 45.016246243063605,
+        "longitude_deg": 9.808164182415368,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.81905810890183,
+        "voltage_v": null,
+        "pressure_pa": 18989.849831746782,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 720,
+        "sequence": 6,
+        "latitude_deg": 45.00918253059213,
+        "longitude_deg": 9.82957350332697,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.8205615233514,
+        "voltage_v": null,
+        "pressure_pa": 18989.210896838682,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 840,
+        "sequence": 7,
+        "latitude_deg": 45.00201327918187,
+        "longitude_deg": 9.8509190252922,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.82129286667632,
+        "voltage_v": null,
+        "pressure_pa": 18988.565746400192,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 960,
+        "sequence": 8,
+        "latitude_deg": 44.99473977825379,
+        "longitude_deg": 9.872206370705072,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.82067650684485,
+        "voltage_v": null,
+        "pressure_pa": 18987.908731999592,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 1080,
+        "sequence": 9,
+        "latitude_deg": 44.987364346136815,
+        "longitude_deg": 9.89344263608163,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.81928218596858,
+        "voltage_v": null,
+        "pressure_pa": 18987.245140073737,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 1200,
+        "sequence": 10,
+        "latitude_deg": 44.979888614984695,
+        "longitude_deg": 9.914630238649636,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.81741042441146,
+        "voltage_v": null,
+        "pressure_pa": 18986.57728959346,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 1320,
+        "sequence": 11,
+        "latitude_deg": 44.972314179757966,
+        "longitude_deg": 9.935771123017958,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.8151052673257,
+        "voltage_v": null,
+        "pressure_pa": 18985.90508822829,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 1440,
+        "sequence": 12,
+        "latitude_deg": 44.964642652259016,
+        "longitude_deg": 9.956866997809868,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.81241145925918,
+        "voltage_v": null,
+        "pressure_pa": 18985.228444441433,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 1560,
+        "sequence": 13,
+        "latitude_deg": 44.95687566296551,
+        "longitude_deg": 9.977919330970138,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.80937443407075,
+        "voltage_v": null,
+        "pressure_pa": 18984.547267716905,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 1680,
+        "sequence": 14,
+        "latitude_deg": 44.94901486283756,
+        "longitude_deg": 9.998929345192039,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.80604030292312,
+        "voltage_v": null,
+        "pressure_pa": 18983.861468798885,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 1800,
+        "sequence": 15,
+        "latitude_deg": 44.94106455883432,
+        "longitude_deg": 10.019895149611301,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.8033098045235,
+        "voltage_v": null,
+        "pressure_pa": 18983.047117477843,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 1920,
+        "sequence": 16,
+        "latitude_deg": 44.93302939978136,
+        "longitude_deg": 10.04081406294992,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.80064278895256,
+        "voltage_v": null,
+        "pressure_pa": 18982.222996541368,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 2040,
+        "sequence": 17,
+        "latitude_deg": 44.92491072696451,
+        "longitude_deg": 10.061686591604058,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.79800134825373,
+        "voltage_v": null,
+        "pressure_pa": 18981.39607205448,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 2160,
+        "sequence": 18,
+        "latitude_deg": 44.91670987544055,
+        "longitude_deg": 10.082512921136328,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.7953867057127,
+        "voltage_v": null,
+        "pressure_pa": 18980.566625080548,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 2280,
+        "sequence": 19,
+        "latitude_deg": 44.90842818812518,
+        "longitude_deg": 10.103292899125734,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.79279987212698,
+        "voltage_v": null,
+        "pressure_pa": 18979.734946911445,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 2400,
+        "sequence": 20,
+        "latitude_deg": 44.90006701717549,
+        "longitude_deg": 10.124026031822211,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.790241654982,
+        "voltage_v": null,
+        "pressure_pa": 18978.90133911446,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 2520,
+        "sequence": 21,
+        "latitude_deg": 44.8916277253442,
+        "longitude_deg": 10.144711481029589,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.78771266780805,
+        "voltage_v": null,
+        "pressure_pa": 18978.066113557354,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 2640,
+        "sequence": 22,
+        "latitude_deg": 44.883111687303455,
+        "longitude_deg": 10.165348061244941,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.78521333974186,
+        "voltage_v": null,
+        "pressure_pa": 18977.229592409236,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 2760,
+        "sequence": 23,
+        "latitude_deg": 44.8745202909363,
+        "longitude_deg": 10.18593423708117,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.78274392531253,
+        "voltage_v": null,
+        "pressure_pa": 18976.392108115473,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 2880,
+        "sequence": 24,
+        "latitude_deg": 44.865854938593436,
+        "longitude_deg": 10.2064681210027,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.78030451447307,
+        "voltage_v": null,
+        "pressure_pa": 18975.554003343947,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 3000,
+        "sequence": 25,
+        "latitude_deg": 44.85711704831315,
+        "longitude_deg": 10.226947471404912,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.7778950428953,
+        "voltage_v": null,
+        "pressure_pa": 18974.715630901293,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 3120,
+        "sequence": 26,
+        "latitude_deg": 44.848308055001944,
+        "longitude_deg": 10.247369691068172,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.77551530254556,
+        "voltage_v": null,
+        "pressure_pa": 18973.877353616703,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 3240,
+        "sequence": 27,
+        "latitude_deg": 44.839424211664486,
+        "longitude_deg": 10.267718529988741,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.77920283934145,
+        "voltage_v": null,
+        "pressure_pa": 18973.089066829332,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 3360,
+        "sequence": 28,
+        "latitude_deg": 44.830457032289715,
+        "longitude_deg": 10.287970096858999,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.78510004483115,
+        "voltage_v": null,
+        "pressure_pa": 18972.31616466385,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 3480,
+        "sequence": 29,
+        "latitude_deg": 44.82140548402907,
+        "longitude_deg": 10.308122845120494,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.79238316611867,
+        "voltage_v": null,
+        "pressure_pa": 18971.551870705494,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 3600,
+        "sequence": 30,
+        "latitude_deg": 44.812268705050215,
+        "longitude_deg": 10.328175551799006,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.80103300065622,
+        "voltage_v": null,
+        "pressure_pa": 18970.79623164233,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      }
+    ],
+    "contacts": [
+      {
+        "start_s": 0.0,
+        "end_s": 900.0,
+        "receiver_id": "demo-receiver-A",
+        "region": "EU868",
+        "data_rates": [
+          3,
+          5
+        ],
+        "channels_hz": null,
+        "compatible": true,
+        "evidence": "assumed",
+        "source": "Synthetic contact scenario; no real receiver",
+        "loss_probability": 0.2
+      },
+      {
+        "start_s": 1800.0,
+        "end_s": 3600.0,
+        "receiver_id": "demo-receiver-B",
+        "region": "EU868",
+        "data_rates": [
+          4,
+          5
+        ],
+        "channels_hz": null,
+        "compatible": true,
+        "evidence": "assumed",
+        "source": "Synthetic contact scenario; no real receiver",
+        "loss_probability": 0.2
+      }
+    ],
+    "outages": [
+      {
+        "start_s": 300.0,
+        "end_s": 600.0
+      }
+    ],
+    "profiles": [
+      {
+        "start_s": 0.0,
+        "end_s": 3600.0,
+        "name": "Illustrative EU test geofence",
+        "region": "EU868",
+        "south": 40.0,
+        "north": 50.0,
+        "west": 5.0,
+        "east": 15.0,
+        "permission_configured": true,
+        "permission_reference": "DEMO ONLY \u2014 no airborne authorization",
+        "duty_fraction": 0.01,
+        "dwell_limit_ms": null
+      }
+    ],
+    "power": {
+      "battery_initial_j": 1000.0,
+      "battery_capacity_j": 1200.0,
+      "reserve_j": 50.0,
+      "harvest_w": 0.0,
+      "idle_w": 0.002,
+      "tx_w": 0.15,
+      "rx_allowance_j": 0.01,
+      "capacitor_f": 1.0,
+      "initial_voltage_v": 4.5,
+      "max_voltage_v": 5.0,
+      "wake_voltage_v": 4.4,
+      "sleep_voltage_v": 3.5,
+      "charge_w": 0.05,
+      "efficiency": 0.85
+    }
+  },
+  "code": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+    "git_commit": "2523bd5134f2988ed001aa08654c09eb445784f1",
+    "source_files_sha256": {
+      "apps/web/package-lock.json": "3570fb2ba27315fcfd6592ef544ce5cd841cd4b2ad22b390559af1e800aab0ee",
+      "apps/web/src/AltitudeChart.tsx": "ab36d92d997649fd256463e77ef035eef022de61dfe46d8af86ec14f01d1c265",
+      "apps/web/src/App.tsx": "e98719885413c6466c2c2698e22efc3367954fd0619432771fcfb016c5af3259",
+      "apps/web/src/ComparisonPanel.tsx": "82b5ca673048922fb1b0033bb5a0f0fb6bf67f513dec19dbda31b49d9a658798",
+      "apps/web/src/Evidence.tsx": "09b1d529d07a5d23e7722dd5d3fb14b0a9c99af4efea8f789e2477330665b176",
+      "apps/web/src/Fields.tsx": "e368e06dc98327ca7476a701bb71ff9741b4563e0f37c7ad4b6cc8e61654bf3c",
+      "apps/web/src/Inspector.tsx": "ecdc4840d1346f1388ee7bc4460073c266a3431355b5d3ad202225feebe85b0f",
+      "apps/web/src/LazyMap.tsx": "ddcdcee6fff84d6ef5ed3b63de351c00f32146f85da516a3c70c197a0cf32ed1",
+      "apps/web/src/TelemetryPanel.tsx": "7cb734c49c8d6a430dc6c4801c3b6b3a437ad29ebd943cf5dbb07192b5ab86f9",
+      "apps/web/src/TrajectoryMap.tsx": "f0608c28abed3cfec6c6f83012de0324d4141cc429c498030661279381de3f1c",
+      "apps/web/src/WeatherExplorer.tsx": "c2ae8dfdb563dc03084d5178f78ca4cee1427d3db5e0497742e13d4a5eeb9a1f",
+      "apps/web/src/WeatherPanel.tsx": "9c200c7335d6e05e4b4a98617bc106dd40a9c4f5747b6039fe76f0b0e2fa3d1d",
+      "apps/web/src/api.ts": "a75a4243b414a686bb7953a096976327279d0659b9069a42da11e7df2c6e4149",
+      "apps/web/src/main.tsx": "751f954bcf52881a7436ca409175e090d980dcfc492e0c41fe0c39d298633076",
+      "apps/web/src/style.css": "0d45832cebf99fa80078992f7b750d27e70640980a4e471b91c8122b9e1b3aeb",
+      "apps/web/src/types.ts": "72b399ef54eb63835310001712e02ab9ca3f72b05fc8b8a2e422d7ae5a6e0e74",
+      "apps/web/src/useNow.ts": "227022805264ea2c18fe9198c217fb117ef1c665d79bc54732c71e38043033cd",
+      "packages/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "packages/domain/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "packages/domain/integrity.py": "f0752e889d7dcf99b0fd0a07b0efc570a9f5035777c6e6352c19b4c820573051",
+      "packages/domain/models.py": "f8d130afc5d506ce575330cbcb35daa2984435d036b5c6de2c9454211c720975",
+      "packages/flight/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "packages/flight/comparison.py": "784c901eb03fd5aebc3bd6ed61247fd0c3d8f6798e147b0c81c24ce4c9758f78",
+      "packages/flight/geojson.py": "674c2ddde0511955890cf0fdbb0d771724a8d62edc13059fb66b745482e0bceb",
+      "packages/flight/integrator.py": "c5929b8b30c7c66466c24ed1a49c99d5e760ef85b69bcc1ee071645f7bce63e0",
+      "packages/flight/legacy.py": "c7db935d328dab3f9afb5a2bdd484d95890b4399dcd54da5984dc3109ac3784b",
+      "packages/meteo/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "packages/meteo/adaptive.py": "127862ae2bc4bf5b01c1830e09518208eb0d4fba4a3dc6dd28943ceca5e6ad06",
+      "packages/meteo/contours.py": "0c09f05be422f4e0184488f99ef59939a4f9b1d03407e5fd347ebc162c6d19f5",
+      "packages/meteo/explorer.py": "e26cc7f2ef582c2e5b614a036ca0343b7f5d9676b930d44bbf83110759194d3e",
+      "packages/meteo/field.py": "bc544979e8456c8b6eeabfc3ce7e709bd1179f6c0beb30461f47ddab43b9b0d6",
+      "packages/meteo/gfs.py": "6f783d8123c407b3abfc69aa28c2cf21fc2901b346f7bc360a4b5e64f7933863",
+      "packages/telemetry/__init__.py": "eed9f9f4e23de2eb86007a4215d9b3ffb36c12ad5bc274bd3538175d22bde992",
+      "packages/telemetry/archive.py": "a4c92107ab4c1017c707131e5b3dead3c91954df824425172cec6f4872267863",
+      "packages/telemetry/codec.py": "46182275ce80039c8d524a7ecbf9798e7b2f357802560ac0280d779d09ff7e1c",
+      "packages/telemetry/evidence.py": "770d2133767928330a09be6002dc6481d712b7e013d2a55af9e79de34f6ca49a",
+      "packages/telemetry/examples.py": "0178b01fa160047a06124d91a5a097141c6d0d8d1992c168938ebc6aa99cd0e0",
+      "packages/telemetry/models.py": "f0a8b54d4fc3995f0b386b441ba7acf6bd40c7c0859f6ab5018d56ba9bf751aa",
+      "packages/telemetry/radio.py": "856e7736bf2619d078cac9a436e4b0f02d1c608ef48774c2bd6e77ed7cae3326",
+      "packages/telemetry/recovery.py": "255e8e0568d30e3f929d03ad985d0dfa80faf26ace57409976cad1db44afeca3",
+      "pyproject.toml": "f0ed653a9234933c8618083bf2a4adbcb2355923ddadc43223c5e0689b27d15c",
+      "services/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "services/api/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "services/api/main.py": "b9a82f60cbfee643857c0aeb2f3a63b94f9477cd510619ab8ed430615e2ff4eb",
+      "services/api/migrations/env.py": "0ac8df31032b1ed0cd23a886b55494e4e97f55056b7c0177be600a806e9c99b7",
+      "services/api/migrations/versions/0001_foundation.py": "29beafe9fc0f985c7cf1f74fc36567ace39aedd8759d9175abfc8e2efbca8d71",
+      "services/api/provenance.py": "a3ab2781adcdef373bb08d81dc5e5f2bf04d1f55aeb441d16d93ab6cdb2d1cee",
+      "services/api/reference_data.py": "2b1e5c721ccfb3eb86e9773c84c70c728eabcb200e909072a570935a5287eec5",
+      "services/api/storage.py": "fafc47f111131025b77702318d6ac35c025fa13204f6a71209902875029ce50e",
+      "services/api/telemetry.py": "733e0baf62e916a21fcea3265577259a4e333ab8c6a32b671c9b2d853f1a2e61",
+      "services/api/worker.py": "f6e6863061e3c82ca5a2980ec91ccde43852828a344f65615b39793ea60c4166",
+      "uv.lock": "91d03df6cb13e3a414eb36c650b852f04bffbe8e2d5a00442475b959c6d9e3bd"
+    },
+    "source_tree_sha256": "2849fa18d3bd094ff3159409364b5e3715e659298753ec3f156842f5d2c27a4c",
+    "scientific_source_sha256": "57d78da11de04315d4cbfcf8542ff8b18895379cc8f18ef0e83fb9dbdf29e3da",
+    "packages": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "geographiclib": "2.1",
+      "xarray": "2026.9.0",
+      "cfgrib": "0.9.15.1",
+      "eccodes": "2.50.0",
+      "fastapi": "0.141.1",
+      "pydantic": "2.14.1"
+    }
+  },
+  "output_sha256": "f984a1989f4fd176a96a243d79ca72812d7ca9e5e626c8809a8b097003c50bb0",
+  "output": {
+    "schema_version": 1,
+    "quality": "simulated_assumptions_not_measured_reception",
+    "seed": 42,
+    "freshness": {
+      "first_received_position_s": 0.082176,
+      "max_known_position_age_s": 970.1845760000001,
+      "mean_known_position_age_s": 211.77669881820967,
+      "final_position_age_s": 240
+    },
+    "metrics": {
+      "generated_records": 60,
+      "missed_samples_power": 0,
+      "received_records": 51,
+      "received_positions": 25,
+      "unrecovered_records": 9,
+      "sender_pending_records": 0,
+      "retired_unrecovered_records": 9,
+      "peak_sender_backlog": 16,
+      "transmissions": 92,
+      "airtime_s": 8.952831999999999,
+      "radio_energy_j": 2.2629248000000013,
+      "battery_remaining_j": 987.3436178823583,
+      "capacitor_final_v": 5.0,
+      "harvested_j": 0.0,
+      "idle_energy_j": 7.1999999999999345,
+      "unserved_idle_j": 0.0,
+      "conversion_loss_j": 0.81845731764706,
+      "spilled_j": 0.0,
+      "energy_balance_residual_j": -5.229594535194337e-12
+    },
+    "blocked_steps": {
+      "nothing_due": 134,
+      "payload_airtime_outage_region_or_energy_constraint": 30,
+      "regional_cooldown": 14,
+      "no_compatible_contact": 90
+    },
+    "events": [
+      {
+        "time_s": 0.0,
+        "end_s": 0.082176,
+        "family": "NAV+ENV",
+        "region": "EU868",
+        "frequency_hz": 868100000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-A"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-A"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "113f0000000000c0123386e5d430d41194e8d1004a31f992",
+        "application_bytes": 24,
+        "phy_bytes": 37,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          0
+        ],
+        "received": true,
+        "decision": "fresh_position_due"
+      },
+      {
+        "time_s": 10.0,
+        "end_s": 10.082176,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868300000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [],
+        "opportunity_receiver_ids": [
+          "demo-receiver-A"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "120100007ee6c8800ca897b708a8c301a846dd5ce2a8020db8",
+        "application_bytes": 25,
+        "phy_bytes": 38,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          0
+        ],
+        "received": false,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 20.0,
+        "end_s": 20.082176,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868500000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-A"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-A"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "120100007ee6c8800ca897b708a8c301a846dd5ce2a8020db8",
+        "application_bytes": 25,
+        "phy_bytes": 38,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          0
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 60.0,
+        "end_s": 60.082176,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868100000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-A"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-A"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201780214feffff0ffeffff0fffff03904effff03feffff0fa755",
+        "application_bytes": 27,
+        "phy_bytes": 40,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          1
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 70.0,
+        "end_s": 70.082176,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868300000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-A"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-A"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201780214feffff0ffeffff0fffff03904effff03feffff0fa755",
+        "application_bytes": 27,
+        "phy_bytes": 40,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          1
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 120.0,
+        "end_s": 120.082176,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868500000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-A"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-A"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201f001047ea0bf800c96a7b708a8c301904edd5ce0a802b9a4",
+        "application_bytes": 26,
+        "phy_bytes": 39,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          2
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 130.0,
+        "end_s": 130.082176,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868100000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-A"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-A"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201f001047ea0bf800c96a7b708a8c301904edd5ce0a802b9a4",
+        "application_bytes": 26,
+        "phy_bytes": 39,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          2
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 180.0,
+        "end_s": 180.087296,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868300000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [],
+        "opportunity_receiver_ids": [
+          "demo-receiver-A"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201e8020614feffff0ffeffff0fffff03904effff03feffff0f237e",
+        "application_bytes": 28,
+        "phy_bytes": 41,
+        "airtime_s": 0.087296,
+        "energy_j": 0.0230944,
+        "record_indices": [
+          3
+        ],
+        "received": false,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 190.0,
+        "end_s": 190.087296,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868500000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-A"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-A"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201e8020614feffff0ffeffff0fffff03904effff03feffff0f237e",
+        "application_bytes": 28,
+        "phy_bytes": 41,
+        "airtime_s": 0.087296,
+        "energy_j": 0.0230944,
+        "record_indices": [
+          3
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 240.0,
+        "end_s": 240.082176,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868100000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [],
+        "opportunity_receiver_ids": [
+          "demo-receiver-A"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201e003087ec8b5800cfeb6b708a8c301904edb5ce0a8024ee8",
+        "application_bytes": 26,
+        "phy_bytes": 39,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          4
+        ],
+        "received": false,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 250.0,
+        "end_s": 250.082176,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868300000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-A"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-A"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201e003087ec8b5800cfeb6b708a8c301904edb5ce0a8024ee8",
+        "application_bytes": 26,
+        "phy_bytes": 39,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          4
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 600.0,
+        "end_s": 600.082176,
+        "family": "NAV+ENV",
+        "region": "EU868",
+        "frequency_hz": 868500000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-A"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-A"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "113f000a000258c005e986f98530d41388e8d3004a2ec476",
+        "application_bytes": 24,
+        "phy_bytes": 37,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          10
+        ],
+        "received": true,
+        "decision": "fresh_position_due"
+      },
+      {
+        "time_s": 610.0,
+        "end_s": 610.184576,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868100000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [],
+        "opportunity_receiver_ids": [
+          "demo-receiver-A"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1204d8040a14feffff0ffeffff0fffff03904effff03feffff0f78026a9dd4ff039fb9c807a8c30500a4a3039fd7fd0f7802699ed4ff03a0b9c807a7c30500a3a303a0d7fd0f78026a9bdeff03c5a9c807a8c30500a6a303a1d7fd0fee52",
+        "application_bytes": 94,
+        "phy_bytes": 107,
+        "airtime_s": 0.184576,
+        "energy_j": 0.037686399999999995,
+        "record_indices": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "received": false,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 630.0,
+        "end_s": 630.184576,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868300000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [],
+        "opportunity_receiver_ids": [
+          "demo-receiver-A"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1204d8040a14feffff0ffeffff0fffff03904effff03feffff0f78026a9dd4ff039fb9c807a8c30500a4a3039fd7fd0f7802699ed4ff03a0b9c807a7c30500a3a303a0d7fd0f78026a9bdeff03c5a9c807a8c30500a6a303a1d7fd0fee52",
+        "application_bytes": 94,
+        "phy_bytes": 107,
+        "airtime_s": 0.184576,
+        "energy_j": 0.037686399999999995,
+        "record_indices": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "received": false,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 650.0,
+        "end_s": 650.118016,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868500000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-A"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-A"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1202b8081214feffff0ffeffff0fffff03904effff03feffff0f78026aabe8ff03f399c807a8c30500a6a303a1d7fd0f16e3",
+        "application_bytes": 50,
+        "phy_bytes": 63,
+        "airtime_s": 0.118016,
+        "energy_j": 0.027702400000000002,
+        "record_indices": [
+          9,
+          10
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 670.0,
+        "end_s": 670.148736,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868100000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-A"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-A"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1203b8081214feffff0ffeffff0fffff03904effff03feffff0f78026aabe8ff03f399c807a8c30500a6a303a1d7fd0f780269ace8ff03f499c807a7c30500a5a303a2d7fd0fe17b",
+        "application_bytes": 72,
+        "phy_bytes": 85,
+        "airtime_s": 0.148736,
+        "energy_j": 0.0323104,
+        "record_indices": [
+          9,
+          10,
+          11
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 690.0,
+        "end_s": 690.087296,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868300000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-A"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-A"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201a80a1614feffff0ffeffff0fffff03904effff03feffff0f976e",
+        "application_bytes": 28,
+        "phy_bytes": 41,
+        "airtime_s": 0.087296,
+        "energy_j": 0.0230944,
+        "record_indices": [
+          11
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 720.0,
+        "end_s": 720.082176,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868500000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-A"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-A"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201a00b187eac8d800cd4f5b708a8c301904ed95cdaa8023797",
+        "application_bytes": 26,
+        "phy_bytes": 39,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          12
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 730.0,
+        "end_s": 730.082176,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868100000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-A"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-A"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201a00b187eac8d800cd4f5b708a8c301904ed95cdaa8023797",
+        "application_bytes": 26,
+        "phy_bytes": 39,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          12
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 780.0,
+        "end_s": 780.087296,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868300000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [],
+        "opportunity_receiver_ids": [
+          "demo-receiver-A"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201980c1a14feffff0ffeffff0fffff03904effff03feffff0fe062",
+        "application_bytes": 28,
+        "phy_bytes": 41,
+        "airtime_s": 0.087296,
+        "energy_j": 0.0230944,
+        "record_indices": [
+          13
+        ],
+        "received": false,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 790.0,
+        "end_s": 790.087296,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868500000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-A"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-A"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201980c1a14feffff0ffeffff0fffff03904effff03feffff0fe062",
+        "application_bytes": 28,
+        "phy_bytes": 41,
+        "airtime_s": 0.087296,
+        "energy_j": 0.0230944,
+        "record_indices": [
+          13
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 840.0,
+        "end_s": 840.082176,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868100000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-A"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-A"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201900d1c7ef482800c9a85b808a8c301904ed95cdaa8025e2b",
+        "application_bytes": 26,
+        "phy_bytes": 39,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          14
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 850.0,
+        "end_s": 850.082176,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868300000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-A"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-A"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201900d1c7ef482800c9a85b808a8c301904ed95cdaa8025e2b",
+        "application_bytes": 26,
+        "phy_bytes": 39,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          14
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 1800.0,
+        "end_s": 1800.082176,
+        "family": "NAV+ENV",
+        "region": "EU868",
+        "frequency_hz": 868500000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "113f001e000708bfea8987201030d41388e8d1004a27c481",
+        "application_bytes": 24,
+        "phy_bytes": 37,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          30
+        ],
+        "received": false,
+        "decision": "fresh_position_due"
+      },
+      {
+        "time_s": 1810.0,
+        "end_s": 1810.184576,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868100000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1204880e1e14feffff0ffeffff0fffff03904effff03feffff0f78026ad5878004a3ebc707a8c30500a6a303a5d7fd0f780269d6878004a4ebc707a7c30500a5a303a6d7fd0f78026ab3928004e7dbc707a8c30500a6a303a7d7fd0fd766",
+        "application_bytes": 94,
+        "phy_bytes": 107,
+        "airtime_s": 0.184576,
+        "energy_j": 0.037686399999999995,
+        "record_indices": [
+          15,
+          16,
+          17,
+          18
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 1830.0,
+        "end_s": 1830.184576,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868300000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1204880e1e14feffff0ffeffff0fffff03904effff03feffff0f78026ad5878004a3ebc707a8c30500a6a303a5d7fd0f780269d6878004a4ebc707a7c30500a5a303a6d7fd0f78026ab3928004e7dbc707a8c30500a6a303a7d7fd0fd766",
+        "application_bytes": 94,
+        "phy_bytes": 107,
+        "airtime_s": 0.184576,
+        "energy_j": 0.037686399999999995,
+        "record_indices": [
+          15,
+          16,
+          17,
+          18
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 1850.0,
+        "end_s": 1850.184576,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868500000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1204e8112614feffff0ffeffff0fffff03904effff03feffff0f78026aa59d8004b1ccc707a8c30500a6a303a7d7fd0f780269a69d8004b2ccc707a7c30500a5a303a8d7fd0f78026aa9a88004ffbcc707a8c30500a6a303a9d7fd0f571c",
+        "application_bytes": 94,
+        "phy_bytes": 107,
+        "airtime_s": 0.184576,
+        "energy_j": 0.037686399999999995,
+        "record_indices": [
+          19,
+          20,
+          21,
+          22
+        ],
+        "received": false,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 1870.0,
+        "end_s": 1870.184576,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868100000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1204e8112614feffff0ffeffff0fffff03904effff03feffff0f78026aa59d8004b1ccc707a8c30500a6a303a7d7fd0f780269a69d8004b2ccc707a7c30500a5a303a8d7fd0f78026aa9a88004ffbcc707a8c30500a6a303a9d7fd0f571c",
+        "application_bytes": 94,
+        "phy_bytes": 107,
+        "airtime_s": 0.184576,
+        "energy_j": 0.037686399999999995,
+        "record_indices": [
+          19,
+          20,
+          21,
+          22
+        ],
+        "received": false,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 1890.0,
+        "end_s": 1890.184576,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868300000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1204c8152e14feffff0ffeffff0fffff03904effff03feffff0f78026abfb38004cfadc707a8c30500a4a303abd7fd0f780269c0b38004d0adc707a7c30500a3a303acd7fd0f78026ae7be8004a59ec707a8c30500a4a303abd7fd0f370b",
+        "application_bytes": 94,
+        "phy_bytes": 107,
+        "airtime_s": 0.184576,
+        "energy_j": 0.037686399999999995,
+        "record_indices": [
+          23,
+          24,
+          25,
+          26
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 1910.0,
+        "end_s": 1910.184576,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868500000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1204c8152e14feffff0ffeffff0fffff03904effff03feffff0f78026abfb38004cfadc707a8c30500a4a303abd7fd0f780269c0b38004d0adc707a7c30500a3a303acd7fd0f78026ae7be8004a59ec707a8c30500a4a303abd7fd0f370b",
+        "application_bytes": 94,
+        "phy_bytes": 107,
+        "airtime_s": 0.184576,
+        "energy_j": 0.037686399999999995,
+        "record_indices": [
+          23,
+          24,
+          25,
+          26
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 1930.0,
+        "end_s": 1930.184576,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868100000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1204a8193614feffff0ffeffff0fffff03904effff03feffff0f78026aa1ca8004ff8ec707a8c30500a4a303add7fd0f780269a2ca8004808fc707a7c30500a3a303aed7fd0f78026aebd58004ddffc607a8c30500a2a303afd7fd0fe50c",
+        "application_bytes": 94,
+        "phy_bytes": 107,
+        "airtime_s": 0.184576,
+        "energy_j": 0.037686399999999995,
+        "record_indices": [
+          27,
+          28,
+          29,
+          30
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 1950.0,
+        "end_s": 1950.184576,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868300000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1204a8193614feffff0ffeffff0fffff03904effff03feffff0f78026aa1ca8004ff8ec707a8c30500a4a303add7fd0f780269a2ca8004808fc707a7c30500a3a303aed7fd0f78026aebd58004ddffc607a8c30500a2a303afd7fd0fe50c",
+        "application_bytes": 94,
+        "phy_bytes": 107,
+        "airtime_s": 0.184576,
+        "energy_j": 0.037686399999999995,
+        "record_indices": [
+          27,
+          28,
+          29,
+          30
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 1970.0,
+        "end_s": 1970.118016,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868500000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1202881d3e14feffff0ffeffff0fffff03904effff03feffff0f78026ac5e18004bff0c607a8c30500a2a303b1d7fd0fd3bb",
+        "application_bytes": 50,
+        "phy_bytes": 63,
+        "airtime_s": 0.118016,
+        "energy_j": 0.027702400000000002,
+        "record_indices": [
+          31,
+          32
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 1990.0,
+        "end_s": 1990.148736,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868100000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1203881d3e14feffff0ffeffff0fffff03904effff03feffff0f78026ac5e18004bff0c607a8c30500a2a303b1d7fd0f780269c6e18004c0f0c607a7c30500a1a303b2d7fd0f7571",
+        "application_bytes": 72,
+        "phy_bytes": 85,
+        "airtime_s": 0.148736,
+        "energy_j": 0.0323104,
+        "record_indices": [
+          31,
+          32,
+          33
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 2010.0,
+        "end_s": 2010.087296,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868300000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201f81e4214feffff0ffeffff0fffff03904effff03feffff0fbd76",
+        "application_bytes": 28,
+        "phy_bytes": 41,
+        "airtime_s": 0.087296,
+        "energy_j": 0.0230944,
+        "record_indices": [
+          33
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 2040.0,
+        "end_s": 2040.082176,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868500000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201f01f447ed092ff0bd89eb908a8c301904edd5ccaa8028abf",
+        "application_bytes": 26,
+        "phy_bytes": 39,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          34
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 2050.0,
+        "end_s": 2050.082176,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868100000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201f01f447ed092ff0bd89eb908a8c301904edd5ccaa8028abf",
+        "application_bytes": 26,
+        "phy_bytes": 39,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          34
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 2100.0,
+        "end_s": 2100.082176,
+        "family": "NAV+ENV",
+        "region": "EU868",
+        "frequency_hz": 868300000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "113f00220007f8bfe4a88727ac30d41388e8d1004a258229",
+        "application_bytes": 24,
+        "phy_bytes": 37,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          34
+        ],
+        "received": true,
+        "decision": "fresh_position_due"
+      },
+      {
+        "time_s": 2110.0,
+        "end_s": 2110.087296,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868500000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201e8204614feffff0ffeffff0fffff03904effff03feffff0f5cde",
+        "application_bytes": 28,
+        "phy_bytes": 41,
+        "airtime_s": 0.087296,
+        "energy_j": 0.0230944,
+        "record_indices": [
+          35
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 2120.0,
+        "end_s": 2120.087296,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868100000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201e8204614feffff0ffeffff0fffff03904effff03feffff0f5cde",
+        "application_bytes": 28,
+        "phy_bytes": 41,
+        "airtime_s": 0.087296,
+        "energy_j": 0.0230944,
+        "record_indices": [
+          35
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 2160.0,
+        "end_s": 2160.082176,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868300000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201e021487ed686ff0becadb908a8c301904edd5ccaa802c373",
+        "application_bytes": 26,
+        "phy_bytes": 39,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          36
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 2170.0,
+        "end_s": 2170.082176,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868500000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201e021487ed686ff0becadb908a8c301904edd5ccaa802c373",
+        "application_bytes": 26,
+        "phy_bytes": 39,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          36
+        ],
+        "received": false,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 2220.0,
+        "end_s": 2220.087296,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868100000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201d8224a14feffff0ffeffff0fffff03904effff03feffff0fafdf",
+        "application_bytes": 28,
+        "phy_bytes": 41,
+        "airtime_s": 0.087296,
+        "energy_j": 0.0230944,
+        "record_indices": [
+          37
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 2230.0,
+        "end_s": 2230.087296,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868300000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201d8224a14feffff0ffeffff0fffff03904effff03feffff0fafdf",
+        "application_bytes": 28,
+        "phy_bytes": 41,
+        "airtime_s": 0.087296,
+        "energy_j": 0.0230944,
+        "record_indices": [
+          37
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 2280.0,
+        "end_s": 2280.082176,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868500000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201d0234c7ecefafe0bfebcb908a8c301904edf5cc8a80205b3",
+        "application_bytes": 26,
+        "phy_bytes": 39,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          38
+        ],
+        "received": false,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 2290.0,
+        "end_s": 2290.082176,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868100000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201d0234c7ecefafe0bfebcb908a8c301904edf5cc8a80205b3",
+        "application_bytes": 26,
+        "phy_bytes": 39,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          38
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 2340.0,
+        "end_s": 2340.087296,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868300000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201c8244e14feffff0ffeffff0fffff03904effff03feffff0f06d6",
+        "application_bytes": 28,
+        "phy_bytes": 41,
+        "airtime_s": 0.087296,
+        "energy_j": 0.0230944,
+        "record_indices": [
+          39
+        ],
+        "received": false,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 2350.0,
+        "end_s": 2350.087296,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868500000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201c8244e14feffff0ffeffff0fffff03904effff03feffff0f06d6",
+        "application_bytes": 28,
+        "phy_bytes": 41,
+        "airtime_s": 0.087296,
+        "energy_j": 0.0230944,
+        "record_indices": [
+          39
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 2400.0,
+        "end_s": 2400.082176,
+        "family": "NAV+ENV",
+        "region": "EU868",
+        "frequency_hz": 868100000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "113f0028000960bfdb9c87330530d41388e8d0004a2375b1",
+        "application_bytes": 24,
+        "phy_bytes": 37,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          40
+        ],
+        "received": true,
+        "decision": "fresh_position_due"
+      },
+      {
+        "time_s": 2410.0,
+        "end_s": 2410.082176,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868300000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201c025507eb8eefe0b8accb908a8c301904edf5cc6a8023258",
+        "application_bytes": 26,
+        "phy_bytes": 39,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          40
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 2420.0,
+        "end_s": 2420.082176,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868500000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201c025507eb8eefe0b8accb908a8c301904edf5cc6a8023258",
+        "application_bytes": 26,
+        "phy_bytes": 39,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          40
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 2460.0,
+        "end_s": 2460.087296,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868100000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201b8265214feffff0ffeffff0fffff03904effff03feffff0f59fc",
+        "application_bytes": 28,
+        "phy_bytes": 41,
+        "airtime_s": 0.087296,
+        "energy_j": 0.0230944,
+        "record_indices": [
+          41
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 2470.0,
+        "end_s": 2470.087296,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868300000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201b8265214feffff0ffeffff0fffff03904effff03feffff0f59fc",
+        "application_bytes": 28,
+        "phy_bytes": 41,
+        "airtime_s": 0.087296,
+        "energy_j": 0.0230944,
+        "record_indices": [
+          41
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 2520.0,
+        "end_s": 2520.082176,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868500000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201b027547e92e2fe0b92dbb908a8c301904edf5cc4a802f2c3",
+        "application_bytes": 26,
+        "phy_bytes": 39,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          42
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 2530.0,
+        "end_s": 2530.082176,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868100000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201b027547e92e2fe0b92dbb908a8c301904edf5cc4a802f2c3",
+        "application_bytes": 26,
+        "phy_bytes": 39,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          42
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 2580.0,
+        "end_s": 2580.087296,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868300000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201a8285614feffff0ffeffff0fffff03904effff03feffff0fe8ce",
+        "application_bytes": 28,
+        "phy_bytes": 41,
+        "airtime_s": 0.087296,
+        "energy_j": 0.0230944,
+        "record_indices": [
+          43
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 2590.0,
+        "end_s": 2590.087296,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868500000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201a8285614feffff0ffeffff0fffff03904effff03feffff0fe8ce",
+        "application_bytes": 28,
+        "phy_bytes": 41,
+        "airtime_s": 0.087296,
+        "energy_j": 0.0230944,
+        "record_indices": [
+          43
+        ],
+        "received": false,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 2640.0,
+        "end_s": 2640.082176,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868100000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201a029587ee0d5fe0b94eab908a8c301904edf5cc2a802acd9",
+        "application_bytes": 26,
+        "phy_bytes": 39,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          44
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 2650.0,
+        "end_s": 2650.082176,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868300000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201a029587ee0d5fe0b94eab908a8c301904edf5cc2a802acd9",
+        "application_bytes": 26,
+        "phy_bytes": 39,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          44
+        ],
+        "received": false,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 2700.0,
+        "end_s": 2700.082176,
+        "family": "NAV+ENV",
+        "region": "EU868",
+        "frequency_hz": 868500000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "113f002c000a50bfd570873a8a30d41388e8d0004a21ad75",
+        "application_bytes": 24,
+        "phy_bytes": 37,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          44
+        ],
+        "received": true,
+        "decision": "fresh_position_due"
+      },
+      {
+        "time_s": 2710.0,
+        "end_s": 2710.087296,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868100000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201982a5a14feffff0ffeffff0fffff03904effff03feffff0f1bcf",
+        "application_bytes": 28,
+        "phy_bytes": 41,
+        "airtime_s": 0.087296,
+        "energy_j": 0.0230944,
+        "record_indices": [
+          45
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 2720.0,
+        "end_s": 2720.087296,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868300000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201982a5a14feffff0ffeffff0fffff03904effff03feffff0f1bcf",
+        "application_bytes": 28,
+        "phy_bytes": 41,
+        "airtime_s": 0.087296,
+        "energy_j": 0.0230944,
+        "record_indices": [
+          45
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 2760.0,
+        "end_s": 2760.082176,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868500000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201902b5c7e9ec9fe0b94f9b908a8c301904ee15cc0a802b5a9",
+        "application_bytes": 26,
+        "phy_bytes": 39,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          46
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 2770.0,
+        "end_s": 2770.082176,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868100000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201902b5c7e9ec9fe0b94f9b908a8c301904ee15cc0a802b5a9",
+        "application_bytes": 26,
+        "phy_bytes": 39,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          46
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 2820.0,
+        "end_s": 2820.087296,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868300000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201882c5e14feffff0ffeffff0fffff03904effff03feffff0fb2c6",
+        "application_bytes": 28,
+        "phy_bytes": 41,
+        "airtime_s": 0.087296,
+        "energy_j": 0.0230944,
+        "record_indices": [
+          47
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 2830.0,
+        "end_s": 2830.087296,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868500000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201882c5e14feffff0ffeffff0fffff03904effff03feffff0fb2c6",
+        "application_bytes": 28,
+        "phy_bytes": 41,
+        "airtime_s": 0.087296,
+        "energy_j": 0.0230944,
+        "record_indices": [
+          47
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 2880.0,
+        "end_s": 2880.082176,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868100000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201802d607ecebcfe0b8e88ba08a8c301904ee15cc0a802f8ba",
+        "application_bytes": 26,
+        "phy_bytes": 39,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          48
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 2890.0,
+        "end_s": 2890.082176,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868300000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201802d607ecebcfe0b8e88ba08a8c301904ee15cc0a802f8ba",
+        "application_bytes": 26,
+        "phy_bytes": 39,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          48
+        ],
+        "received": false,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 2940.0,
+        "end_s": 2940.087296,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868500000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201f82d6214feffff0ffeffff0fffff03904effff03feffff0f285c",
+        "application_bytes": 28,
+        "phy_bytes": 41,
+        "airtime_s": 0.087296,
+        "energy_j": 0.0230944,
+        "record_indices": [
+          49
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 2950.0,
+        "end_s": 2950.087296,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868100000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201f82d6214feffff0ffeffff0fffff03904effff03feffff0f285c",
+        "application_bytes": 28,
+        "phy_bytes": 41,
+        "airtime_s": 0.087296,
+        "energy_j": 0.0230944,
+        "record_indices": [
+          49
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 3000.0,
+        "end_s": 3000.082176,
+        "family": "NAV+ENV",
+        "region": "EU868",
+        "frequency_hz": 868300000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "113f0032000bb8bfcbf98745c130d41388e8cf004a1f56b5",
+        "application_bytes": 24,
+        "phy_bytes": 37,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          50
+        ],
+        "received": true,
+        "decision": "fresh_position_due"
+      },
+      {
+        "time_s": 3010.0,
+        "end_s": 3010.082176,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868500000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201f02e647ef2affe0b8297ba08a8c301904ee15cbea8026912",
+        "application_bytes": 26,
+        "phy_bytes": 39,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          50
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 3020.0,
+        "end_s": 3020.082176,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868100000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201f02e647ef2affe0b8297ba08a8c301904ee15cbea8026912",
+        "application_bytes": 26,
+        "phy_bytes": 39,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          50
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 3060.0,
+        "end_s": 3060.087296,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868300000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201e82f6614feffff0ffeffff0fffff03904effff03feffff0f0558",
+        "application_bytes": 28,
+        "phy_bytes": 41,
+        "airtime_s": 0.087296,
+        "energy_j": 0.0230944,
+        "record_indices": [
+          51
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 3070.0,
+        "end_s": 3070.087296,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868500000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201e82f6614feffff0ffeffff0fffff03904effff03feffff0f0558",
+        "application_bytes": 28,
+        "phy_bytes": 41,
+        "airtime_s": 0.087296,
+        "energy_j": 0.0230944,
+        "record_indices": [
+          51
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 3120.0,
+        "end_s": 3120.082176,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868100000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201e030687e88a3fe0bf2a5ba08a8c301904ee15cbca802b41a",
+        "application_bytes": 26,
+        "phy_bytes": 39,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          52
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 3130.0,
+        "end_s": 3130.082176,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868300000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201e030687e88a3fe0bf2a5ba08a8c301904ee15cbca802b41a",
+        "application_bytes": 26,
+        "phy_bytes": 39,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          52
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 3180.0,
+        "end_s": 3180.087296,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868500000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201d8316a14feffff0ffeffff0fffff03904effff03feffff0f5a19",
+        "application_bytes": 28,
+        "phy_bytes": 41,
+        "airtime_s": 0.087296,
+        "energy_j": 0.0230944,
+        "record_indices": [
+          53
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 3190.0,
+        "end_s": 3190.087296,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868100000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201d8316a14feffff0ffeffff0fffff03904effff03feffff0f5a19",
+        "application_bytes": 28,
+        "phy_bytes": 41,
+        "airtime_s": 0.087296,
+        "energy_j": 0.0230944,
+        "record_indices": [
+          53
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 3240.0,
+        "end_s": 3240.082176,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868300000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201d0326c7e9096fe0bdab4ba08a8c301904ee15cbaa802ebda",
+        "application_bytes": 26,
+        "phy_bytes": 39,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          54
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 3250.0,
+        "end_s": 3250.082176,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868500000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201d0326c7e9096fe0bdab4ba08a8c301904ee15cbaa802ebda",
+        "application_bytes": 26,
+        "phy_bytes": 39,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          54
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 3300.0,
+        "end_s": 3300.082176,
+        "family": "NAV+ENV",
+        "region": "EU868",
+        "frequency_hz": 868100000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "113f0036000ca8bfc588874d2d30d41388e8cf004a1d41fc",
+        "application_bytes": 24,
+        "phy_bytes": 37,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          54
+        ],
+        "received": true,
+        "decision": "fresh_position_due"
+      },
+      {
+        "time_s": 3310.0,
+        "end_s": 3310.087296,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868300000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201c8336e14feffff0ffeffff0fffff03904effff03feffff0f771d",
+        "application_bytes": 28,
+        "phy_bytes": 41,
+        "airtime_s": 0.087296,
+        "energy_j": 0.0230944,
+        "record_indices": [
+          55
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 3320.0,
+        "end_s": 3320.087296,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868500000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201c8336e14feffff0ffeffff0fffff03904effff03feffff0f771d",
+        "application_bytes": 28,
+        "phy_bytes": 41,
+        "airtime_s": 0.087296,
+        "energy_j": 0.0230944,
+        "record_indices": [
+          55
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 3360.0,
+        "end_s": 3360.082176,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868100000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201c034707e8889fe0bbac3ba08a8c301904edf5cb8a802d2b1",
+        "application_bytes": 26,
+        "phy_bytes": 39,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          56
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 3370.0,
+        "end_s": 3370.082176,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868300000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201c034707e8889fe0bbac3ba08a8c301904edf5cb8a802d2b1",
+        "application_bytes": 26,
+        "phy_bytes": 39,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          56
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 3420.0,
+        "end_s": 3420.087296,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868500000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201b8357214feffff0ffeffff0fffff03904effff03feffff0fac3a",
+        "application_bytes": 28,
+        "phy_bytes": 41,
+        "airtime_s": 0.087296,
+        "energy_j": 0.0230944,
+        "record_indices": [
+          57
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 3430.0,
+        "end_s": 3430.087296,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868100000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201b8357214feffff0ffeffff0fffff03904effff03feffff0fac3a",
+        "application_bytes": 28,
+        "phy_bytes": 41,
+        "airtime_s": 0.087296,
+        "energy_j": 0.0230944,
+        "record_indices": [
+          57
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 3480.0,
+        "end_s": 3480.082176,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868300000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201b036747ef0fbfd0b90d2ba08a8c301904edf5cb8a802f0ee",
+        "application_bytes": 26,
+        "phy_bytes": 39,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          58
+        ],
+        "received": false,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 3490.0,
+        "end_s": 3490.082176,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868500000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201b036747ef0fbfd0b90d2ba08a8c301904edf5cb8a802f0ee",
+        "application_bytes": 26,
+        "phy_bytes": 39,
+        "airtime_s": 0.082176,
+        "energy_j": 0.0223264,
+        "record_indices": [
+          58
+        ],
+        "received": false,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 3540.0,
+        "end_s": 3540.087296,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868100000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201a8377614feffff0ffeffff0fffff03904effff03feffff0f813e",
+        "application_bytes": 28,
+        "phy_bytes": 41,
+        "airtime_s": 0.087296,
+        "energy_j": 0.0230944,
+        "record_indices": [
+          59
+        ],
+        "received": false,
+        "decision": "priority_history_fixed_repeat_policy"
+      },
+      {
+        "time_s": 3550.0,
+        "end_s": 3550.087296,
+        "family": "HISTORY",
+        "region": "EU868",
+        "frequency_hz": 868300000,
+        "profile": "Illustrative EU test geofence",
+        "receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "opportunity_receiver_ids": [
+          "demo-receiver-B"
+        ],
+        "contact_evidence": [
+          "assumed"
+        ],
+        "data_rate": 5,
+        "sf": 7,
+        "bandwidth_hz": 125000,
+        "packet_hex": "1201a8377614feffff0ffeffff0fffff03904effff03feffff0f813e",
+        "application_bytes": 28,
+        "phy_bytes": 41,
+        "airtime_s": 0.087296,
+        "energy_j": 0.0230944,
+        "record_indices": [
+          59
+        ],
+        "received": true,
+        "decision": "priority_history_fixed_repeat_policy"
+      }
+    ],
+    "timeline": [
+      {
+        "time_s": 0.0,
+        "pending_records": 1,
+        "received_records": 0,
+        "battery_j": 1000.0,
+        "capacitor_v": 4.5
+      },
+      {
+        "time_s": 10.0,
+        "pending_records": 1,
+        "received_records": 1,
+        "battery_j": 999.48,
+        "capacitor_v": 4.5886105958122005
+      },
+      {
+        "time_s": 20.0,
+        "pending_records": 1,
+        "received_records": 1,
+        "battery_j": 998.96,
+        "capacitor_v": 4.675542150382135
+      },
+      {
+        "time_s": 30.0,
+        "pending_records": 0,
+        "received_records": 1,
+        "battery_j": 998.44,
+        "capacitor_v": 4.760886640112322
+      },
+      {
+        "time_s": 40.0,
+        "pending_records": 0,
+        "received_records": 1,
+        "battery_j": 997.9200000000001,
+        "capacitor_v": 4.849334139858791
+      },
+      {
+        "time_s": 50.0,
+        "pending_records": 0,
+        "received_records": 1,
+        "battery_j": 997.4000000000001,
+        "capacitor_v": 4.93619707872366
+      },
+      {
+        "time_s": 60.0,
+        "pending_records": 1,
+        "received_records": 1,
+        "battery_j": 997.0070832941177,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 70.0,
+        "pending_records": 1,
+        "received_records": 2,
+        "battery_j": 996.9608169411765,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 80.0,
+        "pending_records": 0,
+        "received_records": 2,
+        "battery_j": 996.9145505882353,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 90.0,
+        "pending_records": 0,
+        "received_records": 2,
+        "battery_j": 996.8945505882353,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 100.0,
+        "pending_records": 0,
+        "received_records": 2,
+        "battery_j": 996.8745505882354,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 110.0,
+        "pending_records": 0,
+        "received_records": 2,
+        "battery_j": 996.8545505882354,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 120.0,
+        "pending_records": 1,
+        "received_records": 2,
+        "battery_j": 996.8345505882354,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 130.0,
+        "pending_records": 1,
+        "received_records": 3,
+        "battery_j": 996.7882842352942,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 140.0,
+        "pending_records": 0,
+        "received_records": 3,
+        "battery_j": 996.742017882353,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 150.0,
+        "pending_records": 0,
+        "received_records": 3,
+        "battery_j": 996.722017882353,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 160.0,
+        "pending_records": 0,
+        "received_records": 3,
+        "battery_j": 996.7020178823531,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 170.0,
+        "pending_records": 0,
+        "received_records": 3,
+        "battery_j": 996.6820178823531,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 180.0,
+        "pending_records": 1,
+        "received_records": 3,
+        "battery_j": 996.6620178823531,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 190.0,
+        "pending_records": 1,
+        "received_records": 3,
+        "battery_j": 996.6148480000002,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 200.0,
+        "pending_records": 0,
+        "received_records": 4,
+        "battery_j": 996.5676781176472,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 210.0,
+        "pending_records": 0,
+        "received_records": 4,
+        "battery_j": 996.5476781176473,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 220.0,
+        "pending_records": 0,
+        "received_records": 4,
+        "battery_j": 996.5276781176473,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 230.0,
+        "pending_records": 0,
+        "received_records": 4,
+        "battery_j": 996.5076781176473,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 240.0,
+        "pending_records": 1,
+        "received_records": 4,
+        "battery_j": 996.4876781176473,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 250.0,
+        "pending_records": 1,
+        "received_records": 4,
+        "battery_j": 996.4414117647061,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 260.0,
+        "pending_records": 0,
+        "received_records": 5,
+        "battery_j": 996.3951454117649,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 270.0,
+        "pending_records": 0,
+        "received_records": 5,
+        "battery_j": 996.375145411765,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 280.0,
+        "pending_records": 0,
+        "received_records": 5,
+        "battery_j": 996.355145411765,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 290.0,
+        "pending_records": 0,
+        "received_records": 5,
+        "battery_j": 996.335145411765,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 300.0,
+        "pending_records": 1,
+        "received_records": 5,
+        "battery_j": 996.315145411765,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 310.0,
+        "pending_records": 1,
+        "received_records": 5,
+        "battery_j": 996.295145411765,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 320.0,
+        "pending_records": 1,
+        "received_records": 5,
+        "battery_j": 996.275145411765,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 330.0,
+        "pending_records": 1,
+        "received_records": 5,
+        "battery_j": 996.255145411765,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 340.0,
+        "pending_records": 1,
+        "received_records": 5,
+        "battery_j": 996.2351454117651,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 350.0,
+        "pending_records": 1,
+        "received_records": 5,
+        "battery_j": 996.2151454117651,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 360.0,
+        "pending_records": 2,
+        "received_records": 5,
+        "battery_j": 996.1951454117651,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 370.0,
+        "pending_records": 2,
+        "received_records": 5,
+        "battery_j": 996.1751454117651,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 380.0,
+        "pending_records": 2,
+        "received_records": 5,
+        "battery_j": 996.1551454117651,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 390.0,
+        "pending_records": 2,
+        "received_records": 5,
+        "battery_j": 996.1351454117652,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 400.0,
+        "pending_records": 2,
+        "received_records": 5,
+        "battery_j": 996.1151454117652,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 410.0,
+        "pending_records": 2,
+        "received_records": 5,
+        "battery_j": 996.0951454117652,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 420.0,
+        "pending_records": 3,
+        "received_records": 5,
+        "battery_j": 996.0751454117652,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 430.0,
+        "pending_records": 3,
+        "received_records": 5,
+        "battery_j": 996.0551454117652,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 440.0,
+        "pending_records": 3,
+        "received_records": 5,
+        "battery_j": 996.0351454117653,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 450.0,
+        "pending_records": 3,
+        "received_records": 5,
+        "battery_j": 996.0151454117653,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 460.0,
+        "pending_records": 3,
+        "received_records": 5,
+        "battery_j": 995.9951454117653,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 470.0,
+        "pending_records": 3,
+        "received_records": 5,
+        "battery_j": 995.9751454117653,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 480.0,
+        "pending_records": 4,
+        "received_records": 5,
+        "battery_j": 995.9551454117653,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 490.0,
+        "pending_records": 4,
+        "received_records": 5,
+        "battery_j": 995.9351454117653,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 500.0,
+        "pending_records": 4,
+        "received_records": 5,
+        "battery_j": 995.9151454117654,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 510.0,
+        "pending_records": 4,
+        "received_records": 5,
+        "battery_j": 995.8951454117654,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 520.0,
+        "pending_records": 4,
+        "received_records": 5,
+        "battery_j": 995.8751454117654,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 530.0,
+        "pending_records": 4,
+        "received_records": 5,
+        "battery_j": 995.8551454117654,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 540.0,
+        "pending_records": 5,
+        "received_records": 5,
+        "battery_j": 995.8351454117654,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 550.0,
+        "pending_records": 5,
+        "received_records": 5,
+        "battery_j": 995.8151454117655,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 560.0,
+        "pending_records": 5,
+        "received_records": 5,
+        "battery_j": 995.7951454117655,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 570.0,
+        "pending_records": 5,
+        "received_records": 5,
+        "battery_j": 995.7751454117655,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 580.0,
+        "pending_records": 5,
+        "received_records": 5,
+        "battery_j": 995.7551454117655,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 590.0,
+        "pending_records": 5,
+        "received_records": 5,
+        "battery_j": 995.7351454117655,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 600.0,
+        "pending_records": 6,
+        "received_records": 5,
+        "battery_j": 995.7151454117655,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 610.0,
+        "pending_records": 6,
+        "received_records": 6,
+        "battery_j": 995.6688790588244,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 620.0,
+        "pending_records": 6,
+        "received_records": 6,
+        "battery_j": 995.604542117648,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 630.0,
+        "pending_records": 6,
+        "received_records": 6,
+        "battery_j": 995.584542117648,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 640.0,
+        "pending_records": 2,
+        "received_records": 6,
+        "battery_j": 995.5202051764716,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 650.0,
+        "pending_records": 2,
+        "received_records": 6,
+        "battery_j": 995.5002051764716,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 660.0,
+        "pending_records": 3,
+        "received_records": 7,
+        "battery_j": 995.4476141176481,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 670.0,
+        "pending_records": 3,
+        "received_records": 7,
+        "battery_j": 995.4276141176481,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 680.0,
+        "pending_records": 1,
+        "received_records": 8,
+        "battery_j": 995.369601882354,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 690.0,
+        "pending_records": 1,
+        "received_records": 8,
+        "battery_j": 995.349601882354,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 700.0,
+        "pending_records": 0,
+        "received_records": 8,
+        "battery_j": 995.3024320000011,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 710.0,
+        "pending_records": 0,
+        "received_records": 8,
+        "battery_j": 995.2824320000011,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 720.0,
+        "pending_records": 1,
+        "received_records": 8,
+        "battery_j": 995.2624320000011,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 730.0,
+        "pending_records": 1,
+        "received_records": 9,
+        "battery_j": 995.2161656470599,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 740.0,
+        "pending_records": 0,
+        "received_records": 9,
+        "battery_j": 995.1698992941187,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 750.0,
+        "pending_records": 0,
+        "received_records": 9,
+        "battery_j": 995.1498992941188,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 760.0,
+        "pending_records": 0,
+        "received_records": 9,
+        "battery_j": 995.1298992941188,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 770.0,
+        "pending_records": 0,
+        "received_records": 9,
+        "battery_j": 995.1098992941188,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 780.0,
+        "pending_records": 1,
+        "received_records": 9,
+        "battery_j": 995.0898992941188,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 790.0,
+        "pending_records": 1,
+        "received_records": 9,
+        "battery_j": 995.0427294117659,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 800.0,
+        "pending_records": 0,
+        "received_records": 10,
+        "battery_j": 994.995559529413,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 810.0,
+        "pending_records": 0,
+        "received_records": 10,
+        "battery_j": 994.975559529413,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 820.0,
+        "pending_records": 0,
+        "received_records": 10,
+        "battery_j": 994.955559529413,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 830.0,
+        "pending_records": 0,
+        "received_records": 10,
+        "battery_j": 994.935559529413,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 840.0,
+        "pending_records": 1,
+        "received_records": 10,
+        "battery_j": 994.915559529413,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 850.0,
+        "pending_records": 1,
+        "received_records": 11,
+        "battery_j": 994.8692931764718,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 860.0,
+        "pending_records": 0,
+        "received_records": 11,
+        "battery_j": 994.8230268235307,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 870.0,
+        "pending_records": 0,
+        "received_records": 11,
+        "battery_j": 994.8030268235307,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 880.0,
+        "pending_records": 0,
+        "received_records": 11,
+        "battery_j": 994.7830268235307,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 890.0,
+        "pending_records": 0,
+        "received_records": 11,
+        "battery_j": 994.7630268235307,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 900.0,
+        "pending_records": 1,
+        "received_records": 11,
+        "battery_j": 994.7430268235307,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 910.0,
+        "pending_records": 1,
+        "received_records": 11,
+        "battery_j": 994.7230268235307,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 920.0,
+        "pending_records": 1,
+        "received_records": 11,
+        "battery_j": 994.7030268235308,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 930.0,
+        "pending_records": 1,
+        "received_records": 11,
+        "battery_j": 994.6830268235308,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 940.0,
+        "pending_records": 1,
+        "received_records": 11,
+        "battery_j": 994.6630268235308,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 950.0,
+        "pending_records": 1,
+        "received_records": 11,
+        "battery_j": 994.6430268235308,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 960.0,
+        "pending_records": 2,
+        "received_records": 11,
+        "battery_j": 994.6230268235308,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 970.0,
+        "pending_records": 2,
+        "received_records": 11,
+        "battery_j": 994.6030268235309,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 980.0,
+        "pending_records": 2,
+        "received_records": 11,
+        "battery_j": 994.5830268235309,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 990.0,
+        "pending_records": 2,
+        "received_records": 11,
+        "battery_j": 994.5630268235309,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1000.0,
+        "pending_records": 2,
+        "received_records": 11,
+        "battery_j": 994.5430268235309,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1010.0,
+        "pending_records": 2,
+        "received_records": 11,
+        "battery_j": 994.5230268235309,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1020.0,
+        "pending_records": 3,
+        "received_records": 11,
+        "battery_j": 994.503026823531,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1030.0,
+        "pending_records": 3,
+        "received_records": 11,
+        "battery_j": 994.483026823531,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1040.0,
+        "pending_records": 3,
+        "received_records": 11,
+        "battery_j": 994.463026823531,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1050.0,
+        "pending_records": 3,
+        "received_records": 11,
+        "battery_j": 994.443026823531,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1060.0,
+        "pending_records": 3,
+        "received_records": 11,
+        "battery_j": 994.423026823531,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1070.0,
+        "pending_records": 3,
+        "received_records": 11,
+        "battery_j": 994.403026823531,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1080.0,
+        "pending_records": 4,
+        "received_records": 11,
+        "battery_j": 994.383026823531,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1090.0,
+        "pending_records": 4,
+        "received_records": 11,
+        "battery_j": 994.3630268235311,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1100.0,
+        "pending_records": 4,
+        "received_records": 11,
+        "battery_j": 994.3430268235311,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1110.0,
+        "pending_records": 4,
+        "received_records": 11,
+        "battery_j": 994.3230268235311,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1120.0,
+        "pending_records": 4,
+        "received_records": 11,
+        "battery_j": 994.3030268235311,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1130.0,
+        "pending_records": 4,
+        "received_records": 11,
+        "battery_j": 994.2830268235311,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1140.0,
+        "pending_records": 5,
+        "received_records": 11,
+        "battery_j": 994.2630268235312,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1150.0,
+        "pending_records": 5,
+        "received_records": 11,
+        "battery_j": 994.2430268235312,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1160.0,
+        "pending_records": 5,
+        "received_records": 11,
+        "battery_j": 994.2230268235312,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1170.0,
+        "pending_records": 5,
+        "received_records": 11,
+        "battery_j": 994.2030268235312,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1180.0,
+        "pending_records": 5,
+        "received_records": 11,
+        "battery_j": 994.1830268235312,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1190.0,
+        "pending_records": 5,
+        "received_records": 11,
+        "battery_j": 994.1630268235313,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1200.0,
+        "pending_records": 6,
+        "received_records": 11,
+        "battery_j": 994.1430268235313,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1210.0,
+        "pending_records": 6,
+        "received_records": 11,
+        "battery_j": 994.1230268235313,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1220.0,
+        "pending_records": 6,
+        "received_records": 11,
+        "battery_j": 994.1030268235313,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1230.0,
+        "pending_records": 6,
+        "received_records": 11,
+        "battery_j": 994.0830268235313,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1240.0,
+        "pending_records": 6,
+        "received_records": 11,
+        "battery_j": 994.0630268235313,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1250.0,
+        "pending_records": 6,
+        "received_records": 11,
+        "battery_j": 994.0430268235314,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1260.0,
+        "pending_records": 7,
+        "received_records": 11,
+        "battery_j": 994.0230268235314,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1270.0,
+        "pending_records": 7,
+        "received_records": 11,
+        "battery_j": 994.0030268235314,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1280.0,
+        "pending_records": 7,
+        "received_records": 11,
+        "battery_j": 993.9830268235314,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1290.0,
+        "pending_records": 7,
+        "received_records": 11,
+        "battery_j": 993.9630268235314,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1300.0,
+        "pending_records": 7,
+        "received_records": 11,
+        "battery_j": 993.9430268235315,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1310.0,
+        "pending_records": 7,
+        "received_records": 11,
+        "battery_j": 993.9230268235315,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1320.0,
+        "pending_records": 8,
+        "received_records": 11,
+        "battery_j": 993.9030268235315,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1330.0,
+        "pending_records": 8,
+        "received_records": 11,
+        "battery_j": 993.8830268235315,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1340.0,
+        "pending_records": 8,
+        "received_records": 11,
+        "battery_j": 993.8630268235315,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1350.0,
+        "pending_records": 8,
+        "received_records": 11,
+        "battery_j": 993.8430268235315,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1360.0,
+        "pending_records": 8,
+        "received_records": 11,
+        "battery_j": 993.8230268235316,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1370.0,
+        "pending_records": 8,
+        "received_records": 11,
+        "battery_j": 993.8030268235316,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1380.0,
+        "pending_records": 9,
+        "received_records": 11,
+        "battery_j": 993.7830268235316,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1390.0,
+        "pending_records": 9,
+        "received_records": 11,
+        "battery_j": 993.7630268235316,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1400.0,
+        "pending_records": 9,
+        "received_records": 11,
+        "battery_j": 993.7430268235316,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1410.0,
+        "pending_records": 9,
+        "received_records": 11,
+        "battery_j": 993.7230268235317,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1420.0,
+        "pending_records": 9,
+        "received_records": 11,
+        "battery_j": 993.7030268235317,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1430.0,
+        "pending_records": 9,
+        "received_records": 11,
+        "battery_j": 993.6830268235317,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1440.0,
+        "pending_records": 10,
+        "received_records": 11,
+        "battery_j": 993.6630268235317,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1450.0,
+        "pending_records": 10,
+        "received_records": 11,
+        "battery_j": 993.6430268235317,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1460.0,
+        "pending_records": 10,
+        "received_records": 11,
+        "battery_j": 993.6230268235317,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1470.0,
+        "pending_records": 10,
+        "received_records": 11,
+        "battery_j": 993.6030268235318,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1480.0,
+        "pending_records": 10,
+        "received_records": 11,
+        "battery_j": 993.5830268235318,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1490.0,
+        "pending_records": 10,
+        "received_records": 11,
+        "battery_j": 993.5630268235318,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1500.0,
+        "pending_records": 11,
+        "received_records": 11,
+        "battery_j": 993.5430268235318,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1510.0,
+        "pending_records": 11,
+        "received_records": 11,
+        "battery_j": 993.5230268235318,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1520.0,
+        "pending_records": 11,
+        "received_records": 11,
+        "battery_j": 993.5030268235319,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1530.0,
+        "pending_records": 11,
+        "received_records": 11,
+        "battery_j": 993.4830268235319,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1540.0,
+        "pending_records": 11,
+        "received_records": 11,
+        "battery_j": 993.4630268235319,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1550.0,
+        "pending_records": 11,
+        "received_records": 11,
+        "battery_j": 993.4430268235319,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1560.0,
+        "pending_records": 12,
+        "received_records": 11,
+        "battery_j": 993.4230268235319,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1570.0,
+        "pending_records": 12,
+        "received_records": 11,
+        "battery_j": 993.403026823532,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1580.0,
+        "pending_records": 12,
+        "received_records": 11,
+        "battery_j": 993.383026823532,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1590.0,
+        "pending_records": 12,
+        "received_records": 11,
+        "battery_j": 993.363026823532,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1600.0,
+        "pending_records": 12,
+        "received_records": 11,
+        "battery_j": 993.343026823532,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1610.0,
+        "pending_records": 12,
+        "received_records": 11,
+        "battery_j": 993.323026823532,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1620.0,
+        "pending_records": 13,
+        "received_records": 11,
+        "battery_j": 993.303026823532,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1630.0,
+        "pending_records": 13,
+        "received_records": 11,
+        "battery_j": 993.283026823532,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1640.0,
+        "pending_records": 13,
+        "received_records": 11,
+        "battery_j": 993.2630268235321,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1650.0,
+        "pending_records": 13,
+        "received_records": 11,
+        "battery_j": 993.2430268235321,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1660.0,
+        "pending_records": 13,
+        "received_records": 11,
+        "battery_j": 993.2230268235321,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1670.0,
+        "pending_records": 13,
+        "received_records": 11,
+        "battery_j": 993.2030268235321,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1680.0,
+        "pending_records": 14,
+        "received_records": 11,
+        "battery_j": 993.1830268235321,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1690.0,
+        "pending_records": 14,
+        "received_records": 11,
+        "battery_j": 993.1630268235322,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1700.0,
+        "pending_records": 14,
+        "received_records": 11,
+        "battery_j": 993.1430268235322,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1710.0,
+        "pending_records": 14,
+        "received_records": 11,
+        "battery_j": 993.1230268235322,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1720.0,
+        "pending_records": 14,
+        "received_records": 11,
+        "battery_j": 993.1030268235322,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1730.0,
+        "pending_records": 14,
+        "received_records": 11,
+        "battery_j": 993.0830268235322,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1740.0,
+        "pending_records": 15,
+        "received_records": 11,
+        "battery_j": 993.0630268235323,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1750.0,
+        "pending_records": 15,
+        "received_records": 11,
+        "battery_j": 993.0430268235323,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1760.0,
+        "pending_records": 15,
+        "received_records": 11,
+        "battery_j": 993.0230268235323,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1770.0,
+        "pending_records": 15,
+        "received_records": 11,
+        "battery_j": 993.0030268235323,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1780.0,
+        "pending_records": 15,
+        "received_records": 11,
+        "battery_j": 992.9830268235323,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1790.0,
+        "pending_records": 15,
+        "received_records": 11,
+        "battery_j": 992.9630268235323,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1800.0,
+        "pending_records": 16,
+        "received_records": 11,
+        "battery_j": 992.9430268235324,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1810.0,
+        "pending_records": 16,
+        "received_records": 11,
+        "battery_j": 992.8967604705912,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1820.0,
+        "pending_records": 16,
+        "received_records": 15,
+        "battery_j": 992.8324235294148,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1830.0,
+        "pending_records": 16,
+        "received_records": 15,
+        "battery_j": 992.8124235294148,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1840.0,
+        "pending_records": 12,
+        "received_records": 15,
+        "battery_j": 992.7480865882384,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1850.0,
+        "pending_records": 12,
+        "received_records": 15,
+        "battery_j": 992.7280865882384,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1860.0,
+        "pending_records": 13,
+        "received_records": 15,
+        "battery_j": 992.663749647062,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1870.0,
+        "pending_records": 13,
+        "received_records": 15,
+        "battery_j": 992.643749647062,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1880.0,
+        "pending_records": 9,
+        "received_records": 15,
+        "battery_j": 992.5794127058856,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1890.0,
+        "pending_records": 9,
+        "received_records": 15,
+        "battery_j": 992.5594127058856,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1900.0,
+        "pending_records": 9,
+        "received_records": 19,
+        "battery_j": 992.4950757647092,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1910.0,
+        "pending_records": 9,
+        "received_records": 19,
+        "battery_j": 992.4750757647092,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1920.0,
+        "pending_records": 6,
+        "received_records": 19,
+        "battery_j": 992.4107388235328,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1930.0,
+        "pending_records": 6,
+        "received_records": 19,
+        "battery_j": 992.3907388235328,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1940.0,
+        "pending_records": 6,
+        "received_records": 23,
+        "battery_j": 992.3264018823564,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1950.0,
+        "pending_records": 6,
+        "received_records": 23,
+        "battery_j": 992.3064018823565,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1960.0,
+        "pending_records": 2,
+        "received_records": 23,
+        "battery_j": 992.24206494118,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1970.0,
+        "pending_records": 2,
+        "received_records": 23,
+        "battery_j": 992.2220649411801,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1980.0,
+        "pending_records": 3,
+        "received_records": 25,
+        "battery_j": 992.1694738823566,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 1990.0,
+        "pending_records": 3,
+        "received_records": 25,
+        "battery_j": 992.1494738823566,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2000.0,
+        "pending_records": 1,
+        "received_records": 26,
+        "battery_j": 992.0914616470625,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2010.0,
+        "pending_records": 1,
+        "received_records": 26,
+        "battery_j": 992.0714616470625,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2020.0,
+        "pending_records": 0,
+        "received_records": 26,
+        "battery_j": 992.0242917647096,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2030.0,
+        "pending_records": 0,
+        "received_records": 26,
+        "battery_j": 992.0042917647096,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2040.0,
+        "pending_records": 1,
+        "received_records": 26,
+        "battery_j": 991.9842917647096,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2050.0,
+        "pending_records": 1,
+        "received_records": 27,
+        "battery_j": 991.9380254117684,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2060.0,
+        "pending_records": 0,
+        "received_records": 27,
+        "battery_j": 991.8917590588272,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2070.0,
+        "pending_records": 0,
+        "received_records": 27,
+        "battery_j": 991.8717590588273,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2080.0,
+        "pending_records": 0,
+        "received_records": 27,
+        "battery_j": 991.8517590588273,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2090.0,
+        "pending_records": 0,
+        "received_records": 27,
+        "battery_j": 991.8317590588273,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2100.0,
+        "pending_records": 1,
+        "received_records": 27,
+        "battery_j": 991.8117590588273,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2110.0,
+        "pending_records": 1,
+        "received_records": 27,
+        "battery_j": 991.7654927058861,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2120.0,
+        "pending_records": 1,
+        "received_records": 28,
+        "battery_j": 991.7183228235332,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2130.0,
+        "pending_records": 0,
+        "received_records": 28,
+        "battery_j": 991.6711529411803,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2140.0,
+        "pending_records": 0,
+        "received_records": 28,
+        "battery_j": 991.6511529411803,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2150.0,
+        "pending_records": 0,
+        "received_records": 28,
+        "battery_j": 991.6311529411803,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2160.0,
+        "pending_records": 1,
+        "received_records": 28,
+        "battery_j": 991.6111529411803,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2170.0,
+        "pending_records": 1,
+        "received_records": 29,
+        "battery_j": 991.5648865882391,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2180.0,
+        "pending_records": 0,
+        "received_records": 29,
+        "battery_j": 991.5186202352979,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2190.0,
+        "pending_records": 0,
+        "received_records": 29,
+        "battery_j": 991.498620235298,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2200.0,
+        "pending_records": 0,
+        "received_records": 29,
+        "battery_j": 991.478620235298,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2210.0,
+        "pending_records": 0,
+        "received_records": 29,
+        "battery_j": 991.458620235298,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2220.0,
+        "pending_records": 1,
+        "received_records": 29,
+        "battery_j": 991.438620235298,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2230.0,
+        "pending_records": 1,
+        "received_records": 30,
+        "battery_j": 991.3914503529451,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2240.0,
+        "pending_records": 0,
+        "received_records": 30,
+        "battery_j": 991.3442804705921,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2250.0,
+        "pending_records": 0,
+        "received_records": 30,
+        "battery_j": 991.3242804705922,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2260.0,
+        "pending_records": 0,
+        "received_records": 30,
+        "battery_j": 991.3042804705922,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2270.0,
+        "pending_records": 0,
+        "received_records": 30,
+        "battery_j": 991.2842804705922,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2280.0,
+        "pending_records": 1,
+        "received_records": 30,
+        "battery_j": 991.2642804705922,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2290.0,
+        "pending_records": 1,
+        "received_records": 30,
+        "battery_j": 991.218014117651,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2300.0,
+        "pending_records": 0,
+        "received_records": 31,
+        "battery_j": 991.1717477647098,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2310.0,
+        "pending_records": 0,
+        "received_records": 31,
+        "battery_j": 991.1517477647099,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2320.0,
+        "pending_records": 0,
+        "received_records": 31,
+        "battery_j": 991.1317477647099,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2330.0,
+        "pending_records": 0,
+        "received_records": 31,
+        "battery_j": 991.1117477647099,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2340.0,
+        "pending_records": 1,
+        "received_records": 31,
+        "battery_j": 991.0917477647099,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2350.0,
+        "pending_records": 1,
+        "received_records": 31,
+        "battery_j": 991.044577882357,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2360.0,
+        "pending_records": 0,
+        "received_records": 32,
+        "battery_j": 990.997408000004,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2370.0,
+        "pending_records": 0,
+        "received_records": 32,
+        "battery_j": 990.9774080000041,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2380.0,
+        "pending_records": 0,
+        "received_records": 32,
+        "battery_j": 990.9574080000041,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2390.0,
+        "pending_records": 0,
+        "received_records": 32,
+        "battery_j": 990.9374080000041,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2400.0,
+        "pending_records": 1,
+        "received_records": 32,
+        "battery_j": 990.9174080000041,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2410.0,
+        "pending_records": 1,
+        "received_records": 33,
+        "battery_j": 990.8711416470629,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2420.0,
+        "pending_records": 1,
+        "received_records": 33,
+        "battery_j": 990.8248752941217,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2430.0,
+        "pending_records": 0,
+        "received_records": 33,
+        "battery_j": 990.7786089411806,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2440.0,
+        "pending_records": 0,
+        "received_records": 33,
+        "battery_j": 990.7586089411806,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2450.0,
+        "pending_records": 0,
+        "received_records": 33,
+        "battery_j": 990.7386089411806,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2460.0,
+        "pending_records": 1,
+        "received_records": 33,
+        "battery_j": 990.7186089411806,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2470.0,
+        "pending_records": 1,
+        "received_records": 34,
+        "battery_j": 990.6714390588277,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2480.0,
+        "pending_records": 0,
+        "received_records": 34,
+        "battery_j": 990.6242691764747,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2490.0,
+        "pending_records": 0,
+        "received_records": 34,
+        "battery_j": 990.6042691764748,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2500.0,
+        "pending_records": 0,
+        "received_records": 34,
+        "battery_j": 990.5842691764748,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2510.0,
+        "pending_records": 0,
+        "received_records": 34,
+        "battery_j": 990.5642691764748,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2520.0,
+        "pending_records": 1,
+        "received_records": 34,
+        "battery_j": 990.5442691764748,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2530.0,
+        "pending_records": 1,
+        "received_records": 35,
+        "battery_j": 990.4980028235336,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2540.0,
+        "pending_records": 0,
+        "received_records": 35,
+        "battery_j": 990.4517364705924,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2550.0,
+        "pending_records": 0,
+        "received_records": 35,
+        "battery_j": 990.4317364705925,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2560.0,
+        "pending_records": 0,
+        "received_records": 35,
+        "battery_j": 990.4117364705925,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2570.0,
+        "pending_records": 0,
+        "received_records": 35,
+        "battery_j": 990.3917364705925,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2580.0,
+        "pending_records": 1,
+        "received_records": 35,
+        "battery_j": 990.3717364705925,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2590.0,
+        "pending_records": 1,
+        "received_records": 36,
+        "battery_j": 990.3245665882396,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2600.0,
+        "pending_records": 0,
+        "received_records": 36,
+        "battery_j": 990.2773967058866,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2610.0,
+        "pending_records": 0,
+        "received_records": 36,
+        "battery_j": 990.2573967058867,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2620.0,
+        "pending_records": 0,
+        "received_records": 36,
+        "battery_j": 990.2373967058867,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2630.0,
+        "pending_records": 0,
+        "received_records": 36,
+        "battery_j": 990.2173967058867,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2640.0,
+        "pending_records": 1,
+        "received_records": 36,
+        "battery_j": 990.1973967058867,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2650.0,
+        "pending_records": 1,
+        "received_records": 37,
+        "battery_j": 990.1511303529455,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2660.0,
+        "pending_records": 0,
+        "received_records": 37,
+        "battery_j": 990.1048640000043,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2670.0,
+        "pending_records": 0,
+        "received_records": 37,
+        "battery_j": 990.0848640000044,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2680.0,
+        "pending_records": 0,
+        "received_records": 37,
+        "battery_j": 990.0648640000044,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2690.0,
+        "pending_records": 0,
+        "received_records": 37,
+        "battery_j": 990.0448640000044,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2700.0,
+        "pending_records": 1,
+        "received_records": 37,
+        "battery_j": 990.0248640000044,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2710.0,
+        "pending_records": 1,
+        "received_records": 37,
+        "battery_j": 989.9785976470632,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2720.0,
+        "pending_records": 1,
+        "received_records": 38,
+        "battery_j": 989.9314277647103,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2730.0,
+        "pending_records": 0,
+        "received_records": 38,
+        "battery_j": 989.8842578823574,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2740.0,
+        "pending_records": 0,
+        "received_records": 38,
+        "battery_j": 989.8642578823574,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2750.0,
+        "pending_records": 0,
+        "received_records": 38,
+        "battery_j": 989.8442578823574,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2760.0,
+        "pending_records": 1,
+        "received_records": 38,
+        "battery_j": 989.8242578823574,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2770.0,
+        "pending_records": 1,
+        "received_records": 39,
+        "battery_j": 989.7779915294162,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2780.0,
+        "pending_records": 0,
+        "received_records": 39,
+        "battery_j": 989.731725176475,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2790.0,
+        "pending_records": 0,
+        "received_records": 39,
+        "battery_j": 989.711725176475,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2800.0,
+        "pending_records": 0,
+        "received_records": 39,
+        "battery_j": 989.6917251764751,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2810.0,
+        "pending_records": 0,
+        "received_records": 39,
+        "battery_j": 989.6717251764751,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2820.0,
+        "pending_records": 1,
+        "received_records": 39,
+        "battery_j": 989.6517251764751,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2830.0,
+        "pending_records": 1,
+        "received_records": 40,
+        "battery_j": 989.6045552941222,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2840.0,
+        "pending_records": 0,
+        "received_records": 40,
+        "battery_j": 989.5573854117692,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2850.0,
+        "pending_records": 0,
+        "received_records": 40,
+        "battery_j": 989.5373854117693,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2860.0,
+        "pending_records": 0,
+        "received_records": 40,
+        "battery_j": 989.5173854117693,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2870.0,
+        "pending_records": 0,
+        "received_records": 40,
+        "battery_j": 989.4973854117693,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2880.0,
+        "pending_records": 1,
+        "received_records": 40,
+        "battery_j": 989.4773854117693,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2890.0,
+        "pending_records": 1,
+        "received_records": 41,
+        "battery_j": 989.4311190588281,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2900.0,
+        "pending_records": 0,
+        "received_records": 41,
+        "battery_j": 989.3848527058869,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2910.0,
+        "pending_records": 0,
+        "received_records": 41,
+        "battery_j": 989.364852705887,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2920.0,
+        "pending_records": 0,
+        "received_records": 41,
+        "battery_j": 989.344852705887,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2930.0,
+        "pending_records": 0,
+        "received_records": 41,
+        "battery_j": 989.324852705887,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2940.0,
+        "pending_records": 1,
+        "received_records": 41,
+        "battery_j": 989.304852705887,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2950.0,
+        "pending_records": 1,
+        "received_records": 42,
+        "battery_j": 989.2576828235341,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2960.0,
+        "pending_records": 0,
+        "received_records": 42,
+        "battery_j": 989.2105129411812,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2970.0,
+        "pending_records": 0,
+        "received_records": 42,
+        "battery_j": 989.1905129411812,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2980.0,
+        "pending_records": 0,
+        "received_records": 42,
+        "battery_j": 989.1705129411812,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 2990.0,
+        "pending_records": 0,
+        "received_records": 42,
+        "battery_j": 989.1505129411812,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3000.0,
+        "pending_records": 1,
+        "received_records": 42,
+        "battery_j": 989.1305129411812,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3010.0,
+        "pending_records": 1,
+        "received_records": 43,
+        "battery_j": 989.08424658824,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3020.0,
+        "pending_records": 1,
+        "received_records": 43,
+        "battery_j": 989.0379802352988,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3030.0,
+        "pending_records": 0,
+        "received_records": 43,
+        "battery_j": 988.9917138823577,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3040.0,
+        "pending_records": 0,
+        "received_records": 43,
+        "battery_j": 988.9717138823577,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3050.0,
+        "pending_records": 0,
+        "received_records": 43,
+        "battery_j": 988.9517138823577,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3060.0,
+        "pending_records": 1,
+        "received_records": 43,
+        "battery_j": 988.9317138823577,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3070.0,
+        "pending_records": 1,
+        "received_records": 44,
+        "battery_j": 988.8845440000048,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3080.0,
+        "pending_records": 0,
+        "received_records": 44,
+        "battery_j": 988.8373741176518,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3090.0,
+        "pending_records": 0,
+        "received_records": 44,
+        "battery_j": 988.8173741176519,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3100.0,
+        "pending_records": 0,
+        "received_records": 44,
+        "battery_j": 988.7973741176519,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3110.0,
+        "pending_records": 0,
+        "received_records": 44,
+        "battery_j": 988.7773741176519,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3120.0,
+        "pending_records": 1,
+        "received_records": 44,
+        "battery_j": 988.7573741176519,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3130.0,
+        "pending_records": 1,
+        "received_records": 45,
+        "battery_j": 988.7111077647107,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3140.0,
+        "pending_records": 0,
+        "received_records": 45,
+        "battery_j": 988.6648414117695,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3150.0,
+        "pending_records": 0,
+        "received_records": 45,
+        "battery_j": 988.6448414117696,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3160.0,
+        "pending_records": 0,
+        "received_records": 45,
+        "battery_j": 988.6248414117696,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3170.0,
+        "pending_records": 0,
+        "received_records": 45,
+        "battery_j": 988.6048414117696,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3180.0,
+        "pending_records": 1,
+        "received_records": 45,
+        "battery_j": 988.5848414117696,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3190.0,
+        "pending_records": 1,
+        "received_records": 46,
+        "battery_j": 988.5376715294167,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3200.0,
+        "pending_records": 0,
+        "received_records": 46,
+        "battery_j": 988.4905016470638,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3210.0,
+        "pending_records": 0,
+        "received_records": 46,
+        "battery_j": 988.4705016470638,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3220.0,
+        "pending_records": 0,
+        "received_records": 46,
+        "battery_j": 988.4505016470638,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3230.0,
+        "pending_records": 0,
+        "received_records": 46,
+        "battery_j": 988.4305016470638,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3240.0,
+        "pending_records": 1,
+        "received_records": 46,
+        "battery_j": 988.4105016470638,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3250.0,
+        "pending_records": 1,
+        "received_records": 47,
+        "battery_j": 988.3642352941226,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3260.0,
+        "pending_records": 0,
+        "received_records": 47,
+        "battery_j": 988.3179689411814,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3270.0,
+        "pending_records": 0,
+        "received_records": 47,
+        "battery_j": 988.2979689411815,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3280.0,
+        "pending_records": 0,
+        "received_records": 47,
+        "battery_j": 988.2779689411815,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3290.0,
+        "pending_records": 0,
+        "received_records": 47,
+        "battery_j": 988.2579689411815,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3300.0,
+        "pending_records": 1,
+        "received_records": 47,
+        "battery_j": 988.2379689411815,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3310.0,
+        "pending_records": 1,
+        "received_records": 47,
+        "battery_j": 988.1917025882403,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3320.0,
+        "pending_records": 1,
+        "received_records": 48,
+        "battery_j": 988.1445327058874,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3330.0,
+        "pending_records": 0,
+        "received_records": 48,
+        "battery_j": 988.0973628235345,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3340.0,
+        "pending_records": 0,
+        "received_records": 48,
+        "battery_j": 988.0773628235345,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3350.0,
+        "pending_records": 0,
+        "received_records": 48,
+        "battery_j": 988.0573628235345,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3360.0,
+        "pending_records": 1,
+        "received_records": 48,
+        "battery_j": 988.0373628235345,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3370.0,
+        "pending_records": 1,
+        "received_records": 49,
+        "battery_j": 987.9910964705933,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3380.0,
+        "pending_records": 0,
+        "received_records": 49,
+        "battery_j": 987.9448301176521,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3390.0,
+        "pending_records": 0,
+        "received_records": 49,
+        "battery_j": 987.9248301176522,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3400.0,
+        "pending_records": 0,
+        "received_records": 49,
+        "battery_j": 987.9048301176522,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3410.0,
+        "pending_records": 0,
+        "received_records": 49,
+        "battery_j": 987.8848301176522,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3420.0,
+        "pending_records": 1,
+        "received_records": 49,
+        "battery_j": 987.8648301176522,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3430.0,
+        "pending_records": 1,
+        "received_records": 50,
+        "battery_j": 987.8176602352993,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3440.0,
+        "pending_records": 0,
+        "received_records": 50,
+        "battery_j": 987.7704903529464,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3450.0,
+        "pending_records": 0,
+        "received_records": 50,
+        "battery_j": 987.7504903529464,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3460.0,
+        "pending_records": 0,
+        "received_records": 50,
+        "battery_j": 987.7304903529464,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3470.0,
+        "pending_records": 0,
+        "received_records": 50,
+        "battery_j": 987.7104903529464,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3480.0,
+        "pending_records": 1,
+        "received_records": 50,
+        "battery_j": 987.6904903529464,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3490.0,
+        "pending_records": 1,
+        "received_records": 50,
+        "battery_j": 987.6442240000052,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3500.0,
+        "pending_records": 0,
+        "received_records": 50,
+        "battery_j": 987.597957647064,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3510.0,
+        "pending_records": 0,
+        "received_records": 50,
+        "battery_j": 987.5779576470641,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3520.0,
+        "pending_records": 0,
+        "received_records": 50,
+        "battery_j": 987.5579576470641,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3530.0,
+        "pending_records": 0,
+        "received_records": 50,
+        "battery_j": 987.5379576470641,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3540.0,
+        "pending_records": 1,
+        "received_records": 50,
+        "battery_j": 987.5179576470641,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3550.0,
+        "pending_records": 1,
+        "received_records": 50,
+        "battery_j": 987.4707877647112,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3560.0,
+        "pending_records": 0,
+        "received_records": 51,
+        "battery_j": 987.4236178823583,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3570.0,
+        "pending_records": 0,
+        "received_records": 51,
+        "battery_j": 987.4036178823583,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3580.0,
+        "pending_records": 0,
+        "received_records": 51,
+        "battery_j": 987.3836178823583,
+        "capacitor_v": 5.0
+      },
+      {
+        "time_s": 3590.0,
+        "pending_records": 0,
+        "received_records": 51,
+        "battery_j": 987.3636178823583,
+        "capacitor_v": 5.0
+      }
+    ],
+    "records": [
+      {
+        "time_s": 0,
+        "sequence": 0,
+        "latitude_deg": 45.05,
+        "longitude_deg": 9.699999999999989,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.79999219995548,
+        "voltage_v": 4.5,
+        "pressure_pa": 18992.934080199666,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 60,
+        "sequence": 1,
+        "latitude_deg": 45.05,
+        "longitude_deg": 9.699999999999989,
+        "altitude_m": null,
+        "temperature_k": null,
+        "voltage_v": 5.0,
+        "pressure_pa": null,
+        "clock_valid": true,
+        "fix_valid": false,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 120,
+        "sequence": 2,
+        "latitude_deg": 45.04344423783917,
+        "longitude_deg": 9.721796239425402,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.8049493924366,
+        "voltage_v": 5.0,
+        "pressure_pa": 18992.324945291402,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 180,
+        "sequence": 3,
+        "latitude_deg": 45.04344423783917,
+        "longitude_deg": 9.721796239425402,
+        "altitude_m": null,
+        "temperature_k": null,
+        "voltage_v": 5.0,
+        "pressure_pa": null,
+        "clock_valid": true,
+        "fix_valid": false,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 240,
+        "sequence": 4,
+        "latitude_deg": 45.03679720900969,
+        "longitude_deg": 9.743508314192752,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.80963463114458,
+        "voltage_v": 5.0,
+        "pressure_pa": 18991.724648513722,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 300,
+        "sequence": 5,
+        "latitude_deg": 45.03679720900969,
+        "longitude_deg": 9.743508314192752,
+        "altitude_m": null,
+        "temperature_k": null,
+        "voltage_v": 5.0,
+        "pressure_pa": null,
+        "clock_valid": true,
+        "fix_valid": false,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 360,
+        "sequence": 6,
+        "latitude_deg": 45.03005391563552,
+        "longitude_deg": 9.76513639498637,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.81365535874986,
+        "voltage_v": 5.0,
+        "pressure_pa": 18991.11025797889,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 420,
+        "sequence": 7,
+        "latitude_deg": 45.03005391563552,
+        "longitude_deg": 9.76513639498637,
+        "altitude_m": null,
+        "temperature_k": null,
+        "voltage_v": 5.0,
+        "pressure_pa": null,
+        "clock_valid": true,
+        "fix_valid": false,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 480,
+        "sequence": 8,
+        "latitude_deg": 45.02320361179417,
+        "longitude_deg": 9.786686680477942,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.81676266027154,
+        "voltage_v": 5.0,
+        "pressure_pa": 18990.482853961363,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 540,
+        "sequence": 9,
+        "latitude_deg": 45.02320361179417,
+        "longitude_deg": 9.786686680477942,
+        "altitude_m": null,
+        "temperature_k": null,
+        "voltage_v": 5.0,
+        "pressure_pa": null,
+        "clock_valid": true,
+        "fix_valid": false,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 600,
+        "sequence": 10,
+        "latitude_deg": 45.016246243063605,
+        "longitude_deg": 9.808164182415368,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.81905810890183,
+        "voltage_v": 5.0,
+        "pressure_pa": 18989.849831746782,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 660,
+        "sequence": 11,
+        "latitude_deg": 45.016246243063605,
+        "longitude_deg": 9.808164182415368,
+        "altitude_m": null,
+        "temperature_k": null,
+        "voltage_v": 5.0,
+        "pressure_pa": null,
+        "clock_valid": true,
+        "fix_valid": false,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 720,
+        "sequence": 12,
+        "latitude_deg": 45.00918253059213,
+        "longitude_deg": 9.82957350332697,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.8205615233514,
+        "voltage_v": 5.0,
+        "pressure_pa": 18989.210896838682,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 780,
+        "sequence": 13,
+        "latitude_deg": 45.00918253059213,
+        "longitude_deg": 9.82957350332697,
+        "altitude_m": null,
+        "temperature_k": null,
+        "voltage_v": 5.0,
+        "pressure_pa": null,
+        "clock_valid": true,
+        "fix_valid": false,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 840,
+        "sequence": 14,
+        "latitude_deg": 45.00201327918187,
+        "longitude_deg": 9.8509190252922,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.82129286667632,
+        "voltage_v": 5.0,
+        "pressure_pa": 18988.565746400192,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 900,
+        "sequence": 15,
+        "latitude_deg": 45.00201327918187,
+        "longitude_deg": 9.8509190252922,
+        "altitude_m": null,
+        "temperature_k": null,
+        "voltage_v": 5.0,
+        "pressure_pa": null,
+        "clock_valid": true,
+        "fix_valid": false,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 960,
+        "sequence": 16,
+        "latitude_deg": 44.99473977825379,
+        "longitude_deg": 9.872206370705072,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.82067650684485,
+        "voltage_v": 5.0,
+        "pressure_pa": 18987.908731999592,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 1020,
+        "sequence": 17,
+        "latitude_deg": 44.99473977825379,
+        "longitude_deg": 9.872206370705072,
+        "altitude_m": null,
+        "temperature_k": null,
+        "voltage_v": 5.0,
+        "pressure_pa": null,
+        "clock_valid": true,
+        "fix_valid": false,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 1080,
+        "sequence": 18,
+        "latitude_deg": 44.987364346136815,
+        "longitude_deg": 9.89344263608163,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.81928218596858,
+        "voltage_v": 5.0,
+        "pressure_pa": 18987.245140073737,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 1140,
+        "sequence": 19,
+        "latitude_deg": 44.987364346136815,
+        "longitude_deg": 9.89344263608163,
+        "altitude_m": null,
+        "temperature_k": null,
+        "voltage_v": 5.0,
+        "pressure_pa": null,
+        "clock_valid": true,
+        "fix_valid": false,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 1200,
+        "sequence": 20,
+        "latitude_deg": 44.979888614984695,
+        "longitude_deg": 9.914630238649636,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.81741042441146,
+        "voltage_v": 5.0,
+        "pressure_pa": 18986.57728959346,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 1260,
+        "sequence": 21,
+        "latitude_deg": 44.979888614984695,
+        "longitude_deg": 9.914630238649636,
+        "altitude_m": null,
+        "temperature_k": null,
+        "voltage_v": 5.0,
+        "pressure_pa": null,
+        "clock_valid": true,
+        "fix_valid": false,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 1320,
+        "sequence": 22,
+        "latitude_deg": 44.972314179757966,
+        "longitude_deg": 9.935771123017958,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.8151052673257,
+        "voltage_v": 5.0,
+        "pressure_pa": 18985.90508822829,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 1380,
+        "sequence": 23,
+        "latitude_deg": 44.972314179757966,
+        "longitude_deg": 9.935771123017958,
+        "altitude_m": null,
+        "temperature_k": null,
+        "voltage_v": 5.0,
+        "pressure_pa": null,
+        "clock_valid": true,
+        "fix_valid": false,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 1440,
+        "sequence": 24,
+        "latitude_deg": 44.964642652259016,
+        "longitude_deg": 9.956866997809868,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.81241145925918,
+        "voltage_v": 5.0,
+        "pressure_pa": 18985.228444441433,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 1500,
+        "sequence": 25,
+        "latitude_deg": 44.964642652259016,
+        "longitude_deg": 9.956866997809868,
+        "altitude_m": null,
+        "temperature_k": null,
+        "voltage_v": 5.0,
+        "pressure_pa": null,
+        "clock_valid": true,
+        "fix_valid": false,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 1560,
+        "sequence": 26,
+        "latitude_deg": 44.95687566296551,
+        "longitude_deg": 9.977919330970138,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.80937443407075,
+        "voltage_v": 5.0,
+        "pressure_pa": 18984.547267716905,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 1620,
+        "sequence": 27,
+        "latitude_deg": 44.95687566296551,
+        "longitude_deg": 9.977919330970138,
+        "altitude_m": null,
+        "temperature_k": null,
+        "voltage_v": 5.0,
+        "pressure_pa": null,
+        "clock_valid": true,
+        "fix_valid": false,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 1680,
+        "sequence": 28,
+        "latitude_deg": 44.94901486283756,
+        "longitude_deg": 9.998929345192039,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.80604030292312,
+        "voltage_v": 5.0,
+        "pressure_pa": 18983.861468798885,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 1740,
+        "sequence": 29,
+        "latitude_deg": 44.94901486283756,
+        "longitude_deg": 9.998929345192039,
+        "altitude_m": null,
+        "temperature_k": null,
+        "voltage_v": 5.0,
+        "pressure_pa": null,
+        "clock_valid": true,
+        "fix_valid": false,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 1800,
+        "sequence": 30,
+        "latitude_deg": 44.94106455883432,
+        "longitude_deg": 10.019895149611301,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.8033098045235,
+        "voltage_v": 5.0,
+        "pressure_pa": 18983.047117477843,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 1860,
+        "sequence": 31,
+        "latitude_deg": 44.94106455883432,
+        "longitude_deg": 10.019895149611301,
+        "altitude_m": null,
+        "temperature_k": null,
+        "voltage_v": 5.0,
+        "pressure_pa": null,
+        "clock_valid": true,
+        "fix_valid": false,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 1920,
+        "sequence": 32,
+        "latitude_deg": 44.93302939978136,
+        "longitude_deg": 10.04081406294992,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.80064278895256,
+        "voltage_v": 5.0,
+        "pressure_pa": 18982.222996541368,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 1980,
+        "sequence": 33,
+        "latitude_deg": 44.93302939978136,
+        "longitude_deg": 10.04081406294992,
+        "altitude_m": null,
+        "temperature_k": null,
+        "voltage_v": 5.0,
+        "pressure_pa": null,
+        "clock_valid": true,
+        "fix_valid": false,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 2040,
+        "sequence": 34,
+        "latitude_deg": 44.92491072696451,
+        "longitude_deg": 10.061686591604058,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.79800134825373,
+        "voltage_v": 5.0,
+        "pressure_pa": 18981.39607205448,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 2100,
+        "sequence": 35,
+        "latitude_deg": 44.92491072696451,
+        "longitude_deg": 10.061686591604058,
+        "altitude_m": null,
+        "temperature_k": null,
+        "voltage_v": 5.0,
+        "pressure_pa": null,
+        "clock_valid": true,
+        "fix_valid": false,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 2160,
+        "sequence": 36,
+        "latitude_deg": 44.91670987544055,
+        "longitude_deg": 10.082512921136328,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.7953867057127,
+        "voltage_v": 5.0,
+        "pressure_pa": 18980.566625080548,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 2220,
+        "sequence": 37,
+        "latitude_deg": 44.91670987544055,
+        "longitude_deg": 10.082512921136328,
+        "altitude_m": null,
+        "temperature_k": null,
+        "voltage_v": 5.0,
+        "pressure_pa": null,
+        "clock_valid": true,
+        "fix_valid": false,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 2280,
+        "sequence": 38,
+        "latitude_deg": 44.90842818812518,
+        "longitude_deg": 10.103292899125734,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.79279987212698,
+        "voltage_v": 5.0,
+        "pressure_pa": 18979.734946911445,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 2340,
+        "sequence": 39,
+        "latitude_deg": 44.90842818812518,
+        "longitude_deg": 10.103292899125734,
+        "altitude_m": null,
+        "temperature_k": null,
+        "voltage_v": 5.0,
+        "pressure_pa": null,
+        "clock_valid": true,
+        "fix_valid": false,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 2400,
+        "sequence": 40,
+        "latitude_deg": 44.90006701717549,
+        "longitude_deg": 10.124026031822211,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.790241654982,
+        "voltage_v": 5.0,
+        "pressure_pa": 18978.90133911446,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 2460,
+        "sequence": 41,
+        "latitude_deg": 44.90006701717549,
+        "longitude_deg": 10.124026031822211,
+        "altitude_m": null,
+        "temperature_k": null,
+        "voltage_v": 5.0,
+        "pressure_pa": null,
+        "clock_valid": true,
+        "fix_valid": false,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 2520,
+        "sequence": 42,
+        "latitude_deg": 44.8916277253442,
+        "longitude_deg": 10.144711481029589,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.78771266780805,
+        "voltage_v": 5.0,
+        "pressure_pa": 18978.066113557354,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 2580,
+        "sequence": 43,
+        "latitude_deg": 44.8916277253442,
+        "longitude_deg": 10.144711481029589,
+        "altitude_m": null,
+        "temperature_k": null,
+        "voltage_v": 5.0,
+        "pressure_pa": null,
+        "clock_valid": true,
+        "fix_valid": false,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 2640,
+        "sequence": 44,
+        "latitude_deg": 44.883111687303455,
+        "longitude_deg": 10.165348061244941,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.78521333974186,
+        "voltage_v": 5.0,
+        "pressure_pa": 18977.229592409236,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 2700,
+        "sequence": 45,
+        "latitude_deg": 44.883111687303455,
+        "longitude_deg": 10.165348061244941,
+        "altitude_m": null,
+        "temperature_k": null,
+        "voltage_v": 5.0,
+        "pressure_pa": null,
+        "clock_valid": true,
+        "fix_valid": false,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 2760,
+        "sequence": 46,
+        "latitude_deg": 44.8745202909363,
+        "longitude_deg": 10.18593423708117,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.78274392531253,
+        "voltage_v": 5.0,
+        "pressure_pa": 18976.392108115473,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 2820,
+        "sequence": 47,
+        "latitude_deg": 44.8745202909363,
+        "longitude_deg": 10.18593423708117,
+        "altitude_m": null,
+        "temperature_k": null,
+        "voltage_v": 5.0,
+        "pressure_pa": null,
+        "clock_valid": true,
+        "fix_valid": false,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 2880,
+        "sequence": 48,
+        "latitude_deg": 44.865854938593436,
+        "longitude_deg": 10.2064681210027,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.78030451447307,
+        "voltage_v": 5.0,
+        "pressure_pa": 18975.554003343947,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 2940,
+        "sequence": 49,
+        "latitude_deg": 44.865854938593436,
+        "longitude_deg": 10.2064681210027,
+        "altitude_m": null,
+        "temperature_k": null,
+        "voltage_v": 5.0,
+        "pressure_pa": null,
+        "clock_valid": true,
+        "fix_valid": false,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 3000,
+        "sequence": 50,
+        "latitude_deg": 44.85711704831315,
+        "longitude_deg": 10.226947471404912,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.7778950428953,
+        "voltage_v": 5.0,
+        "pressure_pa": 18974.715630901293,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 3060,
+        "sequence": 51,
+        "latitude_deg": 44.85711704831315,
+        "longitude_deg": 10.226947471404912,
+        "altitude_m": null,
+        "temperature_k": null,
+        "voltage_v": 5.0,
+        "pressure_pa": null,
+        "clock_valid": true,
+        "fix_valid": false,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 3120,
+        "sequence": 52,
+        "latitude_deg": 44.848308055001944,
+        "longitude_deg": 10.247369691068172,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.77551530254556,
+        "voltage_v": 5.0,
+        "pressure_pa": 18973.877353616703,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 3180,
+        "sequence": 53,
+        "latitude_deg": 44.848308055001944,
+        "longitude_deg": 10.247369691068172,
+        "altitude_m": null,
+        "temperature_k": null,
+        "voltage_v": 5.0,
+        "pressure_pa": null,
+        "clock_valid": true,
+        "fix_valid": false,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 3240,
+        "sequence": 54,
+        "latitude_deg": 44.839424211664486,
+        "longitude_deg": 10.267718529988741,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.77920283934145,
+        "voltage_v": 5.0,
+        "pressure_pa": 18973.089066829332,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 3300,
+        "sequence": 55,
+        "latitude_deg": 44.839424211664486,
+        "longitude_deg": 10.267718529988741,
+        "altitude_m": null,
+        "temperature_k": null,
+        "voltage_v": 5.0,
+        "pressure_pa": null,
+        "clock_valid": true,
+        "fix_valid": false,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 3360,
+        "sequence": 56,
+        "latitude_deg": 44.830457032289715,
+        "longitude_deg": 10.287970096858999,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.78510004483115,
+        "voltage_v": 5.0,
+        "pressure_pa": 18972.31616466385,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 3420,
+        "sequence": 57,
+        "latitude_deg": 44.830457032289715,
+        "longitude_deg": 10.287970096858999,
+        "altitude_m": null,
+        "temperature_k": null,
+        "voltage_v": 5.0,
+        "pressure_pa": null,
+        "clock_valid": true,
+        "fix_valid": false,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 3480,
+        "sequence": 58,
+        "latitude_deg": 44.82140548402907,
+        "longitude_deg": 10.308122845120494,
+        "altitude_m": 12500.0,
+        "temperature_k": 213.79238316611867,
+        "voltage_v": 5.0,
+        "pressure_pa": 18971.551870705494,
+        "clock_valid": true,
+        "fix_valid": true,
+        "origin": "simulated"
+      },
+      {
+        "time_s": 3540,
+        "sequence": 59,
+        "latitude_deg": 44.82140548402907,
+        "longitude_deg": 10.308122845120494,
+        "altitude_m": null,
+        "temperature_k": null,
+        "voltage_v": 5.0,
+        "pressure_pa": null,
+        "clock_valid": true,
+        "fix_valid": false,
+        "origin": "simulated"
+      }
+    ],
+    "limitations": [
+      "Entered/imported receiver windows and loss assumptions; no RF/terrain/gateway discovery model.",
+      "Unconfirmed fixed-repeat policy; receiver outcomes never feed sender decisions. Quantized radio recovery is distinct from original local records.",
+      "Configured test geofences are not authoritative borders; no actual transmitter or legal authorization.",
+      "Lumped battery/capacitor power with assumed loads, RX allowance and constant harvest; no ESR, thermal or bench validation."
+    ]
+  },
+  "sha256": "c3661398c23f7cd5142e098803494b1af2bca2e791b3507e058df1007bf37de8"
+}

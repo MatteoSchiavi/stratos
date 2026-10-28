@@ -1,0 +1,153 @@
+[
+  {
+    "family": "NAV",
+    "hex": "10070000000000bffffe86e5d430d4ffff057e",
+    "decoded": {
+      "version": 1,
+      "family": "NAV",
+      "bytes": 19,
+      "integrity": "CRC16_verified_not_authentication",
+      "sequence_bits": 16,
+      "time_resolution_s": 1,
+      "epoch": "explicit mission/session UTC epoch required out of band; never infer rollover",
+      "observations": [
+        {
+          "time_s": 0,
+          "sequence": 0,
+          "flags": 7,
+          "clock_valid": true,
+          "fix_valid": true,
+          "latitude_deg": 44.99999463558132,
+          "longitude_deg": 9.70000621080473,
+          "altitude_m": 12500,
+          "voltage_v": null,
+          "temperature_k": null,
+          "pressure_pa": null
+        }
+      ]
+    }
+  },
+  {
+    "family": "NAV+ENV",
+    "hex": "11370000000000bffffe86e5d430d4ffffed310046509062",
+    "decoded": {
+      "version": 1,
+      "family": "NAV+ENV",
+      "bytes": 24,
+      "integrity": "CRC16_verified_not_authentication",
+      "sequence_bits": 16,
+      "time_resolution_s": 1,
+      "epoch": "explicit mission/session UTC epoch required out of band; never infer rollover",
+      "observations": [
+        {
+          "time_s": 0,
+          "sequence": 0,
+          "flags": 55,
+          "clock_valid": true,
+          "fix_valid": true,
+          "latitude_deg": 44.99999463558132,
+          "longitude_deg": 9.70000621080473,
+          "altitude_m": 12500,
+          "voltage_v": null,
+          "temperature_k": 224.99999999999997,
+          "pressure_pa": 18000
+        }
+      ]
+    }
+  },
+  {
+    "family": "HISTORY",
+    "hex": "120400006efcffff0ba897b708a8c301feff079d4ba09902d8040200000000000000d8040200000000000000d80402000000000000006eef",
+    "decoded": {
+      "version": 1,
+      "family": "HISTORY",
+      "bytes": 56,
+      "integrity": "CRC16_verified_not_authentication",
+      "sequence_bits": 16,
+      "time_resolution_s": 1,
+      "epoch": "explicit mission/session UTC epoch required out of band; never infer rollover",
+      "observations": [
+        {
+          "time_s": 0,
+          "sequence": 0,
+          "flags": 55,
+          "clock_valid": true,
+          "fix_valid": true,
+          "latitude_deg": 44.99999463558132,
+          "longitude_deg": 9.70000621080473,
+          "altitude_m": 12500,
+          "voltage_v": null,
+          "temperature_k": 224.99999999999997,
+          "pressure_pa": 18000
+        },
+        {
+          "time_s": 300,
+          "sequence": 1,
+          "flags": 55,
+          "clock_valid": true,
+          "fix_valid": true,
+          "latitude_deg": 44.99999463558132,
+          "longitude_deg": 9.70000621080473,
+          "altitude_m": 12500,
+          "voltage_v": null,
+          "temperature_k": 224.99999999999997,
+          "pressure_pa": 18000
+        },
+        {
+          "time_s": 600,
+          "sequence": 2,
+          "flags": 55,
+          "clock_valid": true,
+          "fix_valid": true,
+          "latitude_deg": 44.99999463558132,
+          "longitude_deg": 9.70000621080473,
+          "altitude_m": 12500,
+          "voltage_v": null,
+          "temperature_k": 224.99999999999997,
+          "pressure_pa": 18000
+        },
+        {
+          "time_s": 900,
+          "sequence": 3,
+          "flags": 55,
+          "clock_valid": true,
+          "fix_valid": true,
+          "latitude_deg": 44.99999463558132,
+          "longitude_deg": 9.70000621080473,
+          "altitude_m": 12500,
+          "voltage_v": null,
+          "temperature_k": 224.99999999999997,
+          "pressure_pa": 18000
+        }
+      ]
+    }
+  },
+  {
+    "family": "EMERGENCY",
+    "hex": "1303000000bffffe86e5d4",
+    "decoded": {
+      "version": 1,
+      "family": "EMERGENCY",
+      "bytes": 11,
+      "integrity": "external_LoRaWAN_MIC_required",
+      "sequence_bits": 8,
+      "time_resolution_s": 60,
+      "epoch": "explicit mission/session UTC epoch required out of band; never infer rollover",
+      "observations": [
+        {
+          "time_s": 0,
+          "sequence": 0,
+          "flags": 3,
+          "clock_valid": true,
+          "fix_valid": true,
+          "latitude_deg": 44.99999463558132,
+          "longitude_deg": 9.70000621080473,
+          "altitude_m": null,
+          "voltage_v": null,
+          "temperature_k": null,
+          "pressure_pa": null
+        }
+      ]
+    }
+  }
+]

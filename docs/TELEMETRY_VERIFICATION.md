@@ -42,3 +42,25 @@ The corrected synthetic72h computation took26.17s, with126344KiB peak RSS (~123.
 - Freshness/history allocation is a conservative bounded heuristic. Correlated losses, acknowledgments/rejoin traffic and globally optimal scheduling are not modeled.
 - Lumped power lacks measured cold/ESR/transient/solar calibration. Local archives are checksummed artifacts, not a qualified on-device flash journal or incomplete-prefix salvage.
 - Native Windows, independent8GB and the remaining real-weather/3D P1 gates remain open.
+
+
+## Final committed-source workflow
+
+Scientific implementation `2523bd5134f2988ed001aa08654c09eb445784f1` was pushed to GitHub main. The final full suite passed **123 backend tests in32.73s and14 isolated Chromium scenarios in1.1min**. A final frontend-only refinement reopens a saved study using its original inputs when there is no current draft, and labels reopened archives accurately; frontend lint/types/build plus all three telemetry browser workflows passed again in15.0s after that change. No scientific implementation changed after the123-test run.
+
+The actual restarted API/worker then computed and saved:
+
+| Study | Saved ID | Modeled result |
+| --- | --- | --- |
+| Explicitly synthetic one-hour contact scenario |`392161f3-f141-4d39-8145-65571e17f533`|53/60 unique records;8.082432s airtime;2.132365J radio energy|
+| Retained real NOAA modeled trajectory with explicitly synthetic contacts/loss/power |`4d11bef1-e2b3-4d0b-8c14-40030e6e2bf2`|51/60 unique records;25 known positions;8.952832s airtime;2.262925J radio energy|
+
+The NOAA source is the immutable27 October2026 12UTC-cycle study `d2fbed7e-a0e7-48ce-bfb7-63bd8a34a4f9`, output SHA `f94d5b9a95f539c33b444a05d4a3f9246b2162c1274e67b0d66f8b7719072d6f`. Its source sample cadence is120s while the recovery log cadence is60s; intervening entries correctly mark the unavailable contemporaneous fix invalid rather than inventing new measured positions. Full configurations, flags, outcomes, hashes and startup code identity are in `examples/telemetry-*-study.json`.
+
+Archive `1dadd4ab-efb5-4669-830c-087870a94193` retained all31 original NOAA-derived typed observations in1700B. Its actual binary download was posted back to the real decoder, which reproduced every original observation and the explicit18UTC epoch exactly. Evidence: `TELEMETRY_API_VERIFICATION.json`, `examples/telemetry-noaa-archive.json` and `examples/telemetry-noaa-observations.stla`.
+
+A quiet-state backup at `/workspace/stratos-backups/telemetry-release-20261028` verified327 files,15 original simulations and21 referenced forecast sources. A separate restore reopened both new telemetry studies and the new archive with identical complete evidence/binary; the original archive remained unchanged and verified. The telemetry records are transactionally retained in SQLite and included in its integrity checks; runtime state is ignored by Git. Details: `TELEMETRY_BACKUP_VERIFICATION.json`.
+
+The committed-source synthetic72h repeat exactly matched output SHA `eadd421deab6d230689a9bffa537949ac7d63e74b27f1afb9ef63da5d76638b8`. It ran in22.96s with125728KiB peak RSS (~122.8MiB) in a less contended repeat. Exact metrics/source identities: `examples/telemetry-72h-stress-verification.json`. The earlier stress-policy comparison is preserved in `TELEMETRY_SCHEDULER_REVIEW.json`; it is historical software evidence, not an independently calibrated radio comparison. Protocol vectors: `examples/telemetry-wire-vectors.json`.
+
+Actual desktop/mobile, US915 rejection and archive screens are retained in `screenshots/telemetry-*.png`. GitHub source push is verified independently from local checks; remote Actions success is not claimed under the current API destination policy.
